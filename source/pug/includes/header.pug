@@ -1,0 +1,17 @@
+include header-work-schedule.pug
+include header-email.pug
+include header-logo.pug
+include header-phone.pug
+include header-address.pug
+include header-nav.pug
+
+mixin header(className)
+  header(class=[className, 'header'])
+    .header__wrap-info
+      +header-work-schedule('header__wrap-info-item')
+      +header-email('header__wrap-info-item')
+      +header-logo('header__wrap-info-item')
+      +header-phone('header__wrap-info-item')
+      +header-address('header__wrap-info-item')
+    .header__wrapper-main-nav
+      +header-nav('header__main-nav')
