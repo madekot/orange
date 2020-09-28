@@ -2,11 +2,11 @@ const gulp = require('gulp');
 const pug = require('gulp-pug');
 
 gulp.task('pug-compile', ()=>{
-  return gulp.src(['app/pug/**/*.pug', '!app/pug/includes/**/*.pug'])
+  return gulp.src(['source/pug/**/*.pug', '!app/pug/includes/**/*.pug'])
     .pipe(pug({pretty:true}))
-    .pipe(gulp.dest('app/html'))
+    .pipe(gulp.dest('source/html'))
 });
 
 gulp.task('watch',()=>{
-  gulp.watch('app/pug/**/*.pug', gulp.series('pug-compile'))
+  gulp.watch('source/pug/**/*.pug', gulp.series('pug-compile'))
 });
