@@ -8,22 +8,6 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const del = require("del");
 
-// Del
-const del = () => {
-  return del('build')
-}
-
-exports.del = del;
-
-// Images
-const images = () => {
-  return gulp.src('source/img')
-    .pipe(gulp.dest('build/img'))
-}
-
-exports.images = images;
-
-
 // Htmls
 const htmls = () => {
   return gulp.src(['source/pug/**/*.pug', '!source/pug/includes/**/*.pug'])
@@ -65,23 +49,29 @@ const server = (done) => {
 
 exports.server = server;
 
+// Del
+const deleteImage = () => {
+  return del('build/img/**/*')
+}
+
+exports.deleteImage = deleteImage;
+
+// ImagesCopy
+const imagesCopy = () => {
+  return gulp.src('source/img/**/*')
+    .pipe(gulp.dest('build/img'))
+}
+
+exports.imagesCopy = imagesCopy;
+
 // Watcher
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/pug/**/*.pug", gulp.series("htmls"));
   gulp.watch("build/*.html").on("change", sync.reload);
+  gulp.watch("source/img/**/*", gulp.series(["deleteImage", "imagesCopy"]));
 }
 
 exports.default = gulp.series(
-  images, htmls, styles, server, watcher
+  deleteImage, imagesCopy, htmls, styles, server, watcher
 );
-
-// gulp.task('pug-compile', ()=>{
-//   return gulp.src(['source/pug/**/*.pug', '!source/pug/includes/**/*.pug'])
-//     .pipe(pug({pretty:true}))
-//     .pipe(gulp.dest('./build'))
-// });
-
-// gulp.task('watch',()=>{
-//   gulp.watch('source/pug/**/*.pug', gulp.series('pug-compile'))
-// });
