@@ -6,9 +6,9 @@
 *.pdf
 *.psd
 *.sublime*
-source/html/*.html
 node_modules/
 npm-debug.*
+source/**/*.html
 source/css/*.map
 Thumbs.db
 package-lock.json
