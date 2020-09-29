@@ -1,9 +1,9 @@
 mixin header-nav(className)
   nav(class=[className, 'header-nav'])
-    ul.header-nav__list-links
-      li.header-nav__list-links-item
-        a.header-nav__link Главная
-      li.header-nav__list-links-item
-        a.header-nav__link(href='catalog.html') Вся продукция
-      li.header-nav__list-links-item
-        a.header-nav__link(href='contacts.html') Контакты
+    ul.header-nav__list-site-links
+      li.header-nav__item-list-site
+        a.header-nav__link-site-item(href=false).header-nav__link-site-item--active Главная
+      li.header-nav__item-list-site
+        a.header-nav__link-site-item(href='catalog.html') Вся продукция
+      li.header-nav__item-list-site
+        a.header-nav__link-site-item(href='contacts.html') Контакты

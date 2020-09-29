@@ -1,0 +1,46 @@
+.header-nav {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background-color: #fda300;
+  box-shadow: 6px 6px 8px rgba(0,0,0,0.2);
+}
+
+.header-nav__list-site-links {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-nav__item-list-site {
+  margin-right: 40px;
+}
+
+.header-nav__item-list-site:last-of-type {
+  margin-right: 0;
+}
+
+.header-nav__link-site-item {
+  font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header-nav__link-site-item:hover {
+  color: #000000
+}
+
+.header-nav__link-site-item--active:hover {
+  color: #ffffff;
+}
