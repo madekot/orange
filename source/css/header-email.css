@@ -1,0 +1,45 @@
+.header-email {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header-email::before {
+	content: "";
+
+	height: 71px;
+
+	margin-bottom: 17px;
+
+	background-image: url(../img/svg/mail-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 71px 71px;
+}
+
+.header-email__value {
+  margin-left: 0;
+  text-align: center;
+}
+
+.header-email__link {
+  color: #F7931E;
+  font-family: "Trebuchet", "Trebuchet MS", "Tahoma", "Arial", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.header-email__first-part {
+  display: block;
+}
+
+.header-email__second-part {
+    display: block;
+}
+

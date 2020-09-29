@@ -1,0 +1,18 @@
+.header-logo {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header-logo__value {
+  display: flex;
+
+  margin-left: 0;
+}
+
+.header-logo__link {
+  flex-grow: 1;
+}
+
+.header-logo__image {
+  display: block;
+}

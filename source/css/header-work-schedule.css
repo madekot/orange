@@ -1,0 +1,76 @@
+.header-work-schedule {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header-work-schedule::before {
+	content: "";
+	display: block;
+
+	width: 100%;
+	height: 71px;
+
+	margin-bottom: 5px;
+
+	background-image: url(../img/svg/clock-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 71px 71px;
+}
+
+.header-work-schedule__wrap-working-hours {
+	text-align: center;
+
+	text-transform: uppercase;
+}
+
+.header-work-schedule__working-hours {
+	margin-bottom: 3px;
+
+	font-family: "andika", "Arial", sans-serif;
+	font-weight: 400;
+
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.header-work-schedule__working-hours-time {
+	margin-left: 0;
+
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	text-align: center;
+	font-weight: bold;
+
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.header-work-schedule__start-working-hours-time {
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.end-header-work-schedule__start-working-hours-time {
+	display: inline-block;
+}
+
+.header-work-schedule__wrap-weekend {
+	text-align: center;
+
+	text-transform: uppercase;
+	font-family: "Trebuchet MS", "Arial", sans-serif;
+	font-weight: bold;
+
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.header-work-schedule__weekend {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.header-work-schedule__weekend-days {
+	display: inline-block;
+	margin-left: 0;
+}

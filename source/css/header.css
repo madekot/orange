@@ -1,0 +1,32 @@
+.header {
+	padding-top: 10px;
+}
+
+.header__wrap-info {
+	display: flex;
+  justify-content: center;
+
+	width: 1200px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.header__wrap-info-item {
+  margin-top: 45px;
+	margin-right: 60px;
+}
+
+.header__wrap-info-item--not-top-margin {
+  margin-top: 0;
+}
+
+.header__wrap-info-item:last-of-type {
+	margin-right: 0;
+}
+
+
+.header__wrapper-main-nav {}
+
+.header__main-nav {}
