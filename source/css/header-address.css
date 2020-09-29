@@ -12,7 +12,7 @@
   height: 71px;
   margin-bottom: 5px;
 
-	background-image: url(../img/svg/map-icon.svg);
+	background-image: url(../img/map-icon.svg);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: 71px 71px;
@@ -31,6 +31,7 @@
 
 .header-address__metro {
   margin-bottom: 5px;
+  margin-bottom: 0;
 
   font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
   text-transform: uppercase;
@@ -39,6 +40,9 @@
 }
 
 .header-address__street {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
