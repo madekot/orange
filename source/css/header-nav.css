@@ -19,6 +19,8 @@
 
 .header-nav__item-list-site {
   margin-right: 40px;
+
+  text-align: center;
 }
 
 .header-nav__item-list-site:last-of-type {
@@ -43,4 +45,30 @@
 
 .header-nav__link-site-item--active:hover {
   color: #ffffff;
+}
+
+@media (max-width: 425px) {
+  .header-nav__list-site-links {
+    flex-wrap: wrap;
+  }
+
+  .header-nav__item-list-site {
+    width: 100%;
+
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .header-nav__item-list-site:last-of-type {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .header-nav__list-site-links {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }

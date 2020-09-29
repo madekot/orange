@@ -4,11 +4,13 @@
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .header-phone::before {
   content: "";
 
+  width: 71px;
   height: 71px;
   margin-bottom: 17px;
 
