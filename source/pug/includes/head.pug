@@ -1,7 +1,9 @@
-mixin head(titlePage)
+include variables
+
+mixin head(titlePage='Типография Копи Шоп Оранж')
   head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
-    title #{titlePage || 'Типография Копи Шоп Оранж'}
+    title #{titlePage}
     link(href='https://fonts.googleapis.com/css2?family=Andika&display=swap' rel='stylesheet')
-    link(rel='stylesheet' href='style.css')
+    link(rel='stylesheet' href=variables.stylePath + 'style.css')
