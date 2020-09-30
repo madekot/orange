@@ -58,21 +58,21 @@
     "phone email"
     "work-schedule header-address";
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
+    // grid-column-gap: 40px;
   }
 
   .header__wrap-info-item {
-    min-width: 180px;
+    min-width: 145px;
   }
 
   .header__wrap-info-item--work-schedule {
     grid-area: work-schedule;
-    justify-self: flex-end;
+    // justify-self: flex-end;
   }
 
   .header__wrap-info-item--email {
     grid-area: email;
-    justify-self: flex-start;
+    // justify-self: flex-start;
   }
 
   .header__wrap-info-item--logo {
@@ -81,12 +81,12 @@
 
   .header__wrap-info-item--header-phone {
     grid-area: phone;
-    justify-self: flex-end;
+    // justify-self: flex-end;
   }
 
   .header__wrap-info-item--header-address {
     grid-area: header-address;
-    justify-self: flex-start;
+    // justify-self: flex-start;
   }
 
   .header__main-nav {

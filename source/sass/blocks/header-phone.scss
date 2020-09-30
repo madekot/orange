@@ -35,6 +35,13 @@
 
   font-size: 21px;
   line-height: 25px;
+  text-align: center;
 
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .header-phone__link--no-wrap {
+    white-space: nowrap;
+  }
 }
