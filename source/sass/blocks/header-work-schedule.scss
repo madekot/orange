@@ -30,7 +30,7 @@
 .header-work-schedule__working-hours {
 	margin-bottom: 3px;
 
-	font-family: "andika", "Arial", sans-serif;
+	font-family: $secondFont;
 	font-weight: 400;
 
 	font-size: 11px;
@@ -40,7 +40,7 @@
 .header-work-schedule__working-hours-time {
 	margin-left: 0;
 
-	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-family: $mainFont;
 	text-align: center;
 	font-weight: bold;
 
@@ -61,7 +61,7 @@
 	text-align: center;
 
 	text-transform: uppercase;
-	font-family: "Trebuchet MS", "Arial", sans-serif;
+	font-family: $mainFont;
 	font-weight: bold;
 
 	font-size: 16px;
