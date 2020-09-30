@@ -33,6 +33,10 @@
   text-decoration: none;
   font-size: 17px;
   line-height: 20px;
+
+  display: inline-block; // увеличивает кликабельную зону ссылки
+  margin-top: -90px; //
+  padding-top: 90px; //
 }
 
 .header-email__first-part {

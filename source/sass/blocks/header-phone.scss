@@ -38,6 +38,10 @@
   text-align: center;
 
   text-decoration: none;
+
+  display: inline-block; // увеличивает кликабельную зону ссылки
+  margin-top: -90px; //
+  padding-top: 90px; //
 }
 
 @media (max-width: 768px) {
