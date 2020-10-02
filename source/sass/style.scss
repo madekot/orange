@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixins.scss";
 @import "blocks/base-style.scss";
 @import "blocks/decorative-line.scss";
 @import "blocks/header-work-schedule.scss";
@@ -11,3 +12,4 @@
 @import "blocks/types-works.scss";
 @import "blocks/footer.scss";
 @import "blocks/page.scss";
+@import "blocks/page-empty.scss";

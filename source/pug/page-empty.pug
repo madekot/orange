@@ -1,0 +1,17 @@
+include includes/variables.pug
+include includes/head.pug
+include includes/header.pug
+include includes/footer.pug
+include includes/types-works.pug
+
+-var pageClassName = variables.page.empty.className;
+-var pageTitle = variables.page.empty.title;
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle)
+  body(class=pageClassName)
+    +header(pageClassName + '__header')
+    main(class=pageClassName + '__main')
+      h1(style="color: orange; text-align:center; padding: 50px 20px 50px 20px; margin-left: auto; margin-right: auto; font-size: 38px; font-family:Trebuchet, Arial, sans-serif;") Эта страница пока не готова, но вы держитесь!
+    +footer(pageClassName + '__footer')

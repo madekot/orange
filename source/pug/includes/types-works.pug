@@ -3,42 +3,49 @@ mixin types-works(className)
     h2.visually-hidden Мы делаем следующие виды работ
     ul.types-works__list-cards
       li.types-works__card
-        h3.types-works__card-title Офсетная печать
-        ul.types-works__card-list
-          li.types-works__card-list-item Большие тиражи
-          li.types-works__card-list-item Большой формат
-          li.types-works__card-list-item Большая выгода
+        a.types-works__card-link(href="#")
+          h3.types-works__card-title Офсетная печать
+          ul.types-works__card-list
+            li.types-works__card-list-item Большие тиражи
+            li.types-works__card-list-item Большой формат
+            li.types-works__card-list-item Большая выгода
       li.types-works__card
-        h3.types-works__card-title Цифровая печать
-        ul.types-works__card-list
-          li.types-works__card-list-item Оперативность
-          li.types-works__card-list-item Качество
-          li.types-works__card-list-item Постпечать
+        a.types-works__card-link.types-works__card-link--icon-digital(href="page-empty.html")
+          h3.types-works__card-title Цифровая печать
+          ul.types-works__card-list
+            li.types-works__card-list-item Оперативность
+            li.types-works__card-list-item Качество
+            li.types-works__card-list-item Постпечать
       li.types-works__card
-        h3.types-works__card-title Широкоформатная печать
-        ul.types-works__card-list
-          li.types-works__card-list-item Плотерная резка
-          li.types-works__card-list-item Трафареты
-          li.types-works__card-list-item Различные материалы
+        a.types-works__card-link.types-works__card-link--icon-wide-print(href="page-empty.html")
+          h3.types-works__card-title Широко<br class="types-works__card-title-first-part">форматная печать
+          ul.types-works__card-list
+            li.types-works__card-list-item Плотерная резка
+            li.types-works__card-list-item Трафареты
+            li.types-works__card-list-item Различные материалы
       li.types-works__card
-        h3.types-works__card-title Дизайн
-        p.types-works__card-intro Ваши проекты от идеи до воплощения
+        a.types-works__card-link.types-works__card-link--icon-design(href="page-empty.html")
+          h3.types-works__card-title Дизайн
+          p.types-works__card-intro Ваши проекты от&nbsp;идеи до&nbsp;воплощения
+        li.types-works__card
+          a.types-works__card-link.types-works__card-link--icon-souvenir(href="page-empty.html")
+            h3.types-works__card-title Сувенирная продукция
+            p.types-works__card-intro  Огромный выбор сувениров
+            ul.types-works__card-list.types-works__card-list--comma-style
+              li.types-works__card-list-item Футболки
+              li.types-works__card-list-item Кружки
+              li.types-works__card-list-item Посуда
+              li.types-works__card-list-item Пазлы
+              li.types-works__card-list-item Текстиль
+              li.types-works__card-list-item Фото
       li.types-works__card
-        h3.types-works__card-title Сувенирная продукция
-        p.types-works__card-intro Огромный выбор сувениров
-        ul.types-works__card-list
-          li.types-works__card-list-item Футболки
-          li.types-works__card-list-item Кружки
-          li.types-works__card-list-item Посуда
-          li.types-works__card-list-item Пазлы
-          li.types-works__card-list-item Текстиль
-          li.types-works__card-list-item Фото
+        a.types-works__card-link.types-works__card-link--icon-interior(href="page-empty.html")
+          h3.types-works__card-title Интерьерная печать печать на холстах
+          ul.types-works__card-list
+            li.types-works__card-list-item Кухонные фартуки
+            li.types-works__card-list-item Фотомонтаж
+            li.types-works__card-list-item Наклейки на стены
       li.types-works__card
-        h3.types-works__card-title Интерьерная печать печать на холстах
-        ul.types-works__card-list
-          li.types-works__card-list-item Кухонные фартуки
-          li.types-works__card-list-item Фотомонтаж
-          li.types-works__card-list-item Наклейки на стены
-      li.types-works__card
-        h3.types-works__card-title Печать на фотообоях
-        p.types-works__card-intro Большой выбор текстур и изображений
+        a.types-works__card-link.types-works__card-link--icon-photowall-paper(href="page-empty.html")
+          h3.types-works__card-title Печать на фотообоях
+          p.types-works__card-intro Большой выбор текстур и&nbsp;изображений
