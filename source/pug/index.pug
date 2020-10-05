@@ -5,8 +5,11 @@ include includes/footer.pug
 include includes/types-works.pug
 include includes/about-us.pug
 
--var pageClassName = variables.page.main.className;
--var pageTitle = variables.page.main.title;
+-
+  var pageClassName = variables.page.main.className;
+  var pageTitle = variables.page.main.title;
+
+  var aboutUs = variables.page.main.aboutUs;
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -15,7 +18,7 @@ html(lang="ru")
     +header(pageClassName + '__header')
     main(class=pageClassName + '__main')
       h1.visually-hidden Типография оранж - типография полного цикла.
-      +about-us(pageClassName + '__about-us')
+      +about-us(pageClassName + '__about-us', aboutUs)
 
       //- +types-works(pageClassName + '__types-works')
 
