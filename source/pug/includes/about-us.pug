@@ -1,0 +1,8 @@
+include about-us-item.pug
+
+mixin about-us(className, obj)
+  section(class=[className, 'about-us'])
+    h2.visually-hidden О нас
+    ul.about-us__list
+      +about-us-item('about-us__item')
+      +about-us-item('about-us__item')
