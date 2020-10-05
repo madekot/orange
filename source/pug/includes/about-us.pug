@@ -1,8 +1,14 @@
+include variables.pug
 include about-us-item.pug
 
-mixin about-us(className, obj)
+mixin about-us(className)
+  -
+    var aboutUs = variables.page.main.aboutUs.title
+    var ourService = variables.page.main.aboutUs.items[0];
+    var ourAdvantages = variables.page.main.aboutUs.items[1];
+
   section(class=[className, 'about-us'])
-    h2.visually-hidden О нас
+    h2.visually-hidden #{aboutUs}
     ul.about-us__list
-      +about-us-item('about-us__item')
-      +about-us-item('about-us__item')
+      +about-us-item('about-us__item', ourService)
+      +about-us-item('about-us__item', ourAdvantages)

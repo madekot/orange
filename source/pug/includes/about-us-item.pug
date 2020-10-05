@@ -1,9 +1,18 @@
-mixin about-us-item(className)
+mixin about-us-item(className, obj)
+  -
+    obj = obj || {};
+    obj.title = obj.title || 'Lorem ipsum';
+    obj.itemsText = obj.itemsText || [
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    ];
+
   li(class=[className, 'about-us-item'])
-    h3.about-us-item__title Наш сервис
+    h3.about-us-item__title #{obj.title}
+
     ul.about-us-item__list
-      li.about-us-item__item Печать каталогов за один час - это реальность
-      li.about-us-item__item Оперативная доработка макетов для всех видов печати
-      li.about-us-item__item Персонализация любой сложности от пригласительных до индивидуальных печатных изданий
-      li.about-us-item__item Изготовление сигнальных образцов продукции перед цифровой печатью
-      li.about-us-item__item Доставка продукции
+      each itemsText in obj.itemsText
+        li #{itemsText}
