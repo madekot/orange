@@ -1,0 +1,22 @@
+mixin types-products(className, obj)
+  -
+    var loremItem = {
+      title: 'lorem title item',
+      href: '#',
+      imageName: 'types-products-list__image--plakatc.jpg',
+    };
+
+    var obj = obj || {};
+    obj.title = obj.title || 'lorem title lorem title lorem title lorem';
+    obj.listItems = obj.listItems || [loremItem, loremItem];
+
+    var imagePath = variables.imagePath;
+
+  section(class=[className, 'types-products'])
+    h2.types-products__title #{obj.title}
+    ul.types-products__list.types-products-list
+      each item in obj.listItems
+        li.types-products-list__item
+          a.types-products-list__link(href=item.href)
+            img.types-products-list__image(src=imagePath + item.imageName)
+            h3.types-products-list__title #{item.title}
