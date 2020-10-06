@@ -54,8 +54,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
-
 }
 
 .about-us-item__list-item {
@@ -92,4 +90,32 @@
   background-position: center center;
   background-size: cover;
 }
+
+@media (max-width: $tabletBreakpoint) {
+  .about-us-item__list-item {
+    margin-bottom: 35px;
+    font-size: 17px;
+  }
+
+  .about-us-item__list-item::before {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .about-us-item__list-item {
+    margin-bottom: 25px;
+  }
+
+  .about-us-item__title {
+    margin-bottom: 25px;
+  }
+
+  .about-us-item__list-item::before {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 
