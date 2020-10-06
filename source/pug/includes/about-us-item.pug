@@ -2,6 +2,7 @@ mixin about-us-item(className, obj)
   -
     obj = obj || {};
     obj.title = obj.title || 'Lorem ipsum';
+    obj.modifierClass = obj.modifierClass || '';
     obj.itemsText = obj.itemsText || [
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
@@ -10,7 +11,7 @@ mixin about-us-item(className, obj)
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
     ];
 
-  li(class=[className, 'about-us-item'])
+  li(class=[className, 'about-us-item', obj.modifierClass])
     h3.about-us-item__title #{obj.title}
 
     ul.about-us-item__list

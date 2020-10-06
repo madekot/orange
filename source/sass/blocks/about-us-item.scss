@@ -1,5 +1,41 @@
-.about-us-item {
+.about-us-item--icons-service .about-us-item__list-item:nth-of-type(1)::before {
+  background-image: url($cssPath + "about-us-item--clock-icon.svg");
+}
 
+.about-us-item--icons-service .about-us-item__list-item:nth-of-type(2)::before {
+  background-image: url($cssPath + "about-us-item--art-icon.svg");
+}
+
+.about-us-item--icons-service .about-us-item__list-item:nth-of-type(3)::before {
+  background-image: url($cssPath + "about-us-item--documents-icon.svg");
+}
+
+.about-us-item--icons-service .about-us-item__list-item:nth-of-type(4)::before {
+  background-image: url($cssPath + "about-us-item--done-icon.svg");
+}
+
+.about-us-item--icons-service .about-us-item__list-item:nth-of-type(5)::before {
+  background-image: url($cssPath + "about-us-item--car-icon.svg");
+}
+
+.about-us-item--icons-advantages .about-us-item__list-item:nth-of-type(1)::before {
+  background-image: url($cssPath + "about-us-item--balance-icon.svg");
+}
+
+.about-us-item--icons-advantages .about-us-item__list-item:nth-of-type(2)::before {
+  background-image: url($cssPath + "about-us-item--progress-icon.svg");
+}
+
+.about-us-item--icons-advantages .about-us-item__list-item:nth-of-type(3)::before {
+  background-image: url($cssPath + "about-us-item--prise-icon.svg");
+}
+
+.about-us-item--icons-advantages .about-us-item__list-item:nth-of-type(4)::before {
+  background-image: url($cssPath + "about-us-item--pattern-icon.svg");
+}
+
+.about-us-item--icons-advantages .about-us-item__list-item:nth-of-type(5)::before {
+  background-image: url($cssPath + "about-us-item--specialists-icon.svg");
 }
 
 .about-us-item__title {
@@ -23,6 +59,11 @@
 }
 
 .about-us-item__list-item {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
   font-family: $mainFont;
 
   font-size: 20px;
@@ -30,5 +71,25 @@
 
   font-weight: bold;
   color: #000000;
+}
+
+.about-us-item__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-us-item__list-item::before {
+  content: "";
+
+  margin-right: 15px;
+
+  flex-shrink: 0;
+
+  width: 90px;
+  height: 90px;
+
+  background-image: url($cssPath + "about-us-item--default-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 

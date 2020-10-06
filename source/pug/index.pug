@@ -15,7 +15,7 @@ include includes/about-us.pug
 html(lang="ru")
   +head(pageTitle)
   body(class=pageClassName)
-    +header(pageClassName + '__header')
+    //- +header(pageClassName + '__header')
     main(class=pageClassName + '__main')
       h1.visually-hidden Типография оранж - типография полного цикла.
       +about-us(pageClassName + '__about-us', aboutUs)
@@ -23,4 +23,4 @@ html(lang="ru")
       //- +types-works(pageClassName + '__types-works')
 
 
-    +footer(pageClassName + '__footer')
+    //- +footer(pageClassName + '__footer')
