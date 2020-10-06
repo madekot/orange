@@ -18,5 +18,6 @@ mixin types-products(className, obj)
       each item in obj.listItems
         li.types-products-list__item
           a.types-products-list__link(href=item.href)
-            img.types-products-list__image(src=imagePath + item.imageName)
+            .types-products-list__wrap-image
+              img.types-products-list__image(src=imagePath + item.imageName)
             h3.types-products-list__title #{item.title}
