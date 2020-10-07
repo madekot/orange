@@ -1,13 +1,14 @@
 mixin types-products(className, obj)
   -
-    var TeamplateItem = {
+    var teamplateItem = {
       title: 'lorem title item',
+      href: 'page-empty.html',
       imageName: 'types-products-list__image--kalendar.jpg',
     };
 
     var obj = obj || {};
     obj.title = obj.title || 'lorem title lorem title lorem title lorem';
-    obj.listItems = obj.listItems || [TeamplateItem, TeamplateItem];
+    obj.listItems = obj.listItems || [teamplateItem, teamplateItem];
 
     var imagePath = variables.imagePath;
 
