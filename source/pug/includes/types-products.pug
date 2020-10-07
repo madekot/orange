@@ -19,5 +19,5 @@ mixin types-products(className, obj)
         li.types-products-list__item
           a.types-products-list__link(href=item.href || 'page-empty.html')
             .types-products-list__wrap-image
-              img.types-products-list__image(src=imagePath + item.imageName)
+              img.types-products-list__image(src=imagePath + item.imageName, alt=item.imageAlt)
             h3.types-products-list__title #{item.title}
