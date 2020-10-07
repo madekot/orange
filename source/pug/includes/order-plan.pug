@@ -1,0 +1,23 @@
+mixin orderPlan(className, obj)
+  -
+    obj = obj || {};
+    obj.title = obj.title || 'lorem title';
+    obj.listItems = obj.listItems || [
+      {
+        modifierClass: '',
+        text: 'lorem lorem lorem',
+      },
+      {
+        modifierClass: '',
+        text: 'lorem lorem lorem',
+      },
+    ];
+
+  section(class=[className, 'order-plan'])
+    h2.visually-hidden #{obj.title}
+    ol.order-plan__list
+      each item in obj.listItems
+        li(class=['order-plan__item', item.modifierClass]) #{item.text}
+
+
+

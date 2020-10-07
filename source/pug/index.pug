@@ -5,6 +5,7 @@ include includes/footer.pug
 include includes/types-works.pug
 include includes/about-us.pug
 include includes/types-products.pug
+include includes/order-plan.pug
 
 -
   var pageClassName = variables.page.main.className;
@@ -12,6 +13,7 @@ include includes/types-products.pug
 
   var aboutUs = variables.page.main.aboutUs;
   var typesProducts = variables.page.main.typesProducts;
+  var orderPlanData = variables.page.main.orderPlan
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -23,7 +25,9 @@ html(lang="ru")
       //- +types-products(pageClassName + '__types-products', typesProducts)
       //- +about-us(pageClassName + '__about-us', aboutUs)
       //- +types-works(pageClassName + '__types-works')
-      
+      div(class=pageClassName + '__wrap-order-plan')
+        +orderPlan(pageClassName + '__order-plan', orderPlanData)
+
 
 
     //- +footer(pageClassName + '__footer')

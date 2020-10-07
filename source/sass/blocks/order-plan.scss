@@ -1,0 +1,74 @@
+.order-plan {
+  padding-top: 15px;
+  background-color: $mainColor;
+}
+
+.order-plan__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order-plan__item {
+  flex-grow: 1;
+
+  width: 210px;
+
+  padding-top: 130px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  color: #ffffff;
+  font-family: $mainFont;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 17px;
+  line-height: 23px;
+  text-transform: uppercase;
+
+  background-image: url($cssPath + "no-image.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 122px 122px;
+}
+
+.order-plan__item {
+  margin-bottom: 25px;
+}
+
+.order-plan__item--phone-icon {
+  background-image: url($cssPath + "order-plan__phone-icon.svg");
+}
+
+.order-plan__item--email-icon {
+  background-image: url($cssPath + "order-plan__email-icon.svg");
+}
+
+.order-plan__item--plan-icon {
+  background-image: url($cssPath + "order-plan__plan-icon.svg");
+}
+
+.order-plan__item--checkbox-icon {
+  background-image: url($cssPath + "order-plan__checkbox-icon.svg");
+}
+
+.order-plan__item--product-icon {
+  background-image: url($cssPath + "order-plan__product-icon.svg");
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .order-plan__item {
+    width: 50%;
+    margin-bottom: 30px;
+    padding-top: 95px;
+    background-size: 80px 80px;
+  }
+}
