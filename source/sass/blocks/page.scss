@@ -40,6 +40,12 @@
   margin-top: auto;
 }
 
+@media (max-width: $tabletBreakpoint) {
+  .page__types-products {
+    max-width: 600px;
+  }
+}
+
 
 @media (max-width: $mobileBreakpoint) {
 }
