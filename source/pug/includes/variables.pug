@@ -3,7 +3,16 @@ include map.pug
   var variables = {
     imagePath: 'img/',
     stylePath: '',
-    orangeEmail: 'info@copyshop-orange.ru',
+    orange: {
+      contact: {
+        email: 'info@copyshop-orange.ru',
+        phone: {
+          number: '318-18-32',
+          cityCode: '8 (812)',
+          telHref: '+78123181832'
+        },
+      },
+    },
     page: {
       main: {
         title: 'Копи Шоп Оранж: Главная',

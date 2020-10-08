@@ -1,5 +1,9 @@
 mixin header-phone(className)
+  -
+    var fullPhoneNumber = variables.orange.contact.phone.cityCode + ' ' + variables.orange.contact.phone.number;
+    var hrefPhone = variables.orange.contact.phone.telHref;
+
   dl(class=[className, 'header-phone'])
     dt.visually-hidden Контактный телефон
     dd.header-phone__value
-        a.header-phone__link(href='tel:+88123181832') 8 (812) <span class="header-phone__link header-phone__link--no-wrap">318-18-32</span>
+      a.header-phone__link(href='tel:' + hrefPhone) #{fullPhoneNumber}
