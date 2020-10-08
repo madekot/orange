@@ -62,8 +62,15 @@
 }
 
 @media (max-width: $mobileBreakpoint) {
-    .header-phone__link {
+  .header-phone__link {
     font-size: 27px;
     line-height: 20px;
+
+    margin: -10px; // увеличивает кликабельную зону ссылки
+    padding: 10px; //
+  }
+
+  .header-phone::before {
+    display: none;
   }
 }

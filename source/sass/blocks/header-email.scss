@@ -51,3 +51,24 @@
     line-height: 20px;
   }
 }
+
+@media (max-width: $mobileBreakpoint) {
+  .header__wrap-info {
+    display: grid;
+    grid-template-areas:
+    "logo"
+    "email"
+    "phone"
+    "header-address";
+    grid-template-columns: 1fr;
+  }
+
+  .header-email__link {
+    margin: -10px; // увеличивает кликабельную зону ссылки
+    padding: 10px; //
+  }
+
+  .header-email::before {
+    display: none;
+  }
+}
