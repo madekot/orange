@@ -2,4 +2,4 @@ mixin header-email(className)
   dl(class=[className, 'header-email'])
     dt.visually-hidden Адрес электронной почты
     dd.header-email__value
-      a.header-email__link(href='mailto:info@copyshop-orange.ru') info@copyshop-orange.ru
+      a.header-email__link(href='mailto:' + variables.orangeEmail) #{variables.orangeEmail}
