@@ -1,9 +1,10 @@
 .header-address {
-  margin-top: 0;
-  margin-bottom: 0;
-
   display: flex;
   flex-direction: column;
+
+  font-family: $mainFont;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .header-address::before {
@@ -12,42 +13,34 @@
   height: 71px;
   margin-bottom: 5px;
 
-	background-image: url("#{$cssPath + 'map-icon.svg'}");
+	background-image: url($cssPath + 'map-icon.svg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: 71px 71px;
-}
-
-.header-address__wrap-value {
-  margin-left: 0;
-}
-
-.header-address__value {
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .header-address__metro {
   margin-top: 0;
   margin-bottom: 5px;
 
-  font-family: $mainFont;
-  text-transform: uppercase;
   font-size: 11px;
   line-height: 13px;
+}
+
+.header-address__link {
+  text-decoration: none;
+  color: inherit;
+
+  display: inline-block; // увеличивает кликабельную зону ссылки
+  margin-top: -100px; //
+  padding-top: 100px; //
 }
 
 .header-address__street {
   margin-top: 0;
   margin-bottom: 0;
 
-  font-family: $mainFont;
   font-weight: bold;
-  text-transform: uppercase;
   font-size: 17px;
   line-height: 20px;
-
-  text-align: center;
 }

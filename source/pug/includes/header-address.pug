@@ -1,7 +1,6 @@
 mixin header-address(className)
-  dl(class=[className, 'header-address'])
-    dt.visually-hidden Адрес типографии
-    dd.header-address__wrap-value
-      address.header-address__value
-        p.header-address__metro М. Электросила/<br>Московские ворота
-        p.header-address__street Коли Томчака 28ф
+  section(class=[className, 'header-address'])
+    p.header-address__metro м. Электросила / м. Московские ворота
+    a.header-address__link(href="https://yandex.ru/maps/?pt=30.326662677593184,59.88726425066574&z=16&l=map", target="_blank")
+      h2.visually-hidden Адрес типографии
+      p.header-address__street Коли Томчака 28ф
