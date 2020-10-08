@@ -66,6 +66,14 @@
   margin-top: auto;
 }
 
+@media (max-width: $desktopBreakpoint) {
+  .header__wrap-info-item--work-schedule {
+    position: absolute ;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+  }
+}
+
 @media (max-width: $tabletBreakpoint) {
   .page__header {
     margin-bottom: 0;

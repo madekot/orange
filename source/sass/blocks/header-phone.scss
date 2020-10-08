@@ -17,14 +17,13 @@
 	background-image: url("#{$cssPath + 'phone-icon.svg'}");
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: 71px 71px;
+	background-size: cover;
 }
 
 .header-phone__value {
   display: flex;
 
   margin-left: 0;
-  margin-bottom: 17px;
 }
 
 .header-phone__link {
@@ -44,13 +43,27 @@
   padding-top: 90px; //
 }
 
-@media (max-width: 768px) {
-  // .header-phone__link--no-wrap {
-  //   white-space: nowrap;
-  // }
-
-  .header-email__link {
+@media (max-width: $tabletBreakpoint) {
+  .header-phone__link {
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .header-phone::before {
+    height: 65px;
+    width: 65px;
+    align-self: center;
+  }
+
+  .header-phone__link {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+    .header-phone__link {
+    font-size: 27px;
+    line-height: 20px;
   }
 }

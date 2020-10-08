@@ -16,7 +16,7 @@
   background-image: url(#{$cssPath + 'mail-icon.svg'});
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 71px 71px;
+	background-size: contain;
 }
 
 .header-email__value {
@@ -37,4 +37,17 @@
   display: inline-block; // увеличивает кликабельную зону ссылки
   margin-top: -90px; //
   padding-top: 90px; //
+}
+
+@media (max-width: $tabletBreakpoint) {
+  .header-email::before {
+    height: 65px;
+    width: 65px;
+    align-self: center;
+  }
+
+  .header-email__link {
+    font-size: 17px;
+    line-height: 20px;
+  }
 }

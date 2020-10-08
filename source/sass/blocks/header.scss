@@ -27,20 +27,25 @@
   margin-top: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktopBreakpoint) {
   .header__wrap-info-item {
-    margin-top: 30px;
+    margin-top: 25px;
+  }
+
+  .header__wrap-info {
+    display: grid;
+    grid-template-areas:
+    "logo logo logo"
+    "phone header-address email";
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .header__wrap-info-item--logo {
-    order: -1;
+    justify-self: center;
 
     display: flex;
     justify-content: center;
 
-    width: 100%;
-
-    margin-right: 0;
     margin-top: 0;
   }
 
@@ -48,31 +53,13 @@
     padding-right: 20px;
     padding-left: 20px;
   }
-}
-
-@media (max-width: 768px) {
-  .header__wrap-info {
-    display: grid;
-    grid-template-areas:
-    "logo logo"
-    "phone email"
-    "work-schedule header-address";
-    grid-template-columns: 1fr 1fr;
-    // grid-column-gap: 40px;
-  }
-
-  .header__wrap-info-item {
-    min-width: 145px;
-  }
 
   .header__wrap-info-item--work-schedule {
     grid-area: work-schedule;
-    // justify-self: flex-end;
   }
 
   .header__wrap-info-item--email {
     grid-area: email;
-    // justify-self: flex-start;
   }
 
   .header__wrap-info-item--logo {
@@ -81,21 +68,31 @@
 
   .header__wrap-info-item--header-phone {
     grid-area: phone;
-    // justify-self: flex-end;
   }
 
   .header__wrap-info-item--header-address {
     grid-area: header-address;
-    // justify-self: flex-start;
-  }
-
-  .header__main-nav {
-    grid-area: nav;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: $tabletBreakpoint) {
   .header__wrap-info {
-    grid-column-gap: 0;
+    display: grid;
+    grid-template-areas:
+    "logo logo logo"
+    "phone header-address email";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .header__wrap-info {
+    display: grid;
+    grid-template-areas:
+    "logo"
+    "email"
+    "phone"
+    "header-address";
+    grid-template-columns: 1fr;
   }
 }
