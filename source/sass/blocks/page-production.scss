@@ -1,3 +1,9 @@
 .page-production {
   @include page-default;
 }
+
+.page-production__header {}
+
+.page-production__main {}
+
+.page-production__footer {}

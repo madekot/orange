@@ -12,3 +12,11 @@
   display: flex;
   flex-direction: column;
 }
+
+@mixin page-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}

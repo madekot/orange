@@ -9,9 +9,7 @@
 .page__main {}
 
 .page__types-works {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  @include page-inner;
   margin-bottom: 40px;
 }
 
@@ -20,12 +18,8 @@
 }
 
 .page__about-us {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  @include page-inner;
   padding-top: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .page__wrap-types-products {
@@ -37,11 +31,7 @@
 }
 
 .page__types-products {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  @include page-inner;
 }
 
 .page__wrap-order-plan {
@@ -50,9 +40,7 @@
 }
 
 .page__order-plan {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1300px;
+  @mixin page-inner;
 }
 
 .page__decorative-line {}
