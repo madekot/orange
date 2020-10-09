@@ -4,6 +4,12 @@
 
 .page-production__header {}
 
-.page-production__main {}
+.page-production__main {
+  padding-top: 40px;
+}
+
+.page-production__production-item {
+  @include page-inner;
+}
 
 .page-production__footer {}

@@ -40,7 +40,7 @@
 }
 
 .page__order-plan {
-  @mixin page-inner;
+  @include page-inner;
 }
 
 .page__decorative-line {}

@@ -1,0 +1,12 @@
+include types-products-list.pug
+
+mixin productionItem(className, obj)
+  -
+    var title = obj.title;
+    var description = obj.description;
+    var modificationClass = obj.modificationClass || '';
+
+  section(class=[className, 'production-item', modificationClass])
+    h2.production-item__title #{title}
+    p.production-item__description #{description}
+    +typesProductsList('production-item__types-products-list', obj.listItems)
