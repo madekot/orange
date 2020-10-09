@@ -9,7 +9,12 @@
 }
 
 .types-works__list-cards {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  padding-left: 15px;
+  padding-right: 15px;
 
   display: flex;
   flex-wrap: wrap;
@@ -137,36 +142,25 @@
   line-height: 1.4;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $desktopBreakpoint) {
   .types-works__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 46%;
+    width: 33.3%;
   }
+}
 
+@media (max-width: $tabletBreakpoint) {
   .types-works__card-link {
     padding-top: 130px;
     background-size: 90px auto;
   }
 
   .types-works__card-title {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.2;
   }
 
   .types-works__card-title-first-part {
     display: block;
-  }
-
-  .types-works__card-intro {
-    font-size: 16px;
-    line-height: 1.2;
-  }
-
-  .types-works__card-list-item {
-    font-size: 16px;
-    line-height: 1.2;
   }
 
   .types-works__card-link--icon-souvenir {
@@ -189,5 +183,23 @@
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .types-works__card {
+    width: 50%;
+  }
+
+  .types-works__card-title {
+    font-size: 17px;
+  }
+
+  .types-works__card-intro {
+    font-size: 11px;
+  }
+
+  .types-works__card-list-item {
+    font-size: 11px;
   }
 }
