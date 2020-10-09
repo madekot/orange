@@ -1,11 +1,3 @@
 .page-empty {
-  height: 100vh;
-
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.page-empty__footer {
-  margin-top: auto;
+ @include page-default;
 }
