@@ -7,11 +7,12 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const del = require("del");
+const notify = require("gulp-notify");
 
 // Htmls
 const htmls = () => {
   return gulp.src(['source/pug/**/*.pug', '!source/pug/includes/**/*.pug'])
-    .pipe(plumber())
+    .pipe(plumber({ errorHandler: notify.onError() }))
     .pipe(pug({ pretty: true }))
     .pipe(gulp.dest('./build'))
 }
@@ -21,7 +22,7 @@ exports.htmls = htmls;
 // Styles
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
+    .pipe(plumber({ errorHandler: notify.onError() }))
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
