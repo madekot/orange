@@ -26,4 +26,15 @@
   background-size: cover;
 }
 
+.page-production__image-wrapper--plotter-image {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 70px;
+  min-height: 700px;
+  background-image: url($cssPath + "page-production__image-wrapper--plotter-image.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
 .page-production__footer {}

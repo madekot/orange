@@ -10,6 +10,8 @@ include includes/production-item.pug
 -var digitalPrinting = variables.page.production.digitalPrinting;
 -
   var widePrinting = variables.page.production.widePrinting;
+  var souvenir = variables.page.production.souvenir;
+
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -23,5 +25,8 @@ html(lang="ru")
       div(class=pageClassName + '__wrapper' + ' decorative-line decorative-line--double-simple')
         div(class=pageClassName + '__image-wrapper')
       +productionItem(pageClassName + '__production-item', widePrinting)
+      div(class=pageClassName + '__image-wrapper' + ' ' + pageClassName + '__image-wrapper--plotter-image')
+      +productionItem(pageClassName + '__production-item', souvenir)
+
 
     +footer(pageClassName + '__footer')
