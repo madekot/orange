@@ -27,6 +27,20 @@
   display: none;
 }
 
+.decorative-line--double-simple {
+  padding-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(to bottom, $mainColor 0px, $mainColor 10px, transparent 10px, transparent calc(100% - 10px), $mainColor calc(100% - 10px), $mainColor 100%);
+}
+
+.decorative-line--double-simple::before {
+  display: none;
+}
+
+.decorative-line--double-simple::after {
+  display: none;
+}
 
 .decorative-line::after {
   content: "";

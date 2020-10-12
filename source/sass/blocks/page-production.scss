@@ -10,6 +10,20 @@
 
 .page-production__production-item {
   @include page-inner;
+  margin-bottom: 30px;
+}
+
+.page-production__wrapper {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.page-production__image-wrapper {
+  min-height: 780px;
+  background-image: url($cssPath + "page-production__wrapper-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .page-production__footer {}
