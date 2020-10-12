@@ -1,8 +1,6 @@
 .footer {
   margin-top: auto;
   padding-bottom: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .footer__copyright-link {
@@ -17,6 +15,8 @@
 .footer__copyright-text {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 
   font-family: $mainFont;
   line-height: 18px;

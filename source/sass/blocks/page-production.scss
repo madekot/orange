@@ -13,9 +13,18 @@
   margin-bottom: 30px;
 }
 
+.page-production__production-item--design {
+  margin-bottom: 0;
+}
+
 .page-production__wrapper {
   width: 100%;
   margin-bottom: 50px;
+}
+
+.page-production__wrap-design {
+  padding-top: 5%;
+  margin-bottom: 30px;
 }
 
 .page-production__image-wrapper {
@@ -36,4 +45,16 @@
   background-size: contain;
 }
 
-.page-production__footer {}
+.page-production__footer {
+  margin-top: 70px;
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .page-production__wrap-design {
+    padding-top: 50px;
+  }
+}
+
+
+
+
