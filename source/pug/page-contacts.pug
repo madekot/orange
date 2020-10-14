@@ -1,0 +1,24 @@
+include includes/variables.pug
+include includes/head.pug
+include includes/header.pug
+include includes/footer.pug
+
+-
+  var pageClassName = variables.page.contacts.className;
+  var headTitle = variables.page.contacts.headTitle;
+  var pageTitle = variables.page.contacts.pageTitle;
+  var imagePath = variables.imagePath;
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(headTitle)
+  body(class=pageClassName)
+    +header(pageClassName + '__header')
+    main(class=pageClassName + '__main')
+      h1.visually-hidden #{pageTitle}
+      div(class=pageClassName + '__plan-map')
+        div(class=pageClassName + '__plan-map-wrap-image')
+          img(class=pageClassName + '__plan-map-image' src= imagePath + "page-contacts__plan-map-image--first-part.jpg")
+          img(class=pageClassName + '__plan-map-image' src= imagePath + "page-contacts__plan-map-image--second-part.jpg")
+    div(class=pageClassName + '__wrap-footer decorative-line')
+      +footer(pageClassName + '__footer')

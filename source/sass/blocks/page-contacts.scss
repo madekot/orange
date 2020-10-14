@@ -1,0 +1,48 @@
+.page-contacts {
+  @include page-default;
+}
+
+.page-contacts__header {
+  margin-bottom: 50px;
+}
+
+.page-contacts__plan-map {
+  @include page-inner;
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.page-contacts__wrap-footer {
+  margin-top: auto;
+}
+
+.page-contacts__footer {
+  margin-top: 100px;
+}
+
+.page-contacts__plan-map-wrap-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-contacts__plan-map-image {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .page-contacts__plan-map-image {
+    width: 100%;
+  }
+
+  .page-contacts__header {
+    margin-bottom: 30px;
+  }
+
+  .page-contacts__plan-map {
+    margin-bottom: 10px;
+  }
+}
