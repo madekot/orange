@@ -5,7 +5,7 @@ include includes/footer-wrapper.pug
 include includes/production-item.pug
 
 -var pageClassName = 'page-digital-printing';
--var pageTitle = 'Цифровая Печать';
+-var pageTitle = 'Цифровая печать, виды работ';
 -var digitalPrinting = variables.page.production.digitalPrinting;
 
 
@@ -15,5 +15,7 @@ html(lang="ru")
   body(class=pageClassName)
     +header(pageClassName + '__header')
     main(class=pageClassName + '__main')
-      h1.visually-hidden Цифровая Печать
-    +footer-wrapper(pageClassName + '__footer-wrapper')
+      h1.visually-hidden #{pageTitle}
+      +productionItem(pageClassName + '__production-item', digitalPrinting)
+      div(class=pageClassName + '__decorative-line decorative-line decorative-line--simple')
+    +footerWrapper(pageClassName + '__footer-wrapper')
