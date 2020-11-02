@@ -2,28 +2,22 @@
   margin-bottom: 30px;
 }
 
-.page__main {}
-
 .page__types-works {
   @include page-inner;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.page__wrap-about-us {
+.page__simple-decorative-line {
   margin-bottom: 50px;
 }
 
 .page__about-us {
   @include page-inner;
-  padding-top: 60px;
+  margin-bottom: 30px;
 }
 
-.page__wrap-types-products {
-  margin-bottom: 80px;
-}
-
-.page__wrap-types-products::before {
-  margin-bottom: 80px;
+.page__decorative-line {
+  margin-bottom: 100px;
 }
 
 .page__types-products {
@@ -38,8 +32,6 @@
 .page__order-plan {
   @include page-inner;
 }
-
-.page__decorative-line {}
 
 .page__footer {
   margin-top: auto;
@@ -70,8 +62,8 @@
     max-width: 700px;
   }
 
-  .page__wrap-types-products {
-    margin-bottom: 20px;
+  .page__decorative-line {
+    margin-bottom: 80px;
   }
 
   .page__wrap-order-plan {
