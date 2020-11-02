@@ -4,7 +4,6 @@ include includes/header.pug
 include includes/footer-wrapper.pug
 include includes/production-item.pug
 
-
 -var pageClassName = variables.page.production.className;
 -var pageTitle = variables.page.production.title;
 -var digitalPrinting = variables.page.production.digitalPrinting;
@@ -12,7 +11,6 @@ include includes/production-item.pug
   var widePrinting = variables.page.production.widePrinting;
   var souvenir = variables.page.production.souvenir;
   var design = variables.page.production.design;
-
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -22,9 +20,9 @@ html(lang="ru")
     main(class=`${pageClassName}__main`)
       h1.visually-hidden Вся продукция и услуги типографии Копи шоп оранж
       +productionItem(`${pageClassName}__production-item`, digitalPrinting)
-      div(class=`${pageClassName}__decorative-image decorative-image`)
+      div(class=`${pageClassName}__decorative-wrapper decorative-wrapper`)
       +productionItem(`${pageClassName}__production-item`, widePrinting)
-      div(class=`${pageClassName}__decorative-image ${pageClassName}__decorative-image--plotter decorative-image decorative-image--plotter-image`)
+      div(class=`${pageClassName}__decorative-wrapper-image decorative-wrapper decorative-wrapper--image`)
       +productionItem(`${pageClassName}__production-item`, souvenir)
       div(class=`${pageClassName}__wrap-design decorative-line decorative-line--simple`)
         +productionItem(`${pageClassName}__production-item ${pageClassName}__production-item--design`, design)

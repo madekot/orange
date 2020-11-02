@@ -1,4 +1,4 @@
-.decorative-image {
+.decorative-wrapper {
   padding: 25%;
 
   background-image:
@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-.decorative-image--plotter-image {
+.decorative-wrapper--image {
   margin-right: 15px;
   margin-left: 15px;
   background-image: url($cssPath + "page-production__image-wrapper--plotter-image.jpg");
