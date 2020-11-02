@@ -1,7 +1,7 @@
 include includes/variables.pug
 include includes/head.pug
 include includes/header.pug
-include includes/footer.pug
+include includes/footer-wrapper.pug
 include includes/production-item.pug
 
 
@@ -30,5 +30,4 @@ html(lang="ru")
       +productionItem(pageClassName + '__production-item', souvenir)
       div(class=pageClassName + '__wrap-design decorative-line decorative-line--simple')
         +productionItem(pageClassName + '__production-item' + ' ' + pageClassName + '__production-item--design', design)
-    div(class=pageClassName + '__wrap-footer decorative-line')
-      +footer(pageClassName + '__footer')
+    +footer-wrapper(pageClassName + '__footer-wrapper')

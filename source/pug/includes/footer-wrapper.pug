@@ -1,0 +1,9 @@
+include footer.pug
+
+mixin footer-wrapper(className)
+  - var blockClassName = 'footer-wrapper'
+  div(class=[className, blockClassName, 'decorative-line'])
+    +footer(blockClassName + '__footer')
+
+
+
