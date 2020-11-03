@@ -36,6 +36,9 @@
    background-image: url($cssPath + "production-item__design-icon.svg");
 }
 
+.production-item--no-icon::before {
+  content: none;
+}
 
 .production-item__title {
   margin-top: 0;

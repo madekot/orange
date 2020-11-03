@@ -16,5 +16,16 @@ html(lang="ru")
     +header
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
-      +productionItem(pageClassName + '__production-item', design)
+      section(class=pageClassName + '__design-studio')
+        p(class=`${pageClassName}__text ${pageClassName}__text--design-studio ${pageClassName}__text--uppercase ${pageClassName}__text--color`)
+          | Ваши проекты от идеи до воплощения
+        h2(class=`${pageClassName}__text ${pageClassName}__text--size-big`)
+          | Студия дизайна оранж
+        p(class=`${pageClassName}__text`)
+          | "Дизайн-студия ОРАНЖ" работает в области
+          | графического дизайна, рекламы, анимации,
+          | видеомонтажа и фотографии с 2015 года.
+          | Мы любим свое дело, вдохновляемся каждым новым проектом
+          | и эффективно решаем поставленные задачи.
+      +productionItem(pageClassName + '__types-products-list production-item--no-icon', design)
     +footerWrapper

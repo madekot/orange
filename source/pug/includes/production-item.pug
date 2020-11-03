@@ -7,6 +7,6 @@ mixin productionItem(className, obj)
     var modificationClass = obj.modificationClass || '';
 
   section(class=[className, 'production-item', modificationClass])
-    h2.production-item__title #{title}
-    p.production-item__description #{description}
+    h2.production-item__title !{title}
+    p.production-item__description !{description}
     +typesProductsList('production-item__types-products-list', obj.listItems)
