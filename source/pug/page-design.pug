@@ -4,9 +4,10 @@ include includes/header.pug
 include includes/footer-wrapper.pug
 include includes/production-item.pug
 
--var pageClassName = 'page-souvenir';
--var pageTitle = 'Сувениры, виды продукции';
--var souvenir = variables.page.production.souvenir;
+-var pageClassName = 'page-design';
+-var pageTitle = 'Дизайн, виды работ';
+-var design = variables.page.production.design;
+
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -15,5 +16,5 @@ html(lang="ru")
     +header
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
-      +productionItem(pageClassName + '__production-item', souvenir)
+      +productionItem(pageClassName + '__production-item', design)
     +footerWrapper

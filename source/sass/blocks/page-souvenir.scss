@@ -1,0 +1,7 @@
+.page-souvenir__main {
+  margin-top: $main-margin-top;
+}
+
+.page-souvenir__production-item {
+  @include page-inner;
+}
