@@ -32,6 +32,10 @@
    background-image: url($cssPath + "production-item__souvenir-icon.svg");
 }
 
+.production-item--design-icon::before {
+   background-image: url($cssPath + "production-item__design-icon.svg");
+}
+
 
 .production-item__title {
   margin-top: 0;
