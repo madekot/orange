@@ -11,14 +11,6 @@
   margin-bottom: 20px;
 }
 
-.page-contacts__wrap-footer {
-  margin-top: auto;
-}
-
-.page-contacts__footer {
-  margin-top: 100px;
-}
-
 .page-contacts__plan-map-wrap-images {
   display: flex;
   flex-wrap: wrap;
@@ -32,10 +24,6 @@
 @media (max-width: $mobileBreakpoint) {
   .page-contacts__plan-map-image {
     width: 100%;
-  }
-
-  .page-contacts__header {
-    margin-bottom: 30px;
   }
 
   .page-contacts__plan-map {

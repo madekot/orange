@@ -1,7 +1,3 @@
-.page-production__main {
-  padding-top: 40px;
-}
-
 .page-production__production-item {
   @include page-inner;
   margin-bottom: 30px;
@@ -27,7 +23,6 @@
 
 .page-production__wrap-design {
   padding-top: 70px;
-  margin-bottom: 30px;
 }
 
 .page-production__decorative-wrapper {
@@ -42,11 +37,7 @@
   margin-top: 70px;
 }
 
-@media (max-width: $mobileBreakpoint) {
-  .page-production__wrap-design {
-    padding-top: 50px;
-  }
-}
+@media (max-width: $mobileBreakpoint) {}
 
 
 

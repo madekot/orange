@@ -16,7 +16,7 @@ include includes/production-item.pug
 html(lang="ru")
   +head(pageTitle, pageTitle)
   body(class=pageClassName)
-    +header(`${pageClassName}__header`)
+    +header
     main(class=`${pageClassName}__main`)
       h1.visually-hidden Вся продукция и услуги типографии Копи шоп оранж
       +productionItem(`${pageClassName}__production-item`, digitalPrinting)
@@ -26,4 +26,4 @@ html(lang="ru")
       +productionItem(`${pageClassName}__production-item`, souvenir)
       div(class=`${pageClassName}__wrap-design decorative-line decorative-line--simple`)
         +productionItem(`${pageClassName}__production-item ${pageClassName}__production-item--design`, design)
-    +footerWrapper(`${pageClassName}__footer-wrapper`)
+    +footerWrapper

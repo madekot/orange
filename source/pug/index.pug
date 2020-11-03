@@ -19,7 +19,7 @@ include includes/order-plan.pug
 html(lang="ru")
   +head(pageTitle, pageTitle)
   body(class=pageClassName)
-    +header(pageClassName + '__header')
+    +header
     main(class=pageClassName + '__main')
       h1.visually-hidden Типография оранж - типография полного цикла.
       +types-works(pageClassName + '__types-works')
@@ -29,4 +29,4 @@ html(lang="ru")
       +types-products(pageClassName + '__types-products', typesProducts)
       div(class=pageClassName + '__wrap-order-plan')
         +orderPlan(pageClassName + '__order-plan', orderPlanData)
-    +footer(pageClassName + '__footer')
+    +footer
