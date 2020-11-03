@@ -1,7 +1,8 @@
-mixin head(titlePage='Типография Копи Шоп Оранж')
+mixin head(titlePage='Типография Копи Шоп Оранж', description='Основные направления цифровой, офсетной, сувенирной, широкоформатной печати')
   head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='Description' content=description)
     title #{titlePage}
     link(href='https://fonts.googleapis.com/css2?family=Andika&display=swap' rel='stylesheet')
     link(rel='stylesheet' href=variables.stylePath + 'style.css')

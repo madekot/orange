@@ -1,0 +1,21 @@
+include includes/variables.pug
+include includes/head.pug
+include includes/header.pug
+include includes/footer-wrapper.pug
+include includes/production-item.pug
+
+-var pageClassName = 'page-digital-printing';
+-var pageTitle = 'Широкоформатная печать, виды работ';
+-var widePrinting = variables.page.production.widePrinting;
+
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle)
+  body(class=pageClassName)
+    +header(pageClassName + '__header')
+    main(class=pageClassName + '__main')
+      h1.visually-hidden #{pageTitle}
+      +productionItem(pageClassName + '__production-item', widePrinting)
+      div(class=pageClassName + '__decorative-wrapper decorative-wrapper decorative-wrapper--image')
+    +footerWrapper(pageClassName + '__footer-wrapper')
