@@ -14,29 +14,28 @@
 .page-production__wrapper {
   width: 100%;
   margin-bottom: 50px;
-}
 
-.page-production__wrap-design {
-  padding-top: 5%;
-  margin-bottom: 30px;
-}
-
-.page-production__image-wrapper {
   padding: 25%;
-  background-image: url($cssPath + "page-production__wrapper-bg.jpg");
+  background-image:
+    linear-gradient(to bottom,
+      #fda300 0px, #fda300 10px, transparent 10px, transparent calc(100% - 10px),#fda300 calc(100% - 10px), #fda300 100%),
+   url($cssPath + "page-production__wrapper-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-.page-production__image-wrapper--plotter-image {
-  margin-right: 15px;
-  margin-left: 15px;
+.page-production__wrap-design {
+  padding-top: 70px;
+  margin-bottom: 30px;
+}
+
+.page-production__decorative-wrapper {
+  margin-bottom: 50px;
+}
+
+.page-production__decorative-wrapper-image {
   margin-bottom: 70px;
-  background-image: url($cssPath + "page-production__image-wrapper--plotter-image.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
 }
 
 .page-production__footer {

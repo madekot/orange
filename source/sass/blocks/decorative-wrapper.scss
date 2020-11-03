@@ -1,0 +1,18 @@
+.decorative-wrapper {
+  padding: 25%;
+
+  background-image:
+    linear-gradient(to bottom,
+      #fda300 0px, #fda300 10px, transparent 10px, transparent calc(100% - 10px),#fda300 calc(100% - 10px), #fda300 100%),
+   url($cssPath + "page-production__wrapper-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.decorative-wrapper--image {
+  margin-right: 15px;
+  margin-left: 15px;
+  background-image: url($cssPath + "page-production__image-wrapper--plotter-image.jpg");
+  background-size: contain;
+}
