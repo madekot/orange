@@ -1,3 +1,7 @@
+.page__main {
+  margin-top: $main-margin-top;
+}
+
 .page__types-works {
   @include page-inner;
   margin-bottom: 30px;
