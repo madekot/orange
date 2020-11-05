@@ -34,7 +34,6 @@
 
 .page-interior-printing__advantages-title {
   width: 100%;
-  // padding: 0 10%;
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
@@ -46,20 +45,32 @@
 
 .page-interior-printing__advantages-list {
   @include reset-list;
-  max-width: 400px;
-  margin: 0 auto;
+  width: 45%;
+  margin-right: 10%;
+}
+
+.page-interior-printing__advantages-list:nth-of-type(even){
+  margin-right: 0;
 }
 
 .page-interior-printing__advantages-item {
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: bold;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: bold;
 
-    padding-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-image: url($cssPath + "page-interior-printing--prise-icon.svg");
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    background-position: top 5px left;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url($cssPath + "page-interior-printing--prise-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: top 10px left;
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .page-interior-printing__advantages-list {
+    @include reset-list;
+    width: auto;
+    margin-right: 0;
+  }
 }
