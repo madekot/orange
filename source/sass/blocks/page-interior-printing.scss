@@ -5,3 +5,9 @@
 .page-interior-printing__production-item {
   @include page-inner;
 }
+
+.page-interior-printing__information-call {
+  @include page-inner;
+  max-width: 450px;
+  margin-bottom: 60px;
+}

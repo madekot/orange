@@ -3,6 +3,7 @@ include includes/head.pug
 include includes/header.pug
 include includes/footer-wrapper.pug
 include includes/production-item.pug
+include includes/information-call.pug
 
 -var pageClassName = 'page-interior-printing';
 -var pageTitle = 'Интерьерная печать';
@@ -17,4 +18,5 @@ html(lang="ru")
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
       +productionItem(`${pageClassName}__production-item production-item--interior-icon`, interiorPrinting)
+      +informationCall(pageClassName + '__information-call')
     +footerWrapper

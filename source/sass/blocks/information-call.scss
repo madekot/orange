@@ -1,0 +1,46 @@
+.information-call {
+  font-family: $mainFont;
+  text-align: center;
+  color: #7f7f7f;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.information-call__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font: inherit;
+  font-weight: bold;
+  color: $mainColor;
+}
+
+.information-call__phone {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 5px 0;
+
+  border-radius: 20px;
+
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 67px;
+
+  background-color: $mainColor;
+  text-align: center;
+  box-shadow: 6px 6px 8px rgba(0,0,0,0.15);
+}
+
+.information-call__text {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.information-call__email {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  text-transform: uppercase;
+  font: inherit;
+}
