@@ -4,7 +4,9 @@ mixin informationCall(className, obj)
 
   section(class=[className, 'information-call'])
     h2(class='information-call__title') Позвоните и узнайте всё что вас интересует!
-    p(class='information-call__phone') 318-18-32
+    a(class='information-call__link-phone' href='tel:+88123181832')
+      p(class='information-call__phone') 318-18-32
     p(class='information-call__text') Вы можете оставить заявку на почте
-    p(class='information-call__email') info@copyshop-orange.ru
+    a(class='information-call__link-email' href='mailto:info@copyshop-orange.ru')
+      p(class='information-call__email') info@copyshop-orange.ru
 
