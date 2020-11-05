@@ -1,1 +1,7 @@
-.page-interior-printing {}
+.page-interior-printing__main {
+  margin-top: $main-margin-top;
+}
+
+.page-interior-printing__production-item {
+  @include page-inner;
+}

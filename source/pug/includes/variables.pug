@@ -171,12 +171,34 @@ include map.pug
           description:
             `Специалисты нашей типографии помогут Вам найти оптимальные
             решения для реализации <br>Вашего рекламного проекта.`,
-          modificationClass: '',
+          modificationClass: '', // TODOO: доставать из переменной модификатор класса не всегда удобно, передаю его с классом элемента (лучше исправить это и в других местах)
           listItems: [
             map.typesProducts.designLayout,
             map.typesProducts.layout,
             map.typesProducts.photoRetouch,
             map.typesProducts.corporateIdentity,
+          ],
+        },
+        interiorPrinting: {
+          title: 'Интерьерная печать в санкт-петербурге',
+          description:
+            `В последнее время в офисном дизайне и сфере рекламы
+            все большую популярность приобретает интерьерная печать.
+            Сегодня с ней можно встретиться практически повсюду.
+            Типография ОРАНЖ предлагает услугу интерьерной печати
+            в Санкт-Петербурге. Мы работаем со всеми типами рекламных
+            материалов, используя только лучшее специализированное оборудование.
+            Вы можете достичь максимальной реалистичности изображений при печати
+            фотообоев, фотоколажей, модульных картин, наклеек на стену,
+            магнитных наклеек на холодильник, кухонных фартуков.`,
+          modificationClass: '', // TODOO: доставать из переменной модификатор класса не всегда удобно, передаю его с классом элемента (лучше исправить это и в других местах)
+          listItems: [
+            map.typesProducts.canvas,
+            map.typesProducts.modularPictures,
+            map.typesProducts.wallpaper,
+            map.typesProducts.wallStickers,
+            map.typesProducts.fridgeStickers,
+            map.typesProducts.photoMontagePictures,
           ],
         },
       },

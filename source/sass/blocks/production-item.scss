@@ -36,6 +36,10 @@
    background-image: url($cssPath + "production-item__design-icon.svg");
 }
 
+.production-item--interior-icon::before {
+   background-image: url($cssPath + "production-item__interior-icon.svg");
+}
+
 .production-item--no-icon::before {
   content: none;
 }

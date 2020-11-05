@@ -5,8 +5,8 @@ include includes/footer-wrapper.pug
 include includes/production-item.pug
 
 -var pageClassName = 'page-interior-printing';
--var pageTitle = 'Интерьерная печать в санкт-петербурге';
-//- -var interiorPrinting = variables.page.production.interiorPrinting;
+-var pageTitle = 'Интерьерная печать';
+-var interiorPrinting = variables.page.production.interiorPrinting;
 
 
 <!DOCTYPE html>
@@ -16,5 +16,5 @@ html(lang="ru")
     +header
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
-      //- +productionItem(`${pageClassName}__production-item`, souvenir)
+      +productionItem(`${pageClassName}__production-item production-item--interior-icon`, interiorPrinting)
     +footerWrapper
