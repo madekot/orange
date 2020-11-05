@@ -4,6 +4,7 @@ include includes/header.pug
 include includes/footer-wrapper.pug
 include includes/production-item.pug
 include includes/information-call.pug
+include includes/slider.pug
 
 -var pageClassName = 'page-interior-printing';
 -var pageTitle = 'Интерьерная печать';
@@ -20,4 +21,17 @@ html(lang="ru")
       +productionItem(`${pageClassName}__production-item production-item--interior-icon`, interiorPrinting)
       div(class=pageClassName + '__decorative-line decorative-line decorative-line--little-size')
       +informationCall(pageClassName + '__information-call')
+      +slider(pageClassName + '__slider')
+      section(class=pageClassName + '__advantages')
+        h2(class=pageClassName + '__advantages-title') Преимущества печати в типографии оранж
+        ul(class=pageClassName + '__advantages-list')
+          li(class=pageClassName + '__advantages-item') Выразить свою индивидуальность
+          li(class=pageClassName + '__advantages-item') Размер изображения до 50 метров
+          li(class=pageClassName + '__advantages-item') Выбрать изображение, которое нравится именно Вам
+          li(class=pageClassName + '__advantages-item') Оригинальный подарок для всех
+        ul(class=`${pageClassName}__advantages-list`)
+          li(class=pageClassName + '__advantages-item') Сроки изготовления 3-5 раб. дней
+          li(class=pageClassName + '__advantages-item') Картина с галерейной натяжкой
+          li(class=pageClassName + '__advantages-item') Возможность визуализации фото в пространстве Вашей квартиры
+          li(class=pageClassName + '__advantages-item') Советы по монтажу обоев и наклеек
     +footerWrapper

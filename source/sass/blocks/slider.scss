@@ -1,0 +1,27 @@
+.slider {
+  display: flex;
+  min-height: 700px;
+  box-shadow: 7px 7px 12px rgba(0,0,0,0.2);
+}
+
+.slider__content {
+  flex-grow: 1;
+  background-image: url($cssPath + "slider__mage--1.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: $tabletBreakpoint) {
+  .slider {
+    display: flex;
+    min-height: 550px;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .slider {
+    display: flex;
+    min-height: 320px;
+  }
+}

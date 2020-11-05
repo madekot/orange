@@ -11,3 +11,55 @@
   max-width: 450px;
   margin-bottom: 60px;
 }
+
+.page-interior-printing__decorative-line {
+  margin-bottom: 80px;
+}
+
+.page-interior-printing__slider {
+  margin-bottom: 50px;
+}
+
+.page-interior-printing__advantages {
+  @include page-inner;
+
+  max-width: 860px;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 50px;
+
+  font-family: $mainFont;
+}
+
+.page-interior-printing__advantages-title {
+  width: 100%;
+  // padding: 0 10%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+
+  font-size: 26px;
+  line-height: 1.19;
+  text-transform: uppercase;
+}
+
+.page-interior-printing__advantages-list {
+  @include reset-list;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.page-interior-printing__advantages-item {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: bold;
+
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url($cssPath + "page-interior-printing--prise-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: top 5px left;
+}

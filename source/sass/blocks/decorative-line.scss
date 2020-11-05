@@ -47,6 +47,10 @@
   display: none;
 }
 
+.decorative-line--double-simple-color-top {
+  background: linear-gradient(to bottom, #adadad 0px, #adadad 10px, transparent 10px, transparent calc(100% - 10px), $mainColor calc(100% - 10px), $mainColor 100%);
+}
+
 .decorative-line::after {
   content: "";
   position: absolute;
