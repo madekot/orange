@@ -13,6 +13,11 @@
   box-shadow: 6px 6px 8px rgba(0,0,0,0.2);
 }
 
+.decorative-line--little-size::before {
+  height: 50px;
+  margin-bottom: 30px;
+}
+
 .decorative-line--simple {
   padding-bottom: 0;
   padding-top: 10px;
@@ -55,6 +60,13 @@
 
   border-radius: 50%;
   background-color: $mainColor;
+}
+
+.decorative-line--little-size::after {
+  top: 0;
+
+  width: 80px;
+  height: 80px;
 }
 
 @media (max-width: $mobileBreakpoint) {
