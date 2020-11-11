@@ -1,0 +1,39 @@
+mixin priceTable(className, obj)
+  -
+    var obj = obj || {};
+    obj.title = obj.title || 'Прайс - интерьерная печать';
+    obj.content = obj.content  || [
+      ['Материал', '1-5 м2', 'от 5 м2', 'от 10 м2', 'от 20 м2', 'от 50 м2', 'от 100 м2',],
+      ['Самоклеющаяся плёнка',	390,	370,	360,	340,	330,	320,],
+      ['Фотобумага 200 г/м', 570,	540,	520,	500,	490,	485,],
+      ['Банер 400 г/м',	380,	350,	330,	320,	310,	300,],
+      ['Холст натуральный',	1350,	1290,	1260,	1240,	1230,	1220,],
+      ['Бэклит', 1000,	970,	950,	930,	920,	910,],
+      ['Бумага постерная 150-200 г/м',	320,	300,	280,	270,	260,	255,],
+    ];
+
+  section(class=[className, 'price-table'])
+    h2.price-table__title #{obj.title}
+    table.price-table__table
+      caption.visually-hidden #{obj.title}
+      each contentItem,  i in obj.content
+        if (i === 0)
+          tr(class='price-table__table-row price-table__table-row--titles')
+            each contentItemTitle in obj.content[i]
+              if (i == 0)
+                th(class='price-table__table-cell price-table__table-cell--first-column price-table__table-cell--title') #{contentItemTitle}
+              else
+                th(class='price-table__table-cell price-table__table-cell--title') #{contentItemTitle}
+        else
+          tr.price-table__table-row
+            each contentItem, index in obj.content[i]
+              if (index == 0)
+                td(class='price-table__table-cell price-table__table-cell--first-column') #{contentItem}
+              else
+                td.price-table__table-cell #{contentItem}
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+.price-table {
+  display: flex;
+  flex-direction: column;
+  font-family: $mainFont;
+}
+
+.price-table__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: $mainColor;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.price-table__table {
+  margin-bottom: 60px;
+
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.price-table__table-cell {
+  padding: 10px 15px;
+  border: 1px solid #cccccc;
+  font-weight: bold;
+  color: #656565;
+  font-size: 11px;
+}
+
+.price-table__table-cell--first-column {
+  text-align: left;
+  font-weight: normal;
+}
+
+.price-table__table-cell--title {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: $mainColor;
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .price-table__title {
+    font-size: 20px;
+  }
+
+  .price-table__table-cell {
+    padding: 5px;
+  }
+}
+
+
