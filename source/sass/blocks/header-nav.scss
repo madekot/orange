@@ -32,7 +32,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
 
   text-decoration: none;
   text-transform: uppercase;
@@ -47,7 +47,13 @@
   color: #ffffff;
 }
 
-@media (max-width: 425px) {
+@media (max-width: $tabletBreakpoint) {
+  .header-nav__link-site-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
   .header-nav__list-site-links {
     flex-wrap: wrap;
   }
@@ -70,5 +76,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  .header-nav__link-site-item {
+    font-size: 14px;
   }
 }
