@@ -1,0 +1,15 @@
+.page-print-wallpapers {}
+
+.page-print-wallpapers__main {
+  padding-top: 50px;
+}
+
+.page-print-wallpapers__title {
+  @include page-inner;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  text-align: center;
+  font-size: $fontSizeBig;
+  text-transform: uppercase;
+}

@@ -4,6 +4,8 @@ body {
   flex-direction: column;
   height: 100vh;
   min-width: 320px;
+
+  font-family: $mainFont;
 }
 
 .visually-hidden {
