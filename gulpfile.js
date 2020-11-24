@@ -24,7 +24,7 @@ const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber({ errorHandler: notify.onError() }))
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'expanded'}))
     .pipe(postcss([
       autoprefixer()
     ]))
