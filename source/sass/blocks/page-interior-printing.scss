@@ -12,6 +12,12 @@
   margin-bottom: 60px;
 }
 
+.page-interior-printing__information-call--price-table {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+
 .page-interior-printing__decorative-line {
   margin-bottom: 80px;
 }
@@ -20,10 +26,12 @@
   margin-bottom: 50px;
 }
 
-.page-interior-printing__advantages {
+.page-interior-printing__wrap {
   @include page-inner;
-
   max-width: 860px;
+}
+
+.page-interior-printing__advantages {
   display: flex;
   flex-wrap: wrap;
 
@@ -65,6 +73,20 @@
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: top 10px left;
+}
+
+.page-interior-printing__price-printing {
+  padding: 50px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  box-shadow: -3px -7px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: $tabletBreakpoint) {
+  .page-interior-printing__price-printing {
+    padding: 0;
+    box-shadow: none;
+  }
 }
 
 @media (max-width: $mobileBreakpoint) {
