@@ -19,6 +19,10 @@
   }
 
   &__wrap-row {
+    margin-bottom: 70px;
+  }
+
+  &__inner-wrap-row {
     @include page-inner;
 
     display: flex;
@@ -54,28 +58,25 @@
     margin-bottom: 30px;
   }
 
-  &__text--orange-theme {
-    letter-spacing: 0;
-
-    color: $mainColor;
-
-    font-style: italic;
-  }
-
   &__manager-check {
-    margin-top: 0;
     margin-bottom: 20px;
-
-    letter-spacing: 0;
-
-    color: $mainColor;
-
-    font-size: $fontSizeNormal;
-    font-style: italic;
-    line-height: $lineHeightNormal;
   }
 
   &__text:last-of-type {
     margin-bottom: 0;
+  }
+
+  &__interior-print {
+    @include page-inner;
+
+    max-width: 840px;
+    margin-bottom: 50px;
+  }
+
+  &__information-call {
+    @include page-inner;
+
+    max-width: 450px;
+    margin-bottom: 50px;
   }
 }

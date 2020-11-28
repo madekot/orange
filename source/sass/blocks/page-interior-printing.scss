@@ -83,6 +83,10 @@
   box-shadow: -3px -7px 15px rgba(0,0,0,0.2);
 }
 
+.page-interior-printing__price-printing-table {
+  margin-bottom: 60px;
+}
+
 @media (max-width: $tabletBreakpoint) {
   .page-interior-printing__price-printing {
     padding: 0;

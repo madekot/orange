@@ -4,6 +4,10 @@
   font-family: $mainFont;
 }
 
+.price-table--title-align-right {
+  text-align: right;
+}
+
 .price-table__title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -16,8 +20,6 @@
 }
 
 .price-table__table {
-  margin-bottom: 60px;
-
   border-collapse: collapse;
   text-align: center;
 }

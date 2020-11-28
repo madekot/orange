@@ -1,3 +1,4 @@
+// TODO: доделал адаптив и изменил размер шрифта на декстопном варианте для таблицы
 include includes/_includes.pug
 
 -var pageClassName = 'page-photo-wallpaper';
@@ -12,12 +13,15 @@ html(lang="ru")
     main(class=pageClassName + '__main')
       h1(class=pageClassName + '__title') #{pageTitle}
       div(class=pageClassName + '__wrap-row decorative-line decorative-line--double-simple decorative-line--double-simple-color-top')
-        +slider(pageClassName + '__slider slider--border slider--not-shadow')
-        div(class=pageClassName + '__wrap-column')
-          div(class=pageClassName + '__wrap-text')
-            p(class=pageClassName + '__text') Фотообои - это то, что может раскрасить интерьер любого помещения и реализовать самые смелые дизайнерские решения, если Вы хотите видеть у себя дома потрясающие виды Венеции или Праги, красивейших пляжей мира или горных хребтов, то тогда это к нам!
-            p(class=pageClassName + '__text') В нашей компании используется только самая качественная печать. Если вы не можете определиться с тематикой фотообоев, опытные дизайнеры подберут варианты специально для Вашего помещения.
-          p(class=pageClassName + '__manager-check') Наличие материала и индивидуальные особенности уточняйте у менеджеров по телефону 318-18-32
-        //- +sendIdeas(pageClassName + '__send-ideas')
+        div(class=pageClassName + '__inner-wrap-row')
+          +slider(pageClassName + '__slider slider--border slider--not-shadow')
+          div(class=pageClassName + '__wrap-column')
+            div(class=pageClassName + '__wrap-text')
+              p(class=pageClassName + '__text') Фотообои - это то, что может раскрасить интерьер любого помещения и реализовать самые смелые дизайнерские решения, если Вы хотите видеть у себя дома потрясающие виды Венеции или Праги, красивейших пляжей мира или горных хребтов, то тогда это к нам!
+              p(class=pageClassName + '__text') В нашей компании используется только самая качественная печать. Если вы не можете определиться с тематикой фотообоев, опытные дизайнеры подберут варианты специально для Вашего помещения.
+            +managerCheck(pageClassName + '__manager-check')
+            +sendIdeas(pageClassName + '__send-ideas')
+      +priceTable(pageClassName + '__interior-print price-table--title-align-right')
+      +informationCall(pageClassName + '__information-call')
 
     +footerWrapper
