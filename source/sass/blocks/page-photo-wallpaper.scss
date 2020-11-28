@@ -1,82 +1,79 @@
-// TODO: потом нужно будет все блоки переделать с использованием & для элементов
+.page-photo-wallpaper__main {
+  margin-top: $main-margin-top;
+}
 
-.page-photo-wallpaper {
-  &__main {
-    margin-top: $main-margin-top;
-  }
+.page-photo-wallpaper__title {
+  @include page-inner;
 
-  &__title {
-    @include page-inner;
+  margin-top: 0;
+  margin-bottom: 30px;
 
-    margin-top: 0;
-    margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
 
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.19;
+}
 
-    font-size: 26px;
-    line-height: 1.19;
-  }
+.page-photo-wallpaper__wrap-row {
+  margin-bottom: 70px;
+}
 
-  &__wrap-row {
-    margin-bottom: 70px;
-  }
+.page-photo-wallpaper__inner-wrap-row {
+  @include page-inner;
 
-  &__inner-wrap-row {
-    @include page-inner;
+  display: flex;
 
-    display: flex;
+  padding-right: 0;
+  padding-left: 0;
+}
 
-    padding-right: 0;
-    padding-left: 0;
-  }
+.page-photo-wallpaper__slider {
+  flex-shrink: 0;
 
-  &__slider {
-    flex-shrink: 0;
+  width: 500px;
+  height: 400px;
+}
 
-    width: 500px;
-    height: 400px;
-  }
+.page-photo-wallpaper__wrap-column {
+  padding: 40px;
 
-  &__wrap-column {
-    padding: 40px;
+  background-color: #ffffff;
+  box-shadow: -3px -7px 15px rgba(0, 0, 0, 0.2);
+}
 
-    box-shadow: -3px -7px 15px rgba(0, 0, 0, 0.2);
-  }
+.page-photo-wallpaper__wrap-text {
+  margin-bottom: 50px;
 
-  &__wrap-text {
-    margin-bottom: 50px;
+  letter-spacing: 1px;
 
-    letter-spacing: 1px;
+  font-size: $fontSizeNormal;
+  line-height: $lineHeightNormal;
+}
 
-    font-size: $fontSizeNormal;
-    line-height: $lineHeightNormal;
-  }
+.page-photo-wallpaper__text {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 
-  &__text {
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
+.page-photo-wallpaper__manager-check {
+  margin-bottom: 20px;
+}
 
-  &__manager-check {
-    margin-bottom: 20px;
-  }
+.page-photo-wallpaper__text:last-of-type {
+  margin-bottom: 0;
+}
 
-  &__text:last-of-type {
-    margin-bottom: 0;
-  }
+.page-photo-wallpaper__interior-print {
+  @include page-inner;
 
-  &__interior-print {
-    @include page-inner;
+  max-width: 840px;
+  margin-bottom: 50px;
+}
 
-    max-width: 840px;
-    margin-bottom: 50px;
-  }
+.page-photo-wallpaper__information-call {
+  @include page-inner;
 
-  &__information-call {
-    @include page-inner;
-
-    max-width: 450px;
-    margin-bottom: 50px;
-  }
+  max-width: 450px;
+  margin-bottom: 50px;
 }

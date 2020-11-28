@@ -1,25 +1,28 @@
 .send-ideas {
   padding: 20px;
-  border: 1px dashed $mainColor;
-  font-size: 16px;
-  line-height: 22px;
+
   letter-spacing: 1px;
 
-  &__find {
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
+  border: 1px dashed $mainColor;
 
-    &__email {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+  font-size: 16px;
+  line-height: 22px;
+}
 
-  &__link {
-    color: inherit;
-  }
+.send-ideas__find {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
 
-  &__link:hover {
-    color: $mainColor;
-  }
+.send-ideas__email {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.send-ideas__link {
+  color: inherit;
+}
+
+.send-ideas__link:hover {
+  color: $mainColor;
 }
