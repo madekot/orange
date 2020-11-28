@@ -26,6 +26,8 @@
 
   padding-right: 0;
   padding-left: 0;
+
+  background-color: #f5ba00;
 }
 
 .page-photo-wallpaper__slider {
@@ -76,4 +78,51 @@
 
   max-width: 450px;
   margin-bottom: 50px;
+}
+
+@media (max-width: $desktopBreakpoint) {
+  .page-photo-wallpaper__inner-wrap-row {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .page-photo-wallpaper__inner-wrap-row {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: $tabletBreakpoint) {
+  .page-photo-wallpaper__slider {
+    width: calc(500px * 0.6);
+    height: calc(400px * 0.6);
+
+    border-width: calc(70px * 0.6);
+  }
+
+  .page-photo-wallpaper__wrap-text {
+    font-size: $fontSizeNormal;
+    line-height: $lineHeightNormal;
+  }
+
+  .page-photo-wallpaper__wrap-text {
+    font-size: $fontSizeNormal;
+    line-height: $lineHeightNormal;
+  }
+
+  .page-photo-wallpaper__wrap-text {
+    margin-bottom: 50px;
+
+    letter-spacing: 1px;
+
+    font-size: $fontSizeSemiSmall;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .page-photo-wallpaper__slider {
+    width: calc(500px * 0.45);
+    height: calc(400px * 0.45);
+
+    border-width: calc(70px * 0.45);
+  }
 }
