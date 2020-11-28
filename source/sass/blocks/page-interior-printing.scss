@@ -24,6 +24,7 @@
 
 .page-interior-printing__slider {
   margin-bottom: 50px;
+  min-height: 700px;
 }
 
 .page-interior-printing__wrap {
@@ -87,6 +88,10 @@
     padding: 0;
     box-shadow: none;
   }
+
+  .page-interior-printing__slider {
+    min-height: 550px;
+  }
 }
 
 @media (max-width: $mobileBreakpoint) {
@@ -94,5 +99,9 @@
     @include reset-list;
     width: auto;
     margin-right: 0;
+  }
+
+  .page-interior-printing__slider {
+    min-height: 320px;
   }
 }

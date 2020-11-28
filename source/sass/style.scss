@@ -1,15 +1,11 @@
+// переменные, базовые стили
 @import "variables.scss";
 @import "mixins.scss";
 @import "blocks/base-style.scss";
+
+// блоки
 @import "blocks/decorative-line.scss";
 @import "blocks/decorative-wrapper.scss";
-@import "blocks/header-work-schedule.scss";
-@import "blocks/header-email.scss";
-@import "blocks/header-logo.scss";
-@import "blocks/header-phone.scss";
-@import "blocks/header-nav.scss";
-@import "blocks/header-address.scss";
-@import "blocks/header.scss";
 @import "blocks/types-works.scss";
 @import "blocks/about-us.scss";
 @import "blocks/about-us-item.scss";
@@ -20,8 +16,19 @@
 @import "blocks/information-call.scss";
 @import "blocks/slider.scss";
 @import "blocks/price-table.scss";
+
+// header, footer
+@import "blocks/header-work-schedule.scss";
+@import "blocks/header-email.scss";
+@import "blocks/header-logo.scss";
+@import "blocks/header-phone.scss";
+@import "blocks/header-nav.scss";
+@import "blocks/header-address.scss";
+@import "blocks/header.scss";
 @import "blocks/footer.scss";
 @import "blocks/footer-wrapper.scss";
+
+// страницы
 @import "blocks/page.scss";
 @import "blocks/page-contacts.scss";
 @import "blocks/page-production.scss";
@@ -31,3 +38,4 @@
 @import "blocks/page-souvenir.scss";
 @import "blocks/page-interior-printing.scss";
 @import "blocks/page-design.scss";
+@import "blocks/page-photo-wallpaper.scss";
