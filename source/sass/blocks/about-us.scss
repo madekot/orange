@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: $mobileBreakpoint) {
+@media (max-width: $semiMobileBreakpoint) {
   .about-us__list {
     flex-direction: column;
   }

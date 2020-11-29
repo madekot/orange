@@ -51,9 +51,9 @@
   text-transform: uppercase;
 
   font-family: $mainFont;
-  font-size: 26px;
+  font-size: $fontSizeBig;
   font-weight: bold;
-  line-height: 31px;
+  line-height: $lineHeightNormal;
 }
 
 .about-us-item__list {
@@ -72,9 +72,9 @@
   color: #000000;
 
   font-family: $mainFont;
-  font-size: 20px;
+  font-size: $fontSizeSemiBig;
   font-weight: bold;
-  line-height: 24px;
+  line-height: $lineHeightNormal;
 }
 
 .about-us-item__list-item:last-of-type {
@@ -97,10 +97,14 @@
 }
 
 @media (max-width: $tabletBreakpoint) {
+  .about-us-item__title {
+    font-size: $fontSizeSemiSmall;
+  }
+
   .about-us-item__list-item {
     margin-bottom: 35px;
 
-    font-size: 17px;
+    font-size: $fontSizeSmall;
   }
 
   .about-us-item__list-item::before {
