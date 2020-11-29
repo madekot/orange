@@ -51,7 +51,7 @@
   text-transform: uppercase;
 
   font-family: $mainFont;
-  font-size: var(--font-size-semi-big);
+  font-size: var(--font-size-big);
   font-weight: bold;
   line-height: $lineHeightNormal;
 }
@@ -97,13 +97,13 @@
 
 @media (max-width: $tabletBreakpoint) {
   .about-us-item__title {
-    font-size: var(--font-size-semi-small);
+    font-size: var(--font-size-semi-big);
   }
 
   .about-us-item__list-item {
     margin-bottom: 35px;
 
-    font-size: var(--font-size-semi-small);
+    font-size: var(--font-size-normal);
   }
 
   .about-us-item__list-item::before {

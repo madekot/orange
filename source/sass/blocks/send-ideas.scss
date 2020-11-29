@@ -3,7 +3,7 @@
 
   letter-spacing: 1px;
 
-  border: 1px dashed $mainColor;
+  border: 1px dashed var(--main-color);
 
   font-size: 16px;
   line-height: 22px;
@@ -24,5 +24,5 @@
 }
 
 .send-ideas__link:hover {
-  color: $mainColor;
+  color: var(--main-color);
 }

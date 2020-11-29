@@ -8,12 +8,14 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const del = require("del");
 const notify = require("gulp-notify");
+const typograf = require('gulp-typograf');
 
 // Htmls
 const htmls = () => {
   return gulp.src(['source/pug/**/*.pug', '!source/pug/includes/**/*.pug'])
     .pipe(plumber({ errorHandler: notify.onError() }))
     .pipe(pug({ pretty: true }))
+    .pipe(typograf({ locale: ['ru', 'en-US'] }))
     .pipe(gulp.dest('./build'))
 }
 

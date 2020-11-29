@@ -12,13 +12,14 @@ body {
 }
 
 :root {
-// заметка: нужно будет поменять все переменные saas на кстомные свойства;
+// заметка: поменять все переменные saas на кстомные свойства;
+// заметка: поменять svg на инлайновые и вписать в них кастомные свойства для изменения цвета и тени как в основном макете;
 
-  // font-family
+  // font family
   --main-font-family: "Trebuchet", "Arial", sans-serif;
   --second-font-family: 'Andika', 'Arial', sans-serif;
 
-  // font-size
+  // font size
   // --font-size-extra-small: 8px;
   // --font-size-small: 11px;
   --font-size-semi-small: 14px;
@@ -30,4 +31,12 @@ body {
   // color
   --base-color: #000000;
   --main-color: #fda300;
+
+  // page inner
+  --max-width-page: 1200px;
+  --padding-page-inner: 15px;
+
+  @media (max-width: $mobileBreakpoint) {
+    --padding-page-inner: 10px;
+  }
 }

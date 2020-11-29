@@ -1,16 +1,14 @@
-.types-products {}
-
 .types-products__title {
   margin-top: 0;
   margin-bottom: 60px;
 
   text-align: center;
   text-transform: uppercase;
+
+  color: var(--main-color);
+
   font-family: $mainFont;
-  font-weight: bold;
-  color: #FDA300;
   font-size: 29px;
+  font-weight: bold;
   line-height: 39px;
 }
-
-.types-products__list {}

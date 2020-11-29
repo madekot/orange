@@ -33,7 +33,7 @@
 }
 
 .types-works__card:hover .types-works__card-title {
-  color: $mainColor;
+  color: var(--main-color);
 }
 
 .types-works__card:hover .types-works__card-text {
@@ -95,6 +95,7 @@
   margin-bottom: 10px;
 
   letter-spacing: 1px;
+  word-wrap: break-word;
 
   font-size: var(--font-size-normal);
   font-weight: bold;
@@ -104,6 +105,8 @@
 .types-works__card-text {
   margin-top: 0;
   margin-bottom: 0;
+
+  word-wrap: break-word;
 
   font-size: var(--font-size-semi-small);
   line-height: $lineHeightSemiBig;
@@ -146,8 +149,14 @@
 }
 
 @media (max-width: $semiMobileBreakpoint) {
-  .types-works__card { // убирает горизонтальный скролл который появляется из за широкоформатной печати
+  .types-works__card {
+    // убирает горизонтальный скролл который появляется из за широкоформатной печати
     width: 50%;
+  }
+
+  .types-works__card-link {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 

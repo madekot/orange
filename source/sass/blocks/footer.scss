@@ -4,24 +4,27 @@
 }
 
 .footer__copyright-link {
-  width: 300px;
   display: block;
-  text-align: center;
-  margin-left: auto;
+
+  width: 300px;
   margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
   text-decoration: none;
 }
 
 .footer__copyright-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 15px;
   padding-right: 15px;
+  padding-left: 15px;
+
+  color: var(--main-color);
 
   font-family: $mainFont;
-  line-height: 18px;
   font-size: 15px;
-  color: $mainColor;
+  line-height: 18px;
 }
 
 .footer__copyright-logo-image {

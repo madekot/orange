@@ -4,6 +4,7 @@
 
 .page-production__production-item {
   @include page-inner;
+
   margin-bottom: 30px;
 }
 
@@ -14,12 +15,11 @@
 .page-production__wrapper {
   width: 100%;
   margin-bottom: 50px;
-
   padding: 25%;
-  background-image:
-    linear-gradient(to bottom,
-      #fda300 0px, #fda300 10px, transparent 10px, transparent calc(100% - 10px),#fda300 calc(100% - 10px), #fda300 100%),
-   url($cssPath + "page-production__wrapper-bg.jpg");
+
+  background-image: linear-gradient(to bottom,
+  var(--main-color) 0px, var(--main-color) 10px, transparent 10px, transparent calc(100% - 10px),var(--main-color) calc(100% - 10px), var(--main-color) 100%),
+  url($cssPath + "page-production__wrapper-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -41,8 +41,5 @@
   margin-top: 70px;
 }
 
-@media (max-width: $mobileBreakpoint) {}
-
-
-
-
+@media (max-width: $mobileBreakpoint) {
+}

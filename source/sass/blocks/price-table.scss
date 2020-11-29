@@ -15,7 +15,7 @@
 
   text-transform: uppercase;
 
-  color: $mainColor;
+  color: var(--main-color);
 
   font-size: var(--font-size-extra-big);
   font-weight: normal;
@@ -31,12 +31,13 @@
 .price-table__table-cell {
   padding: 10px 15px;
 
+  text-align: center;
+
   color: #656565;
   border: 1px solid #cccccc;
 
   font-size: var(--font-size-normal);
   font-weight: bold;
-  text-align: center;
 }
 
 .price-table__table-cell--color {
@@ -50,11 +51,12 @@
 }
 
 .price-table__table-cell--title {
+  text-align: center;
+
   color: #ffffff;
-  background-color: $mainColor;
+  background-color: var(--main-color);
 
   font-weight: bold;
-  text-align: center;
 }
 
 .price-table__table-cell--title:first-of-type {
