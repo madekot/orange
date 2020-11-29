@@ -99,7 +99,7 @@
 
   font-size: var(--font-size-normal);
   font-weight: bold;
-  line-height: $lineHeightSemiBig;
+  line-height: var(--line-height-semi-big);
 }
 
 .types-works__card-text {
@@ -109,7 +109,7 @@
   word-wrap: break-word;
 
   font-size: var(--font-size-semi-small);
-  line-height: $lineHeightSemiBig;
+  line-height: var(--line-height-semi-big);
 }
 
 @media (max-width: $desktopBreakpoint) {
@@ -126,8 +126,8 @@
   }
 
   .types-works__card-title {
-    font-size: var(--font-size-semi-small);
-    line-height: $lineHeightNormal;
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
   }
 
   .types-works__card-link--icon-souvenir {

@@ -19,7 +19,7 @@
 
   font-size: var(--font-size-extra-big);
   font-weight: normal;
-  line-height: $lineHeightNormal;
+  line-height: var(--line-height-normal);
 }
 
 .price-table__table {
@@ -48,6 +48,11 @@
   text-align: left;
 
   font-weight: normal;
+}
+
+.price-table__table-cell:first-of-type {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .price-table__table-cell--title {
@@ -80,7 +85,13 @@
 }
 
 @media (max-width: $mobileBreakpoint) {
+  .price-table__title {
+    font-size: var(--font-size-semi-big);
+  }
+
   .price-table__table-cell {
-    padding: 5px 0;
+    padding: 10px 5px;
+
+    font-size: var(--font-size-normal);
   }
 }

@@ -3,7 +3,7 @@ mixin priceTable(className, obj)
     var obj = obj || {};
     obj.title = obj.title || `Прайс - интерьерная печать`;
     obj.content = obj.content  || [
-      [`Материал`, `1-5`, 5, 10, 20, 50, 100,],
+      [`Материал`, 1, 5, 10, 20, 50, 100,],
       [`Самоклеющаяся плёнка`,	390,	370,	360,	340,	330,	320,],
       [`Фотобумага 200 г/м`, 570,	540,	520,	500,	490,	485,],
       [`Банер 400 г/м`,	380,	350,	330,	320,	310,	300,],
@@ -21,14 +21,14 @@ mixin priceTable(className, obj)
           tr(class=`price-table__table-row price-table__table-row--titles`)
             each contentItemTitle, index in obj.content[i]
               if (i == 0)
-                if (index > 1)
+                if (index > 0)
                   th(class=`price-table__table-cell
                   price-table__table-cell--first-column
-                  price-table__table-cell--title`) от #{contentItemTitle} м<sup><small>2</small></sup>
+                  price-table__table-cell--title`) #{contentItemTitle} м<sup><small>2</small></sup>
                 else
                   th(class=`price-table__table-cell
                     price-table__table-cell--first-column
-                    price-table__table-cell--title`) #{contentItemTitle} м<sup><small>2</small></sup>
+                    price-table__table-cell--title`) #{contentItemTitle}
               else
                 th(class=`price-table__table-cell
                 price-table__table-cell--title`) #{contentItemTitle}

@@ -53,7 +53,7 @@
   font-family: $mainFont;
   font-size: var(--font-size-big);
   font-weight: bold;
-  line-height: $lineHeightNormal;
+  line-height: var(--line-height-normal);
 }
 
 .about-us-item__list {
@@ -73,7 +73,7 @@
 
   font-family: $mainFont;
   font-size: var(--font-size-semi-big);
-  line-height: $lineHeightNormal;
+  line-height: var(--line-height-normal);
 }
 
 .about-us-item__list-item:last-of-type {

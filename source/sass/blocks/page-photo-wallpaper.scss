@@ -50,7 +50,7 @@
   letter-spacing: 1px;
 
   font-size: var(--font-size-normal);
-  line-height: $lineHeightNormal;
+  line-height: var(--line-height-normal);
 }
 
 .page-photo-wallpaper__text {
@@ -101,12 +101,12 @@
 
   .page-photo-wallpaper__wrap-text {
     font-size: var(--font-size-normal);
-    line-height: $lineHeightNormal;
+    line-height: var(--line-height-normal);
   }
 
   .page-photo-wallpaper__wrap-text {
     font-size: var(--font-size-normal);
-    line-height: $lineHeightNormal;
+    line-height: var(--line-height-normal);
   }
 
   .page-photo-wallpaper__wrap-text {
