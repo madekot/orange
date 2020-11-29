@@ -96,7 +96,7 @@
 
   letter-spacing: 1px;
 
-  font-size: $fontSizeNormal;
+  font-size: var(--font-size-normal);
   font-weight: bold;
   line-height: $lineHeightSemiBig;
 }
@@ -105,7 +105,7 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  font-size: $fontSizeSemiSmall;
+  font-size: var(--font-size-semi-small);
   line-height: $lineHeightSemiBig;
 }
 
@@ -123,7 +123,7 @@
   }
 
   .types-works__card-title {
-    font-size: $fontSizeSemiSmall;
+    font-size: var(--font-size-semi-small);
     line-height: $lineHeightNormal;
   }
 

@@ -49,7 +49,7 @@
 
   letter-spacing: 1px;
 
-  font-size: $fontSizeNormal;
+  font-size: var(--font-size-normal);
   line-height: $lineHeightNormal;
 }
 
@@ -100,12 +100,12 @@
   }
 
   .page-photo-wallpaper__wrap-text {
-    font-size: $fontSizeNormal;
+    font-size: var(--font-size-normal);
     line-height: $lineHeightNormal;
   }
 
   .page-photo-wallpaper__wrap-text {
-    font-size: $fontSizeNormal;
+    font-size: var(--font-size-normal);
     line-height: $lineHeightNormal;
   }
 
@@ -114,7 +114,7 @@
 
     letter-spacing: 1px;
 
-    font-size: $fontSizeSemiSmall;
+    font-size: var(--font-size-semi-small);
   }
 }
 
