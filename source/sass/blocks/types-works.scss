@@ -36,11 +36,7 @@
   color: $mainColor;
 }
 
-.types-works__card:hover .types-works__card-intro {
-  color: #7f7f7f;
-}
-
-.types-works__card:hover .types-works__card-list-item {
+.types-works__card:hover .types-works__card-text {
   color: #7f7f7f;
 }
 
@@ -100,47 +96,17 @@
 
   letter-spacing: 1px;
 
-  font-size: 17px;
+  font-size: $fontSizeNormal;
   font-weight: bold;
-  line-height: 1.4;
+  line-height: $lineHeightSemiBig;
 }
 
-.types-works__card-title-first-part {
-  display: none;
-}
-
-.types-works__card-intro {
+.types-works__card-text {
   margin-top: 0;
   margin-bottom: 0;
 
-  font-size: 14px;
-}
-
-.types-works__card-list {
-  @include reset-list;
-}
-
-.types-works__card-list--comma-style {
-  display: block;
-}
-
-.types-works__card-list--comma-style .types-works__card-list-item::after {
-  content: ",";
-
-  display: inline-block;
-}
-
-.types-works__card-list--comma-style .types-works__card-list-item:last-of-type::after {
-  content: none;
-}
-
-.types-works__card-list--comma-style .types-works__card-list-item {
-  display: inline-block;
-}
-
-.types-works__card-list-item {
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: $fontSizeSemiSmall;
+  line-height: $lineHeightSemiBig;
 }
 
 @media (max-width: $desktopBreakpoint) {
@@ -157,12 +123,12 @@
   }
 
   .types-works__card-title {
-    font-size: 17px;
-    line-height: 1.2;
+    font-size: $fontSizeSemiExtraSmall;
+    line-height: $lineHeightNormal;
   }
 
-  .types-works__card-title-first-part {
-    display: block;
+  .types-works__card-text {
+    font-size: $fontSizeSemiExtraSmall;
   }
 
   .types-works__card-link--icon-souvenir {
@@ -181,28 +147,10 @@
     background-position: top 10px center;
     background-size: 100px auto;
   }
-
-  .types-works__card-list--comma-style {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 
 @media (max-width: $mobileBreakpoint) {
   .types-works__card {
     width: 50%;
-  }
-
-  .types-works__card-title {
-    font-size: 17px;
-  }
-
-  .types-works__card-intro {
-    font-size: 11px;
-  }
-
-  .types-works__card-list-item {
-    font-size: 11px;
   }
 }
