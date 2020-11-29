@@ -13,11 +13,11 @@ $main-margin-top: 50px;
 
 // font-size
 $fontSizeExtraSmall: 8px;
-// $fontSizeSemiExtraSmall: 0px;
-// $fontSizeSmall: 0px;
+$fontSizeSemiExtraSmall: 12px;
+$fontSizeSmall: 14px;
 $fontSizeSemiSmall: 16px;
 $fontSizeNormal: 18px;
-// $fontSizeSemiBig: 0px;
+$fontSizeSemiBig: 22px;
 $fontSizeBig: 26px;
 // $fontSizeSemiExtraBig: 0px;
 // $fontSizeExtraBig: 0px;
@@ -34,3 +34,7 @@ $lineHeightNormal: 1.22;
 // $lineHeightBig: 0px;
 // $lineHeightSemiExtraBig: 0px;
 // $lineHeightExtraBig: 0px;
+
+@media (max-width: $desktopBreakpoint) {}
+@media (max-width: $tabletBreakpoint) {}
+@media (max-width: $mobileBreakpoint) {}

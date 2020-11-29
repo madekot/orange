@@ -1,6 +1,7 @@
 .price-table {
   display: flex;
   flex-direction: column;
+
   font-family: $mainFont;
 }
 
@@ -12,45 +13,72 @@
   margin-top: 0;
   margin-bottom: 20px;
 
-  color: $mainColor;
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: normal;
   text-transform: uppercase;
+
+  color: $mainColor;
+
+  font-size: $fontSizeBig;
+  font-weight: normal;
+  line-height: $lineHeightNormal;
 }
 
 .price-table__table {
-  border-collapse: collapse;
   text-align: center;
+
+  border-collapse: collapse;
 }
 
 .price-table__table-cell {
   padding: 10px 15px;
-  border: 1px solid #cccccc;
-  font-weight: bold;
+
   color: #656565;
-  font-size: 11px;
+  border: 1px solid #cccccc;
+
+  font-size: $fontSizeNormal;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price-table__table-cell--color {
+  background-color: rgba(lightgray, 0.3);
 }
 
 .price-table__table-cell--first-column {
   text-align: left;
+
   font-weight: normal;
 }
 
 .price-table__table-cell--title {
   color: #ffffff;
-  font-weight: bold;
   background-color: $mainColor;
+
+  font-weight: bold;
+  text-align: center;
 }
 
-@media (max-width: $mobileBreakpoint) {
+.price-table__table-cell--title:first-of-type {
+  text-align: left;
+}
+
+.price-table__tiny-text {
+  font-size: 14px;
+}
+
+@media (max-width: $tabletBreakpoint) {
   .price-table__title {
-    font-size: 20px;
+    font-size: $fontSizeSemiBig;
   }
 
   .price-table__table-cell {
     padding: 5px;
+
+    font-size: $fontSizeSmall;
   }
 }
 
-
+@media (max-width: $mobileBreakpoint) {
+  .price-table__table-cell {
+    padding: 5px 0;
+  }
+}
