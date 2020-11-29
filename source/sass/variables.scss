@@ -13,13 +13,13 @@ $secondFont: 'Andika', 'Arial', sans-serif;
 $main-margin-top: 50px;
 
 // font-size
-// $fontSizeSemiExtraSmall: 10px;
-$fontSizeSmall: 14px;
-$fontSizeSemiSmall: 16px;
+// $fontSizeSemiExtraSmall: 8px;
+$fontSizeSmall: 11px;
+$fontSizeSemiSmall: 14px;
 $fontSizeNormal: 17px;
-$fontSizeSemiBig: 21px;
-$fontSizeBig: 26px;
-// $fontSizeSemiExtraBig: 32px;
+$fontSizeSemiBig: 20px;
+$fontSizeBig: 23px;
+$fontSizeSemiExtraBig: 26px;
 
 // line-height
 // $lineHeightExtraSmall: 0px;
@@ -32,4 +32,5 @@ $lineHeightSemiBig: 1.4;
 
 // @media (max-width: $desktopBreakpoint) {}
 // @media (max-width: $tabletBreakpoint) {}
+// @media (max-width: $semiMobileBreakpoint) {}
 // @media (max-width: $mobileBreakpoint) {}

@@ -51,7 +51,7 @@
   text-transform: uppercase;
 
   font-family: $mainFont;
-  font-size: $fontSizeBig;
+  font-size: $fontSizeSemiBig;
   font-weight: bold;
   line-height: $lineHeightNormal;
 }
@@ -73,7 +73,6 @@
 
   font-family: $mainFont;
   font-size: $fontSizeSemiBig;
-  font-weight: bold;
   line-height: $lineHeightNormal;
 }
 
@@ -104,12 +103,22 @@
   .about-us-item__list-item {
     margin-bottom: 35px;
 
-    font-size: $fontSizeSmall;
+    font-size: $fontSizeSemiSmall;
   }
 
   .about-us-item__list-item::before {
     width: 70px;
     height: 70px;
+  }
+}
+
+@media (max-width: $semiMobileBreakpoint) {
+  .about-us-item__title {
+    margin-bottom: 20px;
+  }
+
+  .about-us-item__list-item {
+    margin-bottom: 15px;
   }
 }
 

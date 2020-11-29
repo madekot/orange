@@ -6,10 +6,28 @@ body {
   height: 100vh;
   margin: 0;
 
-  font-family: "Trebuchet", "Arial", sans-serif;
+  color: var(--base-color);
+
+  font-family: var(--main-font-family);
 }
 
 :root {
-  --color-black: green;
-  --color-white: #ffffff;
+// заметка: нужно будет поменять все переменные saas на кстомные свойства;
+
+  // font-family
+  --main-font-family: "Trebuchet", "Arial", sans-serif;
+  --second-font-family: 'Andika', 'Arial', sans-serif;
+
+  // font-size
+  --font-size-semi-extra-small: 8px;
+  --font-size-small: 11px;
+  --font-size-semi-small: 14px;
+  --font-size-normal: 17px;
+  --font-size-semi-big: 20px;
+  --font-size-big: 23px;
+  --font-size-semiExtra-big: 26px;
+
+  // color
+  --base-color: #000000;
+  --main-color: #fda300;
 }
