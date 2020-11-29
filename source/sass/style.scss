@@ -1,9 +1,10 @@
 // переменные, базовые стили
 @import "variables.scss";
 @import "mixins.scss";
-@import "blocks/base-style.scss";
+@import "base-style.scss";
 
 // блоки
+@import "blocks/visually-hidden.scss";
 @import "blocks/decorative-line.scss";
 @import "blocks/decorative-wrapper.scss";
 @import "blocks/types-works.scss";

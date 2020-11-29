@@ -105,7 +105,7 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  font-size: $fontSizeSemiSmall;
+  font-size: $fontSizeSmall;
   line-height: $lineHeightSemiBig;
 }
 
@@ -123,12 +123,8 @@
   }
 
   .types-works__card-title {
-    font-size: $fontSizeSemiExtraSmall;
+    font-size: $fontSizeSmall;
     line-height: $lineHeightNormal;
-  }
-
-  .types-works__card-text {
-    font-size: $fontSizeSemiExtraSmall;
   }
 
   .types-works__card-link--icon-souvenir {

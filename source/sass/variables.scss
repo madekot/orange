@@ -13,29 +13,23 @@ $secondFont: 'Andika', 'Arial', sans-serif;
 $main-margin-top: 50px;
 
 // font-size
-$fontSizeExtraSmall: 8px;
-$fontSizeSemiExtraSmall: 12px;
+// $fontSizeSemiExtraSmall: 10px;
 $fontSizeSmall: 14px;
 $fontSizeSemiSmall: 16px;
-$fontSizeNormal: 18px;
-$fontSizeSemiBig: 22px;
+$fontSizeNormal: 17px;
+$fontSizeSemiBig: 21px;
 $fontSizeBig: 26px;
-// $fontSizeSemiExtraBig: 0px;
-// $fontSizeExtraBig: 0px;
-
-
+// $fontSizeSemiExtraBig: 32px;
 
 // line-height
 // $lineHeightExtraSmall: 0px;
-// $lineHeightSemiExtraSmall: 0px;
 // $lineHeightSmall: 0px;
 // $lineHeightSemiSmall: 0px;
-$lineHeightNormal: 1.22;
+$lineHeightNormal: 1.2;
 $lineHeightSemiBig: 1.4;
 // $lineHeightBig: 0px;
-// $lineHeightSemiExtraBig: 0px;
 // $lineHeightExtraBig: 0px;
 
-@media (max-width: $desktopBreakpoint) {}
-@media (max-width: $tabletBreakpoint) {}
-@media (max-width: $mobileBreakpoint) {}
+// @media (max-width: $desktopBreakpoint) {}
+// @media (max-width: $tabletBreakpoint) {}
+// @media (max-width: $mobileBreakpoint) {}
