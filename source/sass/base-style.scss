@@ -47,8 +47,4 @@ body {
   // page inner
   --max-width-page: 1200px;
   --padding-page-inner: 15px;
-
-  @media (max-width: $mobileBreakpoint) {
-    --padding-page-inner: 10px;
-  }
 }
