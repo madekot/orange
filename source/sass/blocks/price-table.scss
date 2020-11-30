@@ -78,7 +78,7 @@
   }
 }
 
-@media (max-width: $semiMobileBreakpoint) {
+@media (max-width: $mobileBreakpoint) {
   .price-table__title {
     font-size: var(--font-size-semi-big);
   }
