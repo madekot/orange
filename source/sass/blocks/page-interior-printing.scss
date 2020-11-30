@@ -24,11 +24,12 @@
 
 .page-interior-printing__slider {
   margin-bottom: 50px;
+  min-height: 700px;
 }
 
 .page-interior-printing__wrap {
   @include page-inner;
-  max-width: 860px;
+  max-width: 1000px;
 }
 
 .page-interior-printing__advantages {
@@ -82,10 +83,18 @@
   box-shadow: -3px -7px 15px rgba(0,0,0,0.2);
 }
 
+.page-interior-printing__price-printing-table {
+  margin-bottom: 60px;
+}
+
 @media (max-width: $tabletBreakpoint) {
   .page-interior-printing__price-printing {
     padding: 0;
     box-shadow: none;
+  }
+
+  .page-interior-printing__slider {
+    min-height: 550px;
   }
 }
 
@@ -94,5 +103,9 @@
     @include reset-list;
     width: auto;
     margin-right: 0;
+  }
+
+  .page-interior-printing__slider {
+    min-height: 320px;
   }
 }

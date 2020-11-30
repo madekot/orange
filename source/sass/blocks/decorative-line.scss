@@ -5,11 +5,12 @@
 .decorative-line::before {
   content: "";
 
-  height: 80px;
   display: block;
+
+  height: 80px;
   margin-bottom: 45px;
 
-  background-color: $mainColor;
+  background-color: var(--main-color);
   box-shadow: 6px 6px 8px rgba(0,0,0,0.2);
 }
 
@@ -19,9 +20,10 @@
 }
 
 .decorative-line--simple {
-  padding-bottom: 0;
   padding-top: 10px;
-  background: linear-gradient(to bottom, $mainColor 0px, $mainColor 10px, transparent 10px, transparent 100%);
+  padding-bottom: 0;
+
+  background: linear-gradient(to bottom, var(--main-color) 0px, var(--main-color) 10px, transparent 10px, transparent 100%);
 }
 
 .decorative-line--simple::before {
@@ -33,10 +35,11 @@
 }
 
 .decorative-line--double-simple {
-  padding-bottom: 0;
   padding-top: 10px;
+  padding-bottom: 0;
   padding-bottom: 10px;
-  background: linear-gradient(to bottom, $mainColor 0px, $mainColor 10px, transparent 10px, transparent calc(100% - 10px), $mainColor calc(100% - 10px), $mainColor 100%);
+
+  background: linear-gradient(to bottom, var(--main-color) 0px, var(--main-color) 10px, transparent 10px, transparent calc(100% - 10px), var(--main-color) calc(100% - 10px), var(--main-color) 100%);
 }
 
 .decorative-line--double-simple::before {
@@ -48,22 +51,22 @@
 }
 
 .decorative-line--double-simple-color-top {
-  background: linear-gradient(to bottom, #adadad 0px, #adadad 10px, transparent 10px, transparent calc(100% - 10px), $mainColor calc(100% - 10px), $mainColor 100%);
+  background: linear-gradient(to bottom, #adadad 0px, #adadad 10px, transparent 10px, transparent calc(100% - 10px), var(--main-color) calc(100% - 10px), var(--main-color) 100%);
 }
 
 .decorative-line::after {
   content: "";
   position: absolute;
-
-  left: 50%;
   top: 20px;
-  transform: translate(-50%);
+  left: 50%;
 
   width: 105px;
   height: 105px;
 
+  transform: translate(-50%);
+
   border-radius: 50%;
-  background-color: $mainColor;
+  background-color: var(--main-color);
 }
 
 .decorative-line--little-size::after {
@@ -79,12 +82,13 @@
   }
 
   .decorative-line::after {
-    left: 50%;
     top: 10px;
-    transform: translate(-50%);
+    left: 50%;
 
     width: 90px;
     height: 90px;
+
+    transform: translate(-50%);
   }
 
   .decorative-line--little-size::before {

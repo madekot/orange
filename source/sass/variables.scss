@@ -1,8 +1,7 @@
-$mainColor: #fda300;
-
 $cssPath: 'img/'; // путь к картинкам
 
 $mobileBreakpoint: 425px;
+$semiMobileBreakpoint: 595px;
 $tabletBreakpoint: 768px;
 $desktopBreakpoint: 1024px;
 
@@ -11,14 +10,16 @@ $secondFont: 'Andika', 'Arial', sans-serif;
 
 $main-margin-top: 50px;
 
-// font-size
-$fontSizeExtraSmall: 8px; 
-// $fontSizeSemiExtraSmall: 0px;
-// $fontSizeSmall: 0px;
-// $fontSizeSemiSmall: 0px;
-// $fontSizeNormal: 0px;
-// $fontSizeSemiBig: 0px;
-$fontSizeBig: 26px;
-// $fontSizeSemiExtraBig: 0px;
-// $fontSizeExtraBig: 0px;
+// line-height
+// $lineHeightExtraSmall: 0px;
+// $lineHeightSmall: 0px;
+// $lineHeightSemiSmall: 0px;
+$lineHeightNormal: 1.2;
+$lineHeightSemiBig: 1.4;
+// $lineHeightBig: 0px;
+// $lineHeightExtraBig: 0px;
 
+// @media (max-width: $desktopBreakpoint) {}
+// @media (max-width: $tabletBreakpoint) {}
+// @media (max-width: $semiMobileBreakpoint) {}
+// @media (max-width: $mobileBreakpoint) {}

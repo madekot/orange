@@ -1,0 +1,28 @@
+.send-ideas {
+  padding: 20px;
+
+  letter-spacing: 1px;
+
+  border: 1px dashed var(--main-color);
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.send-ideas__find {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.send-ideas__email {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.send-ideas__link {
+  color: inherit;
+}
+
+.send-ideas__link:hover {
+  color: var(--main-color);
+}

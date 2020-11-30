@@ -5,9 +5,9 @@
 }
 
 @mixin page-inner {
-  max-width: 1200px;
+  max-width: var(--max-width-page);
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: var(--padding-page-inner);
+  padding-left: var(--padding-page-inner);
 }

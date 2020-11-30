@@ -1,55 +1,97 @@
 .price-table {
   display: flex;
   flex-direction: column;
+
   font-family: $mainFont;
+}
+
+.price-table--title-align-right {
+  text-align: right;
 }
 
 .price-table__title {
   margin-top: 0;
   margin-bottom: 20px;
 
-  color: $mainColor;
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: normal;
   text-transform: uppercase;
+
+  color: var(--main-color);
+
+  font-size: var(--font-size-extra-big);
+  font-weight: normal;
+  line-height: var(--line-height-normal);
 }
 
 .price-table__table {
-  margin-bottom: 60px;
+  text-align: center;
 
   border-collapse: collapse;
-  text-align: center;
 }
 
 .price-table__table-cell {
   padding: 10px 15px;
-  border: 1px solid #cccccc;
-  font-weight: bold;
+
+  text-align: center;
+
   color: #656565;
-  font-size: 11px;
+  border: 1px solid #cccccc;
+
+  font-size: var(--font-size-normal);
+  font-weight: bold;
+}
+
+.price-table__table-cell--color {
+  background-color: rgba(lightgray, 0.3);
 }
 
 .price-table__table-cell--first-column {
   text-align: left;
+
   font-weight: normal;
 }
 
-.price-table__table-cell--title {
-  color: #ffffff;
-  font-weight: bold;
-  background-color: $mainColor;
+.price-table__table-cell:first-of-type {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-@media (max-width: $mobileBreakpoint) {
+.price-table__table-cell--title {
+  text-align: center;
+
+  color: #ffffff;
+  background-color: var(--main-color);
+
+  font-weight: bold;
+}
+
+.price-table__table-cell--title:first-of-type {
+  text-align: left;
+}
+
+.price-table__tiny-text {
+  font-size: 14px;
+}
+
+@media (max-width: $tabletBreakpoint) {
   .price-table__title {
-    font-size: 20px;
+    font-size: var(--font-size-extra-big);
   }
 
   .price-table__table-cell {
     padding: 5px;
-    font-size: $fontSizeExtraSmall;
+
+    font-size: var(--font-size-semi-small);
   }
 }
 
+@media (max-width: $mobileBreakpoint) {
+  .price-table__title {
+    font-size: var(--font-size-semi-big);
+  }
 
+  .price-table__table-cell {
+    padding: 10px 5px;
+
+    font-size: var(--font-size-normal);
+  }
+}

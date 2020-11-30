@@ -1,7 +1,8 @@
 .types-works {
-  font-family: $mainFont;
   text-align: center;
   text-transform: uppercase;
+
+  font-family: $mainFont;
 }
 
 .types-works__wrap-list-cards {
@@ -9,19 +10,21 @@
 }
 
 .types-works__list-cards {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .types-works__card {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+
   width: 285px;
 }
 
@@ -30,113 +33,83 @@
 }
 
 .types-works__card:hover .types-works__card-title {
-  color: $mainColor;
+  color: var(--main-color);
 }
 
-.types-works__card:hover .types-works__card-intro {
-  color: #7f7f7f;
-}
-
-.types-works__card:hover .types-works__card-list-item {
+.types-works__card:hover .types-works__card-text {
   color: #7f7f7f;
 }
 
 .types-works__card-link {
-  width: 100%;
-
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
-
-  padding-top: 200px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  flex-grow: 1;
 
   box-sizing: border-box;
+  width: 100%;
+  padding-top: 200px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 
-  color: inherit;
   text-decoration: none;
 
-  background-image: url($cssPath + 'types-works__offset-icon.svg');
+  color: inherit;
+  background-image: url($cssPath + "types-works__offset-icon.svg");
   background-repeat: no-repeat;
   background-position: top 30px center;
   background-size: 145px auto;
 }
 
 .types-works__card-link--icon-digital {
-  background-image: url($cssPath + 'types-works__digital-icon.svg');
+  background-image: url($cssPath + "types-works__digital-icon.svg");
 }
 
 .types-works__card-link--icon-wide-print {
+  background-image: url($cssPath + "types-works__wide-print-icon.svg");
   background-size: 165px auto;
-  background-image: url($cssPath + 'types-works__wide-print-icon.svg');
 }
 
 .types-works__card-link--icon-design {
+  background-image: url($cssPath + "types-works__design-icon.svg");
   background-size: 165px auto;
-  background-image: url($cssPath + 'types-works__design-icon.svg');
 }
 
 .types-works__card-link--icon-souvenir {
+  background-image: url($cssPath + "types-works__souvenir-icon.svg");
   background-size: 130px auto;
-  background-image: url($cssPath + 'types-works__souvenir-icon.svg');
 }
 
 .types-works__card-link--icon-interior {
+  background-image: url($cssPath + "types-works__interior-icon.svg");
   background-size: 120px auto;
-  background-image: url($cssPath + 'types-works__interior-icon.svg');
 }
 
 .types-works__card-link--icon-photowall-paper {
+  background-image: url($cssPath + "types-works__photowall-paper.svg");
   background-size: 175px auto;
-  background-image: url($cssPath + 'types-works__photowall-paper.svg');
 }
 
 .types-works__card-title {
   margin-top: 0;
   margin-bottom: 10px;
 
-  font-weight: bold;
   letter-spacing: 1px;
-  font-size: 17px;
-  line-height: 1.4;
+  word-wrap: break-word;
+
+  font-size: var(--font-size-normal);
+  font-weight: bold;
+  line-height: var(--line-height-semi-big);
 }
 
-.types-works__card-title-first-part {
-  display: none;
-}
-
-.types-works__card-intro {
+.types-works__card-text {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
-}
 
-.types-works__card-list {
-  @include reset-list;
-}
+  word-wrap: break-word;
 
-.types-works__card-list--comma-style {
-  display: block;
-}
-
-.types-works__card-list--comma-style .types-works__card-list-item::after {
-  content: ",";
-  display: inline-block;
-}
-
-.types-works__card-list--comma-style .types-works__card-list-item:last-of-type::after {
-  content: none;
-}
-
-.types-works__card-list--comma-style .types-works__card-list-item {
-  display: inline-block;
-}
-
-.types-works__card-list-item {
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: var(--font-size-semi-small);
+  line-height: var(--line-height-semi-big);
 }
 
 @media (max-width: $desktopBreakpoint) {
@@ -148,16 +121,13 @@
 @media (max-width: $tabletBreakpoint) {
   .types-works__card-link {
     padding-top: 130px;
+
     background-size: 90px auto;
   }
 
   .types-works__card-title {
-    font-size: 17px;
-    line-height: 1.2;
-  }
-
-  .types-works__card-title-first-part {
-    display: block;
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
   }
 
   .types-works__card-link--icon-souvenir {
@@ -172,31 +142,27 @@
 
   .types-works__card-link--icon-photowall-paper {
     padding-top: 110px;
-    background-size: 100px auto;
-    background-position: top 10px center;
-  }
 
-  .types-works__card-list--comma-style {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-position: top 10px center;
+    background-size: 100px auto;
   }
 }
+
+@media (max-width: $semiMobileBreakpoint) {
+  .types-works__card {
+    // убирает горизонтальный скролл который появляется из за широкоформатной печати
+    width: 50%;
+  }
+
+  .types-works__card-link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 
 @media (max-width: $mobileBreakpoint) {
   .types-works__card {
     width: 50%;
-  }
-
-  .types-works__card-title {
-    font-size: 17px;
-  }
-
-  .types-works__card-intro {
-    font-size: 11px;
-  }
-
-  .types-works__card-list-item {
-    font-size: 11px;
   }
 }

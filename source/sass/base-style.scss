@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 290px;
+  height: 100vh;
+  margin: 0;
+
+  color: var(--base-color);
+
+  font-family: var(--main-font-family);
+}
+
+:root {
+// заметка: поменять все переменные saas на кстомные свойства;
+// заметка: поменять svg на инлайновые и вписать в них кастомные свойства для изменения цвета и тени как в основном макете;
+// заметка: удалить свойства font-family из блоков пускай берет его из body;
+// заметка: проблема с таблицей после типографа появляется горизонтальный скролл;
+  // заметка: проблема с таблицей: как вариант можно скрыть определенные столбцы таблицы на мобильном варианте;
+
+  // font family
+  --main-font-family: "Trebuchet", "Arial", sans-serif;
+  --second-font-family: 'Andika', 'Arial', sans-serif;
+
+  // font size
+  // --font-size-extra-small: 8px;
+  --font-size-small: 11px;
+  --font-size-semi-small: 14px;
+  --font-size-normal: 17px;
+  --font-size-semi-big: 20px;
+  --font-size-big: 23px;
+  --font-size-extra-big: 26px;
+
+  // line height
+  // $lineHeightExtraSmall: 0px;
+  // $lineHeightSmall: 0px;
+  // $lineHeightSemiSmall: 0px;
+  --line-height-normal: 1.2;
+  --line-height-semi-big: 1.4;
+  // $lineHeightBig: 0px;
+  // $lineHeightExtraBig: 0px;
+
+  // color
+  --base-color: #000000;
+  --main-color: #fda300;
+
+  // page inner
+  --max-width-page: 1200px;
+  --padding-page-inner: 15px;
+
+  @media (max-width: $mobileBreakpoint) {
+    --padding-page-inner: 10px;
+  }
+}
