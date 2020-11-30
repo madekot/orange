@@ -7,43 +7,47 @@
 }
 
 .header-email::before {
-	content: "";
+  content: "";
 
-	height: 71px;
+  height: 71px;
+  margin-bottom: 17px;
 
-	margin-bottom: 17px;
-
-  background-image: url(#{$cssPath + 'mail-icon.svg'});
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: contain;
+  background-image: url(#{$cssPath + "mail-icon.svg"});
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .header-email__value {
   margin-left: 0;
+
   text-align: center;
 }
 
 .header-email__link {
-  color: var(--main-color);
-  font-family: $mainFont;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 17px;
-  line-height: 20px;
-
   display: inline-block; // увеличивает кликабельную зону ссылки
+
   margin-top: -90px; //
   padding-top: 90px; //
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: var(--main-color);
+
+  font-family: $mainFont;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
 }
 
 @media (max-width: $tabletBreakpoint) {
   .header-email::before {
-    height: 65px;
-    width: 65px;
     align-self: center;
+
+    width: 65px;
+    height: 65px;
   }
 
   .header-email__link {
@@ -55,8 +59,8 @@
 @media (max-width: $mobileBreakpoint) {
   .header__wrap-info {
     display: grid;
-    grid-template-areas:
-    "logo"
+
+    grid-template-areas: "logo"
     "email"
     "phone"
     "header-address";

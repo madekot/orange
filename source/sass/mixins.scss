@@ -1,13 +1,14 @@
 @mixin reset-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 @mixin page-inner {
   max-width: var(--max-width-page);
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   padding-right: var(--padding-page-inner);
   padding-left: var(--padding-page-inner);
 }
