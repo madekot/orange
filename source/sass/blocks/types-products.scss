@@ -8,7 +8,15 @@
   color: var(--main-color);
 
   font-family: $mainFont;
-  font-size: 29px;
+  font-size: var(--font-size-extra-big);
   font-weight: bold;
-  line-height: 39px;
+  line-height: var(--line-height-semi-big);
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .types-products__title {
+    margin-bottom: 20px;
+
+    font-size: var(--font-size-semi-big);
+  }
 }

@@ -15,5 +15,5 @@ mixin types-products(className, obj)
     var imagePath = variables.imagePath;
 
   section(class=[className, 'types-products'])
-    h2.types-products__title #{obj.title}
+    h2.types-products__title !{obj.title}
     +typesProductsList('types-products__list', obj.listItems)

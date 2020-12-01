@@ -91,21 +91,13 @@
   }
 }
 
-
 @media (max-width: $mobileBreakpoint) {
-  .types-products-list__title {
-    font-size: var(--font-size-normal);
-  }
-
   .types-products-list {
     justify-content: center;
   }
 
-  .types-products__title {
-    margin-bottom: 20px;
-
-    font-size: 20px;
-    line-height: 1.5;
+  .types-products-list__title {
+    font-size: var(--font-size-normal);
   }
 
   .types-products-list__item {
