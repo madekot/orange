@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
 
-  font-family: $mainFont;
   text-align: center;
   text-transform: uppercase;
+
+  font-family: $mainFont;
 }
 
 .header-address::before {
@@ -13,10 +14,10 @@
   height: 71px;
   margin-bottom: 5px;
 
-	background-image: url($cssPath + 'map-icon.svg');
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: 71px 71px;
+  background-image: url($cssPath + "map-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 71px 71px;
 }
 
 .header-address__metro {
@@ -28,19 +29,21 @@
 }
 
 .header-address__link {
-  text-decoration: none;
-  color: inherit;
-
   display: inline-block; // увеличивает кликабельную зону ссылки
+
   margin-top: -100px; //
   padding-top: 100px; //
+
+  text-decoration: none;
+
+  color: inherit;
 }
 
 .header-address__street {
   margin-top: 0;
   margin-bottom: 0;
 
-  font-weight: bold;
   font-size: 17px;
+  font-weight: bold;
   line-height: 20px;
 }

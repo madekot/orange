@@ -148,15 +148,15 @@
   }
 }
 
-@media (max-width: $semiMobileBreakpoint) {
+@media (max-width: $mobileBreakpoint) {
   .types-works__card {
     // убирает горизонтальный скролл который появляется из за широкоформатной печати
     width: 50%;
   }
 
   .types-works__card-link {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 }
 

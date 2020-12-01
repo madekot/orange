@@ -28,6 +28,10 @@
   border-collapse: collapse;
 }
 
+.price-table__table-row:nth-of-type(odd) {
+  background-color: rgba(lightgray, 0.2);
+}
+
 .price-table__table-cell {
   padding: 10px 15px;
 
@@ -40,10 +44,6 @@
   font-weight: bold;
 }
 
-.price-table__table-cell--color {
-  background-color: rgba(lightgray, 0.3);
-}
-
 .price-table__table-cell--first-column {
   text-align: left;
 
@@ -51,21 +51,15 @@
 }
 
 .price-table__table-cell:first-of-type {
-  padding-left: 10px;
   padding-right: 10px;
+  padding-left: 10px;
 }
 
 .price-table__table-cell--title {
-  text-align: center;
-
   color: #ffffff;
   background-color: var(--main-color);
 
   font-weight: bold;
-}
-
-.price-table__table-cell--title:first-of-type {
-  text-align: left;
 }
 
 .price-table__tiny-text {
@@ -78,7 +72,7 @@
   }
 
   .price-table__table-cell {
-    padding: 5px;
+    padding: 10px 5px;
 
     font-size: var(--font-size-semi-small);
   }
@@ -87,11 +81,5 @@
 @media (max-width: $mobileBreakpoint) {
   .price-table__title {
     font-size: var(--font-size-semi-big);
-  }
-
-  .price-table__table-cell {
-    padding: 10px 5px;
-
-    font-size: var(--font-size-normal);
   }
 }

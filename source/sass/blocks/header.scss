@@ -3,16 +3,15 @@
 }
 
 .header__wrap-info {
+  @include page-inner;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 
-	max-width: 1200px;
-
-  margin-bottom: 20px;
-
   box-sizing: border-box;
-  @include page-inner;
+  max-width: 1200px;
+  margin-bottom: 20px;
 }
 
 .header__wrap-info-item {
@@ -30,19 +29,19 @@
 
   .header__wrap-info {
     display: grid;
-    grid-template-areas:
-    "logo logo logo"
+
+    grid-template-areas: "logo logo logo"
     "phone header-address email";
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   .header__wrap-info-item--logo {
-    justify-self: center;
-
     display: flex;
     justify-content: center;
 
     margin-top: 0;
+
+    justify-self: center;
   }
 
   .header__main-nav {
@@ -74,8 +73,8 @@
 @media (max-width: $tabletBreakpoint) {
   .header__wrap-info {
     display: grid;
-    grid-template-areas:
-    "logo logo logo"
+
+    grid-template-areas: "logo logo logo"
     "phone header-address email";
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -84,14 +83,14 @@
 @media (max-width: $mobileBreakpoint) {
   .header__wrap-info {
     display: grid;
-    grid-template-areas:
-    "logo"
+
+    padding-right: 0;
+    padding-left: 0;
+
+    grid-template-areas: "logo"
     "email"
     "phone"
     "header-address";
     grid-template-columns: 1fr;
-
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
