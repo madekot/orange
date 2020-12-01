@@ -1,4 +1,5 @@
 include types-products-list.pug
+include title-type-work.pug
 
 mixin productionItem(className, obj)
   -
@@ -7,6 +8,6 @@ mixin productionItem(className, obj)
     var modificationClass = obj.modificationClass || '';
 
   section(class=[className, 'production-item', modificationClass])
-    h2.production-item__title !{title}
+    +titleTypeWork('production-item__title', { textContent: obj.title })
     p.production-item__description !{description}
     +typesProductsList('production-item__types-products-list', obj.listItems)

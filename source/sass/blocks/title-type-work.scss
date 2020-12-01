@@ -1,0 +1,12 @@
+.title-type-work {
+  text-transform: uppercase;
+
+  font-size: var(--font-size-extra-big);
+  line-height: var(--line-height-normal);
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .production-item__title {
+    font-size: var(--font-size-semi-big);
+  }
+}

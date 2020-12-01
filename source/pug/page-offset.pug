@@ -11,8 +11,5 @@ html(lang="ru")
     +header
 
     main(class=pageClassName + '__main')
-      h1(class=pageClassName + '__title') #{pageTitle}
-      
-
-
+      +titleTypeWork(pageClassName + '__title', {tagName: 'h1', textContent: pageTitle})
     +footer

@@ -1,0 +1,7 @@
+mixin titleTypeWork(className, obj)
+  -
+    var obj = obj || {};
+    obj.tagName = obj.tagName || 'h2';
+    obj.textContent = obj.textContent || 'lorem text';
+
+  #{obj.tagName}(class=[className, 'title-type-work']) #{obj.textContent}
