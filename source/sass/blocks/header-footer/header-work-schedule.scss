@@ -29,9 +29,9 @@
   margin-bottom: 3px;
 
   font-family: $secondFont;
-  font-size: 11px;
+  font-size: var(--font-size-semi-small);
   font-weight: 400;
-  line-height: 13px;
+  line-height: var(--line-height-normal);
 }
 
 .header-work-schedule__working-hours-time {
@@ -40,9 +40,9 @@
   text-align: center;
 
   font-family: $mainFont;
-  font-size: 17px;
+  font-size: var(--font-size-normal);
   font-weight: bold;
-  line-height: 20px;
+  line-height: var(--line-height-normal);
 }
 
 .header-work-schedule__start-working-hours-time {
@@ -60,9 +60,9 @@
   text-transform: uppercase;
 
   font-family: $mainFont;
-  font-size: 16px;
+  font-size: var(--font-size-normal);
   font-weight: bold;
-  line-height: 19px;
+  line-height: var(--line-height-normal);
 }
 
 .header-work-schedule__weekend {

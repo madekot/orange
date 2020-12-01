@@ -4,8 +4,8 @@
   color: #7f7f7f;
 
   font-family: $mainFont;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
 }
 
 .information-call__title {
@@ -40,9 +40,9 @@
   background-color: var(--main-color);
   box-shadow: 6px 6px 8px rgba(0,0,0,0.15);
 
-  font-size: 56px;
+  font-size: var(--font-size-super-extra-big);
   font-weight: bold;
-  line-height: 67px;
+  line-height: var(--line-height-semi-big);
 }
 
 .information-call__text {

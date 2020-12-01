@@ -63,7 +63,7 @@
 }
 
 .price-table__tiny-text {
-  font-size: 14px;
+  font-size: var(--font-size-semi-small);
 }
 
 @media (max-width: $tabletBreakpoint) {

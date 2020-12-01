@@ -11,8 +11,8 @@
   text-align: center;
   text-transform: uppercase;
 
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: var(--font-size-extra-big);
+  line-height: var(--line-height-normal);
 }
 
 .page-photo-wallpaper__wrap-row {

@@ -23,8 +23,8 @@
   color: var(--main-color);
 
   font-family: $mainFont;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: var(--font-size-semi-small);
+  line-height: var(--line-height-normal);
 }
 
 .footer__copyright-logo-image {

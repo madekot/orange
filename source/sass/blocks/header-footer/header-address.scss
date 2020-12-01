@@ -24,8 +24,8 @@
   margin-top: 0;
   margin-bottom: 5px;
 
-  font-size: 11px;
-  line-height: 13px;
+  font-size: var(--font-size-semi-small);
+  line-height: var(--line-height-normal);
 }
 
 .header-address__link {
@@ -43,7 +43,7 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  font-size: 17px;
+  font-size: var(--font-size-normal);
   font-weight: bold;
-  line-height: 20px;
+  line-height: var(--line-height-normal);
 }

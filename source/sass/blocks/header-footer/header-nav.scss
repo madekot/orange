@@ -36,9 +36,9 @@
   color: #ffffff;
 
   font-family: $mainFont;
-  font-size: 18px;
+  font-size: var(--font-size-normal);
   font-weight: 700;
-  line-height: 22px;
+  line-height: var(--line-height-normal);
 }
 
 .header-nav__link-site-item:hover {
@@ -51,7 +51,7 @@
 
 @media (max-width: $tabletBreakpoint) {
   .header-nav__link-site-item {
-    font-size: 16px;
+    font-size: var(--font-size-normal);
   }
 }
 
@@ -81,6 +81,6 @@
   }
 
   .header-nav__link-site-item {
-    font-size: 14px;
+    font-size: var(--font-size-semi-small);
   }
 }

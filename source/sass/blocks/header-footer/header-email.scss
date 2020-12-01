@@ -37,9 +37,9 @@
   color: var(--main-color);
 
   font-family: $mainFont;
-  font-size: 17px;
+  font-size: var(--font-size-normal);
   font-weight: bold;
-  line-height: 20px;
+  line-height: var(--line-height-normal);
 }
 
 @media (max-width: $tabletBreakpoint) {
@@ -48,11 +48,6 @@
 
     width: 65px;
     height: 65px;
-  }
-
-  .header-email__link {
-    font-size: 17px;
-    line-height: 20px;
   }
 }
 

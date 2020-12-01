@@ -58,8 +58,8 @@
   padding-right: 10%;
   padding-left: 10%;
 
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
 }
 
 @media (max-width: $tabletBreakpoint) {
@@ -79,7 +79,7 @@
     padding-right: 5%;
     padding-left: 5%;
 
-    font-size: 19px;
+    font-size: var(--font-size-semi-big);
   }
 
   .production-item__description {
@@ -88,6 +88,6 @@
     padding-right: 5%;
     padding-left: 5%;
 
-    font-size: 17px;
+    font-size: var(--font-size-normal);
   }
 }

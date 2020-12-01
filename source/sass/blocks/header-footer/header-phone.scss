@@ -39,15 +39,15 @@
   color: var(--main-color);
 
   font-family: $mainFont;
-  font-size: 21px;
+  font-size: var(--font-size-semi-big);
   font-weight: bold;
-  line-height: 25px;
+  line-height: var(--line-height-normal);
 }
 
 @media (max-width: $tabletBreakpoint) {
   .header-phone__link {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
   }
 
   .header-phone::before {
@@ -58,8 +58,7 @@
   }
 
   .header-phone__link {
-    font-size: 17px;
-    line-height: 20px;
+    font-size: var(--font-size-normal);
   }
 }
 
@@ -68,8 +67,7 @@
     margin: -10px; // увеличивает кликабельную зону ссылки
     padding: 10px; //
 
-    font-size: 27px;
-    line-height: 20px;
+    font-size: var(--font-size-extra-big);
   }
 
   .header-phone::before {

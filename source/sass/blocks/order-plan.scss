@@ -36,9 +36,9 @@
   background-size: 122px 122px;
 
   font-family: $mainFont;
-  font-size: 17px;
+  font-size: var(--font-size-normal);
   font-weight: bold;
-  line-height: 23px;
+  line-height: var(--line-height-normal);
 }
 
 .order-plan__item {
