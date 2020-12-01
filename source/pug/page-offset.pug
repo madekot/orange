@@ -1,0 +1,18 @@
+include includes/_includes.pug
+
+-
+  var pageClassName = 'page-offset';
+  var pageTitle = 'Офсетная печать';
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header
+
+    main(class=pageClassName + '__main')
+      h1(class=pageClassName + '__title') #{pageTitle}
+      
+
+
+    +footer
