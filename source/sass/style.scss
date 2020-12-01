@@ -2,10 +2,10 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "base-style.scss";
+@import "visually-hidden.scss";
+@import "visually-hidden-mobile.scss";
 
 // блоки
-@import "blocks/visually-hidden.scss";
-@import "blocks/visually-hidden-mobile.scss";
 @import "blocks/decorative-line.scss";
 @import "blocks/decorative-wrapper.scss";
 @import "blocks/types-works.scss";
@@ -22,24 +22,24 @@
 @import "blocks/manager-check.scss";
 
 // header, footer
-@import "blocks/header-work-schedule.scss";
-@import "blocks/header-email.scss";
-@import "blocks/header-logo.scss";
-@import "blocks/header-phone.scss";
-@import "blocks/header-nav.scss";
-@import "blocks/header-address.scss";
-@import "blocks/header.scss";
-@import "blocks/footer.scss";
-@import "blocks/footer-wrapper.scss";
+@import "blocks/header-footer/header-work-schedule.scss";
+@import "blocks/header-footer/header-email.scss";
+@import "blocks/header-footer/header-logo.scss";
+@import "blocks/header-footer/header-phone.scss";
+@import "blocks/header-footer/header-nav.scss";
+@import "blocks/header-footer/header-address.scss";
+@import "blocks/header-footer/header.scss";
+@import "blocks/header-footer/footer.scss";
+@import "blocks/header-footer/footer-wrapper.scss";
 
 // страницы
-@import "blocks/page.scss";
-@import "blocks/page-contacts.scss";
-@import "blocks/page-production.scss";
-@import "blocks/page-empty.scss";
-@import "blocks/page-digital-printing.scss";
-@import "blocks/page-wide-printing.scss";
-@import "blocks/page-souvenir.scss";
-@import "blocks/page-interior-printing.scss";
-@import "blocks/page-design.scss";
-@import "blocks/page-photo-wallpaper.scss";
+@import "blocks/pages/page.scss";
+@import "blocks/pages/page-contacts.scss";
+@import "blocks/pages/page-production.scss";
+@import "blocks/pages/page-empty.scss";
+@import "blocks/pages/page-digital-printing.scss";
+@import "blocks/pages/page-wide-printing.scss";
+@import "blocks/pages/page-souvenir.scss";
+@import "blocks/pages/page-interior-printing.scss";
+@import "blocks/pages/page-design.scss";
+@import "blocks/pages/page-photo-wallpaper.scss";
