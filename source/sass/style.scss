@@ -1,45 +1,47 @@
-// переменные, базовые стили
+// (сортировка свойств по: алфавиту)
+
+// переменные, базовые стили (сортировка по: важности)
 @import "variables.scss";
 @import "mixins.scss";
 @import "base-style.scss";
-@import "visually-hidden.scss";
 @import "visually-hidden-mobile.scss";
+@import "visually-hidden.scss";
 
 // блоки
+@import "blocks/about-us-item.scss";
+@import "blocks/about-us.scss";
 @import "blocks/decorative-line.scss";
 @import "blocks/decorative-wrapper.scss";
-@import "blocks/types-works.scss";
-@import "blocks/about-us.scss";
-@import "blocks/about-us-item.scss";
-@import "blocks/types-products.scss";
-@import "blocks/types-products-list.scss";
-@import "blocks/order-plan.scss";
-@import "blocks/production-item.scss";
 @import "blocks/information-call.scss";
-@import "blocks/slider.scss";
-@import "blocks/price-table.scss";
-@import "blocks/send-ideas.scss";
 @import "blocks/manager-check.scss";
+@import "blocks/order-plan.scss";
+@import "blocks/price-table.scss";
+@import "blocks/production-item.scss";
+@import "blocks/send-ideas.scss";
+@import "blocks/slider.scss";
+@import "blocks/types-products-list.scss";
+@import "blocks/types-products.scss";
+@import "blocks/types-works.scss";
 
 // header, footer
-@import "blocks/header-footer/header-work-schedule.scss";
+@import "blocks/header-footer/footer-wrapper.scss";
+@import "blocks/header-footer/footer.scss";
+@import "blocks/header-footer/header-address.scss";
 @import "blocks/header-footer/header-email.scss";
 @import "blocks/header-footer/header-logo.scss";
-@import "blocks/header-footer/header-phone.scss";
 @import "blocks/header-footer/header-nav.scss";
-@import "blocks/header-footer/header-address.scss";
+@import "blocks/header-footer/header-phone.scss";
+@import "blocks/header-footer/header-work-schedule.scss";
 @import "blocks/header-footer/header.scss";
-@import "blocks/header-footer/footer.scss";
-@import "blocks/header-footer/footer-wrapper.scss";
 
 // страницы
-@import "blocks/pages/page.scss";
 @import "blocks/pages/page-contacts.scss";
-@import "blocks/pages/page-production.scss";
-@import "blocks/pages/page-empty.scss";
-@import "blocks/pages/page-digital-printing.scss";
-@import "blocks/pages/page-wide-printing.scss";
-@import "blocks/pages/page-souvenir.scss";
-@import "blocks/pages/page-interior-printing.scss";
 @import "blocks/pages/page-design.scss";
+@import "blocks/pages/page-digital-printing.scss";
+@import "blocks/pages/page-empty.scss";
+@import "blocks/pages/page-interior-printing.scss";
 @import "blocks/pages/page-photo-wallpaper.scss";
+@import "blocks/pages/page-production.scss";
+@import "blocks/pages/page-souvenir.scss";
+@import "blocks/pages/page-wide-printing.scss";
+@import "blocks/pages/page.scss";
