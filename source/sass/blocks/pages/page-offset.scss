@@ -3,3 +3,36 @@
 
   text-align: center;
 }
+
+.page-offset__wrap-top {
+  @include page-inner;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.page-offset__wrap-icon {
+  flex-shrink: 0;
+
+  width: 200px;
+  height: 280px;
+
+  margin-top: 50px;
+  margin-right: 50px;
+
+  background-color: lemonchiffon;
+}
+
+.page-offset__wrap-text {
+  max-width: 670px;
+}
+
+.page-offset__description-text {
+  margin-top: 0;
+  max-width: 650px;
+
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
+}
