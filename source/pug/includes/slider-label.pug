@@ -1,0 +1,19 @@
+mixin sliderLabel(className, obj)
+  -
+    var obj = obj || {};
+    obj.tagName = obj.tagName || 'div';
+
+    obj.title = obj.title || {}
+    obj.title.tagName = obj.title.tagName || 'h2'
+    obj.title.textContent = obj.title.textContent || 'lorem text';
+
+    obj.comment = obj.comment || {}
+    obj.comment.tagName = obj.comment.tagName || 'p'
+    //- obj.comment.textContent = obj.comment.textContent || 'lorem text';
+
+  #{obj.tagName}(class=[className, 'slider-label'])
+    #{obj.title.tagName}(class=['slider-label__title']) #{obj.title.textContent}
+
+    //- Отрисовывает коментарий
+    if (obj.comment.textContent)
+      #{obj.comment.tagName}(class=['slider-label__comment']) #{obj.comment.textContent}

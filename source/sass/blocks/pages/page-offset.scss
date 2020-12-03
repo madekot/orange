@@ -1,38 +1,89 @@
-.page-offset__title {
-  @include page-inner;
+.page-offset {
+  .page-offset__main {
+    padding-bottom: 30px;
+  }
 
-  text-align: center;
-}
+  .page-offset__title {
+    @include page-inner;
 
-.page-offset__wrap-top {
-  @include page-inner;
+    text-align: center;
+  }
 
-  display: flex;
-  justify-content: center;
+  .page-offset__wrap-top {
+    @include page-inner;
 
-  margin-top: 50px;
-}
+    display: flex;
+    justify-content: center;
 
-.page-offset__wrap-icon {
-  flex-shrink: 0;
+    margin-top: 50px;
+  }
 
-  width: 200px;
-  height: 280px;
+  .page-offset__wrap-icon {
+    flex-shrink: 0;
 
-  margin-top: 50px;
-  margin-right: 50px;
+    width: 200px;
+    height: 280px;
+    margin-top: 50px;
+    margin-right: 50px;
 
-  background-color: lemonchiffon;
-}
+    background-color: lemonchiffon;
+  }
 
-.page-offset__wrap-text {
-  max-width: 670px;
-}
+  .page-offset__wrap-text {
+    max-width: 670px;
+    margin-bottom: 50px;
+  }
 
-.page-offset__description-text {
-  margin-top: 0;
-  max-width: 650px;
+  .page-offset__description {
+    max-width: 650px;
+    margin-top: 0;
+    margin-bottom: 25px;
 
-  font-size: var(--font-size-normal);
-  line-height: var(--line-height-normal);
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
+  }
+
+  .page-offset__description:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .page-offset__slider {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    max-width: 950px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+
+    background-color: var(--main-color-light);
+  }
+
+  &__slider-wrap-text {
+    min-width: 430px;
+    max-width: 700px;
+    margin-bottom: 50px;
+    margin-left: auto;
+  }
+
+  .page-offset__slider-title::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: calc(100% - 60px);
+    height: 100%;
+
+    box-shadow: var(--box-shadow);
+  }
+
+  .page-offset__slider-slides {
+    align-self: center;
+
+    width: 460px;
+    height: 360px;
+    margin-bottom: 60px;
+  }
 }

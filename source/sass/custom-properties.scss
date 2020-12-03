@@ -7,6 +7,7 @@
 // заметка: types-products__title нужно поработать с размером шрифта на мобильной версии
 // заметка: выделить в отдельный блоки иконку и иконку с заголовком http://prntscr.com/vttw63
 // заметка: подключить шрифты локально
+// заметка: подключать размер шрифта и line-hight из body шрифты
 
   // font family
   --main-font-family: "Trebuchet", "Arial", sans-serif;
@@ -20,6 +21,7 @@
   --font-size-semi-big: 20px;
   --font-size-big: 23px;
   --font-size-extra-big: 26px;
+  --font-size-semi-super-extra-big: 36px;
   --font-size-super-extra-big: 56px;
 
   // line height
@@ -34,6 +36,11 @@
   // color
   --base-color: #000000;
   --main-color: #fda300;
+  --main-color-light: #f5ba00;
+  --color-white: #ffffff;
+
+  // box shadow
+  --box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2);
 
   // page inner
   --max-width-page: 1200px;

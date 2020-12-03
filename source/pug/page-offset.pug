@@ -1,4 +1,5 @@
 include includes/_includes.pug
+include includes/slider-label.pug
 
 -
   var pageClassName = 'page-offset';
@@ -9,7 +10,6 @@ html(lang="ru")
   +head(pageTitle, pageTitle)
   body(class=pageClassName)
     +header
-
     main(class=pageClassName + '__main')
       div(class=`${pageClassName}__wrap-top`)
         div(class=`${pageClassName}__wrap-icon`)
@@ -34,4 +34,13 @@ html(lang="ru")
             | на его гидрофобные части наносится краска. Изображение переносится с вала с печатной формой на
             | офсетный вал, а оттуда — на бумагу. Офсетный вал способствует меньшему износу форм и большей
             | ровности краски.
-    +footer
+      section(class=`${pageClassName}__wrap-slider decorative-line decorative-line decorative-line--double-simple decorative-line--double-simple-color-top`)
+        div(class=`${pageClassName}__slider`)
+          +sliderLabel(`${pageClassName}__slider-wrap-text`, {
+              title: {
+                textContent: 'Примеры'
+              }
+            })
+          +slider(`${pageClassName}__slider-slides`)
+
+    +footerWrapper
