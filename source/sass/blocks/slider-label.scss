@@ -13,20 +13,48 @@
   background-image: linear-gradient(55deg, transparent 0px, transparent 50px, var(--color-white) 50px, var(--color-white));
 }
 
-.slider-label__title {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  text-transform: uppercase;
-
-  color: var(--main-color);
-  background-image: linear-gradient(55deg, transparent 0px, transparent 50px, var(--color-white) 50px, var(--color-white));
-
-  font-size: var(--font-size-semi-super-extra-big);
-  font-weight: bold;
+.slider-label--orange-theme {
+  // модификатор темы
+  background-image: linear-gradient(55deg, transparent 0px, transparent 50px, var(--main-color-light) 50px, var(--main-color-light));
 }
 
-.slider-label__title::after {
+.slider-label--orange-theme .slider-label__title {
+  color: var(--color-white);
+}
+
+.slider-label--orange-theme .slider-label__comment {
+  color: var(--base-color);
+}
+
+.slider-label--white-theme {
+  // модификатор темы
+  background-image: linear-gradient(55deg, transparent 0px, transparent 50px, var(--color-white) 50px, var(--color-white));
+}
+
+.slider-label--white-theme .slider-label__title {
+  color: var(--main-color);
+}
+
+.slider-label--white-theme .slider-label__comment {
+  color: var(--color-gray);
+}
+
+.slider-label--green-theme {
+  // модификатор темы
+  background-image: linear-gradient(55deg, transparent 0px, transparent 50px, var(--color-white) 50px, var(--color-white));
+}
+
+.slider-label--green-theme .slider-label__title {
+  color: var(--color-green);
+}
+
+.slider-label--green-theme .slider-label__comment {
+  color: var(--color-gray);
+}
+
+
+
+.slider-label::after {
   content: "";
   position: absolute;
   right: 0;
@@ -38,10 +66,25 @@
   box-shadow: var(--box-shadow);
 }
 
+.slider-label__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  text-transform: uppercase;
+
+  color: var(--main-color);
+
+  font-size: var(--font-size-semi-super-extra-big);
+  font-weight: bold;
+}
+
+.slider-label__title + .slider-label__comment {
+  margin-left: 20px;
+}
+
 .slider-label__comment {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 20px;
 
   color: #7f7f7f;
 

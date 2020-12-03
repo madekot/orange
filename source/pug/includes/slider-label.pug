@@ -1,19 +1,17 @@
-mixin sliderLabel(className, obj)
+mixin sliderLabel(nameMixedClass, obj = {})
   -
-    var obj = obj || {};
-    obj.tagName = obj.tagName || 'div';
+    var blockName = 'slider-label'; // имя блока
 
+    obj.tagName = obj.tagName || 'p'; // тег блока по умолчанию
     obj.title = obj.title || {}
-    obj.title.tagName = obj.title.tagName || 'h2'
-    obj.title.textContent = obj.title.textContent || 'lorem text';
-
+    obj.title.tagName = obj.title.tagName || 'span'; // тег элемента по умолчанию
+    obj.title.textContent = obj.title.textContent || 'lorem text'; // текст элемента по умолчанию
     obj.comment = obj.comment || {}
-    obj.comment.tagName = obj.comment.tagName || 'p'
-    //- obj.comment.textContent = obj.comment.textContent || 'lorem text';
+    obj.comment.tagName = obj.comment.tagName || 'span'; // тег элемента по умолчанию
 
-  #{obj.tagName}(class=[className, 'slider-label'])
-    #{obj.title.tagName}(class=['slider-label__title']) #{obj.title.textContent}
+  #{obj.tagName}(class=[nameMixedClass, blockName])
+    #{obj.title.tagName}(class=[`${blockName}__title`]) #{obj.title.textContent}
 
-    //- Отрисовывает коментарий
+    //- Отрисовывает элемент, если значение не пустая строка
     if (obj.comment.textContent)
-      #{obj.comment.tagName}(class=['slider-label__comment']) #{obj.comment.textContent}
+      #{obj.comment.tagName}(class=[`${blockName}__comment`]) #{obj.comment.textContent}
