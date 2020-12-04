@@ -1,17 +1,26 @@
-mixin sliderLabel(nameMixedClass, obj = {})
+mixin sliderLabel(nameMixedClass, obj)
   -
     var blockName = 'slider-label'; // имя блока
 
+    obj = obj || {};
     obj.tagName = obj.tagName || 'p'; // тег блока по умолчанию
-    obj.title = obj.title || {}
+    obj.classModifiers = obj.classModifiers || [];
+
+    obj.title = obj.title || {};
     obj.title.tagName = obj.title.tagName || 'span'; // тег элемента по умолчанию
-    obj.title.textContent = obj.title.textContent || 'lorem text'; // текст элемента по умолчанию
+    obj.title.classModifiers =  obj.title.classModifiers || [];
+
     obj.comment = obj.comment || {}
     obj.comment.tagName = obj.comment.tagName || 'span'; // тег элемента по умолчанию
+    obj.comment.classModifiers =  obj.comment.classModifiers || [];
 
-  #{obj.tagName}(class=[nameMixedClass, blockName])
-    #{obj.title.tagName}(class=[`${blockName}__title`]) #{obj.title.textContent}
+  #{obj.tagName}(class=[nameMixedClass,
+  `${blockName} ${variables.getModifierClasses(obj.classModifiers, blockName)}`])
+    if (obj.title.textContent)
+      #{obj.title.tagName}(class=[`${blockName}__title`,
+      variables.getModifierClasses(obj.title.classModifiers, blockName)]) #{obj.title.textContent}
 
     //- Отрисовывает элемент, если значение не пустая строка
     if (obj.comment.textContent)
-      #{obj.comment.tagName}(class=[`${blockName}__comment`]) #{obj.comment.textContent}
+      #{obj.comment.tagName}(class=[`${blockName}__comment`,
+      variables.getModifierClasses(obj.comment.classModifiers, blockName)]) #{obj.comment.textContent}

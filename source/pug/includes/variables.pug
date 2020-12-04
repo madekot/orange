@@ -1,6 +1,11 @@
 include map.pug
 -
   var variables = {
+    getModifierClasses: function(modifierClasses, blockName) {
+      return modifierClasses.map(function (element){
+        return `${blockName}${element}`;
+      });
+    },
     imagePath: 'img/',
     stylePath: '',
     orange: {
