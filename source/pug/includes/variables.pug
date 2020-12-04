@@ -4,7 +4,10 @@ include map.pug
     getModifierClasses: function(modifierClasses, blockName) {
       return modifierClasses.map(function (element){
         return `${blockName}${element}`;
-      });
+      }).join(' ');
+    },
+    getArrayClassModifiers: function(classModifiers) {
+      return Array.isArray(classModifiers) ? classModifiers : classModifiers.split() || [];
     },
     imagePath: 'img/',
     stylePath: '',

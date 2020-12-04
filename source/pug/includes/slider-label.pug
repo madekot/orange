@@ -1,26 +1,31 @@
 mixin sliderLabel(nameMixedClass, obj)
   -
-    var blockName = 'slider-label'; // имя блока
-
-    obj = obj || {};
+    obj = obj || {}
     obj.tagName = obj.tagName || 'p'; // тег блока по умолчанию
     obj.classModifiers = obj.classModifiers || [];
+    obj.elementName = obj.elementName || 'slider-label';
 
     obj.title = obj.title || {};
     obj.title.tagName = obj.title.tagName || 'span'; // тег элемента по умолчанию
-    obj.title.classModifiers =  obj.title.classModifiers || [];
+    obj.title.classModifiers = obj.title.classModifiers || [];
+    obj.title.classModifiers = variables.getArrayClassModifiers(obj.title.classModifiers);
+    obj.title.elementName = obj.title.elementName || '__title'; // имя элемента по умолчанию
+    obj.title.textContent = obj.title.textContent || 'Lorem impulse';
 
     obj.comment = obj.comment || {}
     obj.comment.tagName = obj.comment.tagName || 'span'; // тег элемента по умолчанию
-    obj.comment.classModifiers =  obj.comment.classModifiers || [];
+    obj.comment.classModifiers = obj.comment.classModifiers || [];
+    obj.comment.classModifiers = variables.getArrayClassModifiers(obj.comment.classModifiers);
+    obj.comment.elementName = obj.comment.elementName || '__comment'; // имя элемента по умолчанию
 
   #{obj.tagName}(class=[nameMixedClass,
-  `${blockName} ${variables.getModifierClasses(obj.classModifiers, blockName)}`])
-    if (obj.title.textContent)
-      #{obj.title.tagName}(class=[`${blockName}__title`,
-      variables.getModifierClasses(obj.title.classModifiers, blockName)]) #{obj.title.textContent}
+  `${obj.elementName} ${variables.getModifierClasses(obj.classModifiers, obj.elementName)}`])
 
-    //- Отрисовывает элемент, если значение не пустая строка
+    #{obj.title.tagName}(class=[`${obj.elementName}${obj.title.elementName}`,
+    variables.getModifierClasses(obj.title.classModifiers,
+    `${obj.elementName}${obj.title.elementName}`)]) #{obj.title.textContent}
+
     if (obj.comment.textContent)
-      #{obj.comment.tagName}(class=[`${blockName}__comment`,
-      variables.getModifierClasses(obj.comment.classModifiers, blockName)]) #{obj.comment.textContent}
+      #{obj.comment.tagName}(class=[`${obj.elementName}${obj.comment.elementName}`,
+      variables.getModifierClasses(obj.comment.classModifiers,
+      `${obj.elementName}${obj.comment.elementName}`)]) #{obj.comment.textContent}
