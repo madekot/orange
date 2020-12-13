@@ -11,4 +11,14 @@
   margin-left: auto;
   padding-right: var(--padding-page-inner);
   padding-left: var(--padding-page-inner);
+  box-sizing: border-box;
+}
+
+@mixin semi-size-page-inner {
+  max-width: var(--semi-max-width-page);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--padding-page-inner);
+  padding-left: var(--padding-page-inner);
+  box-sizing: border-box;
 }

@@ -1,8 +1,8 @@
-mixin titleTypeWork(nameMixedClass, obj)
+mixin descriptionTypeWork(nameMixedClass, obj)
   -
     obj = obj || {}
-    obj.tagName = obj.tagName || 'h2'; // тег блока по умолчанию
-    obj.elementName = obj.elementName || 'title-type-work';
+    obj.tagName = obj.tagName || 'p'; // тег блока по умолчанию
+    obj.elementName = obj.elementName || 'description-type-work';
     obj.classModifiers = obj.classModifiers || [];
     obj.classModifiers = variables.getArrayClassModifiers(obj.classModifiers);
     obj.textContent = obj.textContent || 'Lorem impulse';

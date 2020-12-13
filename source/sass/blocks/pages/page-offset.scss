@@ -6,11 +6,13 @@
 .page-offset__title {
   @include page-inner;
 
+  margin-bottom: 25px;
+
   text-align: center;
 }
 
 .page-offset__wrap-top {
-  @include page-inner;
+  @include semi-size-page-inner;
 
   display: flex;
   justify-content: center;
@@ -38,10 +40,6 @@
   background-size: contain;
 }
 
-.page-offset__wrap-text {
-  max-width: 670px;
-}
-
 .page-offset__icon-text {
   margin-top: 0;
   margin-bottom: 0;
@@ -54,7 +52,6 @@
 }
 
 .page-offset__description {
-  max-width: 650px;
   margin-top: 0;
   margin-bottom: 25px;
 
@@ -71,11 +68,13 @@
   overflow: hidden;
   flex-direction: column;
 
-  max-width: 950px;
+  max-width: var(--semi-max-width-page);
   margin-right: auto;
   margin-left: auto;
   padding-top: 30px;
+  padding-right: 0;
   padding-bottom: 60px;
+  padding-left: 0;
 
   background-color: var(--main-color-light);
 }
@@ -114,5 +113,6 @@
   .page-offset__wrap-icon {
     margin-top: 0;
     margin-right: 0;
+    margin-bottom: 30px;
   }
 }

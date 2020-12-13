@@ -8,6 +8,11 @@
 @import "visually-hidden-mobile.scss";
 @import "visually-hidden.scss";
 
+// второстепенные блоки
+@import "blocks/label.scss";
+@import "blocks/title-type-work.scss";
+@import "blocks/description-type-work.scss";
+
 // блоки
 @import "blocks/about-us-item.scss";
 @import "blocks/about-us.scss";
@@ -20,11 +25,9 @@
 @import "blocks/production-item.scss";
 @import "blocks/send-ideas.scss";
 @import "blocks/slider.scss";
-@import "blocks/title-type-work.scss";
 @import "blocks/types-products-list.scss";
 @import "blocks/types-products.scss";
 @import "blocks/types-works.scss";
-@import "blocks/label.scss";
 
 // header, footer
 @import "blocks/header-footer/footer-wrapper.scss";
@@ -38,6 +41,8 @@
 @import "blocks/header-footer/header.scss";
 
 // страницы
+@import "blocks/pages/index.scss";
+@import "blocks/pages/page-calendars.scss";
 @import "blocks/pages/page-contacts.scss";
 @import "blocks/pages/page-design.scss";
 @import "blocks/pages/page-digital-printing.scss";
@@ -48,4 +53,3 @@
 @import "blocks/pages/page-production.scss";
 @import "blocks/pages/page-souvenir.scss";
 @import "blocks/pages/page-wide-printing.scss";
-@import "blocks/pages/index.scss";

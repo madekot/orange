@@ -31,7 +31,7 @@ mixin label(nameMixedClass, obj)
         obj.title.classModifiers,
         `${obj.elementName}${obj.title.elementName}`
       )
-    ]) #{obj.title.textContent}
+    ]) !{obj.title.textContent}
 
     if (obj.description.textContent)
       #{obj.description.tagName}(class=[`${obj.elementName}${obj.description.elementName}`,

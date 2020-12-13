@@ -1,0 +1,21 @@
+
+.page-calendars__main {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.page-calendars__wrap-text {
+  @include semi-size-page-inner;
+}
+
+.page-calendars__title {
+  text-align: center;
+}
+
+.page-calendars__wrap-text > * + * {
+  margin-top: 20px;
+}
+
+.page-calendars__title + * {
+  margin-top: 30px;
+}
