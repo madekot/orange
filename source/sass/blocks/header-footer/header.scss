@@ -6,8 +6,7 @@
   @include page-inner;
 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
   box-sizing: border-box;
   max-width: 1300px;
@@ -21,6 +20,7 @@
 .header__wrap-info-item--logo {
   margin-top: 0;
 }
+
 
 @media (max-width: $desktopBreakpoint) {
   .header__wrap-info-item {
@@ -67,16 +67,6 @@
 
   .header__wrap-info-item--header-address {
     grid-area: header-address;
-  }
-}
-
-@media (max-width: $tabletBreakpoint) {
-  .header__wrap-info {
-    display: grid;
-
-    grid-template-areas: "logo logo logo"
-    "phone header-address email";
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
