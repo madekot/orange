@@ -10,6 +10,7 @@ html(lang="ru")
   +head(pageTitle, pageTitle)
   body(class=pageClassName)
     +header
+
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
       +productionItem(`${pageClassName}__production-item production-item--interior-icon`, interiorPrinting)
@@ -32,4 +33,5 @@ html(lang="ru")
         div(class=pageClassName + '__price-printing')
           +priceTable(pageClassName + '__price-printing-table')
           +informationCall(`${pageClassName}__information-call ${pageClassName}__information-call--price-table`)
+          
     +footerWrapper

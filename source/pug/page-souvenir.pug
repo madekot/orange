@@ -13,7 +13,9 @@ html(lang="ru")
   +head(pageTitle, pageTitle)
   body(class=pageClassName)
     +header
+
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
       +productionItem(pageClassName + '__production-item', souvenir)
+      
     +footerWrapper

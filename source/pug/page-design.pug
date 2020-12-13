@@ -15,6 +15,7 @@ html(lang="ru")
   +head(pageTitle, pageTitle)
   body(class=pageClassName)
     +header
+
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
       section(class=pageClassName + '__design-studio')
@@ -28,4 +29,5 @@ html(lang="ru")
           | Мы любим свое дело, вдохновляемся каждым новым проектом
           | и эффективно решаем поставленные задачи.
       +productionItem(pageClassName + '__types-products-list production-item--no-icon', design)
+      
     +footerWrapper

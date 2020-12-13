@@ -14,8 +14,10 @@ html(lang="ru")
   +head(pageTitle, pageTitle)
   body(class=pageClassName)
     +header
+
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
       +productionItem(pageClassName + '__production-item', digitalPrinting)
       div(class=pageClassName + '__decorative-line decorative-line decorative-line--simple')
+      
     +footerWrapper

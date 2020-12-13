@@ -14,8 +14,10 @@ html(lang="ru")
   +head(pageTitle, pageTitle)
   body(class=pageClassName)
     +header
+
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
       +productionItem(pageClassName + '__production-item', widePrinting)
       div(class=pageClassName + '__decorative-wrapper decorative-wrapper decorative-wrapper--image')
+      
     +footerWrapper

@@ -75,6 +75,7 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 30px;
+  padding-bottom: 60px;
 
   background-color: var(--main-color-light);
 }
@@ -103,7 +104,6 @@
 
   width: 460px;
   height: 360px;
-  margin-bottom: 60px;
 }
 
 @media (max-width: $mobileBreakpoint) {

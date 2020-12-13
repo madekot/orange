@@ -1,38 +1,38 @@
-.page__main {
+.index__main {
   margin-top: $main-margin-top;
 }
 
-.page__types-works {
+.index__types-works {
   @include page-inner;
 
   margin-bottom: 30px;
 }
 
-.page__simple-decorative-line {
+.index__simple-decorative-line {
   margin-bottom: 50px;
 }
 
-.page__about-us {
+.index__about-us {
   @include page-inner;
 
   margin-bottom: 30px;
 }
 
-.page__decorative-line {
+.index__decorative-line {
   margin-bottom: 100px;
 }
 
-.page__types-products {
+.index__types-products {
   @include page-inner;
 }
 
-.page__wrap-order-plan {
+.index__wrap-order-plan {
   margin-bottom: 30px;
 
   background-color: var(--main-color);
 }
 
-.page__order-plan {
+.index__order-plan {
   @include page-inner;
 }
 
@@ -46,26 +46,23 @@
 }
 
 @media (max-width: $tabletBreakpoint) {
-  .page__types-products {
+  .index__types-products {
     max-width: 600px;
   }
 
-  .page__types-works {
+  .index__types-works {
     margin-bottom: 20px;
   }
 
-  .page__about-us {
+  .index__about-us {
     max-width: 700px;
   }
 
-  .page__decorative-line {
+  .index__decorative-line {
     margin-bottom: 80px;
   }
 
-  .page__wrap-order-plan {
+  .index__wrap-order-plan {
     margin-bottom: 30px;
   }
-}
-
-@media (max-width: $mobileBreakpoint) {
 }

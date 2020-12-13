@@ -1,5 +1,4 @@
 include includes/_includes.pug
-//- include includes/slider-label.pug
 
 -
   var pageClassName = 'page-offset';
@@ -10,6 +9,7 @@ html(lang="ru")
   +head(pageTitle, pageTitle)
   body(class=pageClassName)
     +header
+
     main(class=pageClassName + '__main')
       div(class=`${pageClassName}__wrap-top`)
         div(class=`${pageClassName}__wrap-icon`)

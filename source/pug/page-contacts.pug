@@ -14,10 +14,12 @@ html(lang="ru")
   +head(headTitle, pageTitle)
   body(class=pageClassName)
     +header
+
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
       div(class=pageClassName + '__plan-map')
         div(class=pageClassName + '__plan-map-wrap-image')
           img(class=pageClassName + '__plan-map-image' src= imagePath + "page-contacts__plan-map-image--first-part.jpg")
           img(class=pageClassName + '__plan-map-image' src= imagePath + "page-contacts__plan-map-image--second-part.jpg")
+          
     +footerWrapper
