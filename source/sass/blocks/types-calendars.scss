@@ -1,0 +1,57 @@
+.types-calendars {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.types-calendars__item {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.types-calendars__link {
+  flex-grow: 1;
+
+  min-width: 150px;
+  min-height: 180px;
+
+  background-image: url("/img/types-calendars__1-mono.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.types-calendars__link--mono {
+  background-image: url("/img/types-calendars__1-mono.svg");
+}
+
+.types-calendars__link--trio {
+  background-image: url("/img/types-calendars__2-trio.svg");
+}
+
+.types-calendars__link--house-first-type {
+  background-image: url("/img/types-calendars__3-house-first-type.svg");
+}
+
+.types-calendars__link--house-second-type {
+  background-image: url("/img/types-calendars__4-house-second-type.svg");
+}
+
+.types-calendars__link--house-third-type {
+  background-image: url("/img/types-calendars__5-house-third-type.svg");
+}
+
+.types-calendars__link--pocket {
+  background-image: url("/img/types-calendars__6-pocket.svg");
+}
+
+
+
+
+
+

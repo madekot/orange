@@ -6,6 +6,8 @@
 
 .page-calendars__wrap-text {
   @include semi-size-page-inner;
+
+  margin-bottom: 30px;
 }
 
 .page-calendars__title {
@@ -18,4 +20,22 @@
 
 .page-calendars__title + * {
   margin-top: 30px;
+}
+
+ * + .page-calendars__title {
+  margin-top: 50px;
+}
+
+.page-calendars__types-calendars {
+  @include semi-size-page-inner;
+  margin-bottom: 50px;
+}
+
+.page-calendars__lead {
+  @include semi-size-page-inner;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--main-color);
+  font-size: var(--font-size-semi-super-extra-big);
+  text-align: center;
 }

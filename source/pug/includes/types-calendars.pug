@@ -1,0 +1,26 @@
+mixin typesCalendars(nameMixedClass, obj)
+  -
+    obj = obj || {}
+    obj.tagName = obj.tagName || 'ul'; // тег блока по умолчанию
+    obj.elementName = obj.elementName || 'types-calendars';
+    obj.classModifiers = obj.classModifiers || [];
+    obj.classModifiers = variables.getArrayClassModifiers(obj.classModifiers);
+
+  #{obj.tagName}(class=[
+    nameMixedClass,
+    obj.elementName,
+    variables.getModifierClasses(obj.classModifiers, obj.elementName)
+  ])
+    li(class='types-calendars__item')
+      a(class='types-calendars__link types-calendars__link--mono' href="#" alt="")
+    li(class='types-calendars__item')
+      a(class='types-calendars__link types-calendars__link--trio' href="#" alt="")
+    li(class='types-calendars__item')
+      a(class='types-calendars__link types-calendars__link--house-first-type' href="#" alt="")
+    li(class='types-calendars__item')
+      a(class='types-calendars__link types-calendars__link--house-second-type' href="#" alt="")
+    li(class='types-calendars__item')
+      a(class='types-calendars__link types-calendars__link--house-third-type' href="#" alt="")
+    li(class='types-calendars__item')
+      a(class='types-calendars__link types-calendars__link--pocket' href="#" alt="")
+
