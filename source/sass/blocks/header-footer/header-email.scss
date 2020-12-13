@@ -37,9 +37,7 @@
   color: var(--main-color);
 
   font-family: $mainFont;
-  font-size: var(--font-size-normal);
   font-weight: bold;
-  line-height: var(--line-height-normal);
 }
 
 @media (max-width: $tabletBreakpoint) {

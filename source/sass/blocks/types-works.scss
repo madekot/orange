@@ -96,8 +96,8 @@
 
   letter-spacing: 1px;
 
-  font-size: var(--font-size-normal);
   font-weight: bold;
+  font-size: var(--font-size-normal);
   line-height: var(--line-height-semi-big);
 }
 
@@ -124,11 +124,6 @@
     padding-top: 130px;
 
     background-size: 90px auto;
-  }
-
-  .types-works__card-title {
-    font-size: var(--font-size-normal);
-    line-height: var(--line-height-normal);
   }
 
   .types-works__card-link--icon-souvenir {

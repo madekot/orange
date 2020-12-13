@@ -12,7 +12,6 @@
   text-transform: uppercase;
 
   font-size: var(--font-size-extra-big);
-  line-height: var(--line-height-normal);
 }
 
 .page-photo-wallpaper__wrap-row {
@@ -48,9 +47,6 @@
   margin-bottom: 50px;
 
   letter-spacing: 1px;
-
-  font-size: var(--font-size-normal);
-  line-height: var(--line-height-normal);
 }
 
 .page-photo-wallpaper__text {
@@ -97,16 +93,6 @@
     height: calc(400px * 0.6);
 
     border-width: calc(70px * 0.6);
-  }
-
-  .page-photo-wallpaper__wrap-text {
-    font-size: var(--font-size-normal);
-    line-height: var(--line-height-normal);
-  }
-
-  .page-photo-wallpaper__wrap-text {
-    font-size: var(--font-size-normal);
-    line-height: var(--line-height-normal);
   }
 
   .page-photo-wallpaper__wrap-text {

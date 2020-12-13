@@ -41,24 +41,14 @@
   font-family: $mainFont;
   font-size: var(--font-size-semi-big);
   font-weight: bold;
-  line-height: var(--line-height-normal);
 }
 
 @media (max-width: $tabletBreakpoint) {
-  .header-phone__link {
-    font-size: var(--font-size-normal);
-    line-height: var(--line-height-normal);
-  }
-
   .header-phone::before {
     align-self: center;
 
     width: 65px;
     height: 65px;
-  }
-
-  .header-phone__link {
-    font-size: var(--font-size-normal);
   }
 }
 

@@ -52,7 +52,6 @@
   text-transform: uppercase;
 
   font-size: var(--font-size-extra-big);
-  line-height: var(--line-height-normal);
 }
 
 .page-interior-printing__advantages-list {
@@ -76,9 +75,7 @@
   background-position: top 10px left;
   background-size: 30px 30px;
 
-  font-size: var(--font-size-normal);
   font-weight: bold;
-  line-height: var(--line-height-normal);
 }
 
 .page-interior-printing__price-printing {
