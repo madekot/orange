@@ -1,4 +1,5 @@
   .page-offset__main {
+  padding-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -14,7 +15,7 @@
   display: flex;
   justify-content: center;
 
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .page-offset__wrap-icon {
@@ -28,8 +29,8 @@
   width: 160px;
   height: 160px;
   margin-right: auto;
-  margin-left: auto;
   margin-bottom: 20px;
+  margin-left: auto;
 
   background-image: url(img/types-works__offset-icon.svg);
   background-repeat: no-repeat;
@@ -39,7 +40,6 @@
 
 .page-offset__wrap-text {
   max-width: 670px;
-  margin-bottom: 50px;
 }
 
 .page-offset__icon-text {

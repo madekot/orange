@@ -1,0 +1,39 @@
+mixin label(nameMixedClass, obj)
+  -
+    obj = obj || {}
+    obj.tagName = obj.tagName || 'div'; // тег блока по умолчанию
+    obj.elementName = obj.elementName || 'label';
+    obj.classModifiers = obj.classModifiers || [];
+    obj.classModifiers = variables.getArrayClassModifiers(obj.classModifiers);
+
+    obj.title = obj.title || {};
+    obj.title.tagName = obj.title.tagName || 'h2'; // тег элемента по умолчанию
+    obj.title.elementName = obj.title.elementName || '__title'; // имя элемента по умолчанию
+    obj.title.classModifiers = obj.title.classModifiers || [];
+    obj.title.classModifiers = variables.getArrayClassModifiers(obj.title.classModifiers);
+    obj.title.textContent = obj.title.textContent || 'Lorem impulse';
+
+    obj.description = obj.description || {}
+    obj.description.tagName = obj.description.tagName || 'p'; // тег элемента по умолчанию
+    obj.description.elementName = obj.description.elementName || '__description'; // имя элемента по умолчанию
+    obj.description.classModifiers = obj.description.classModifiers || [];
+    obj.description.classModifiers = variables.getArrayClassModifiers(obj.description.classModifiers);
+
+  #{obj.tagName}(class=[
+    nameMixedClass,
+    obj.elementName,
+    variables.getModifierClasses(obj.classModifiers, obj.elementName)
+  ])
+
+    #{obj.title.tagName}(class=[
+      `${obj.elementName}${obj.title.elementName}`,
+      variables.getModifierClasses(
+        obj.title.classModifiers,
+        `${obj.elementName}${obj.title.elementName}`
+      )
+    ]) #{obj.title.textContent}
+
+    if (obj.description.textContent)
+      #{obj.description.tagName}(class=[`${obj.elementName}${obj.description.elementName}`,
+      variables.getModifierClasses(obj.description.classModifiers,
+      `${obj.elementName}${obj.description.elementName}`)]) #{obj.description.textContent}
