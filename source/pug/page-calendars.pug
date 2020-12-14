@@ -37,8 +37,8 @@ html(lang="ru")
       p(class=`${pageClassName}__lead`) Закажи календари сейчас по выгодной цене!
       ul(class=`${pageClassName}__calendars-list`)
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-gray`)
-          div(class=`${pageClassName}__calendar-content` id="calendar-1")
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--color-orange`)
+          div(class=`${pageClassName}__calendar-content`)
+            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--color-orange` id="calendar-1")
               +label(`${pageClassName}__calendar-title`, {
                 title: {
                     textContent: 'Моно',

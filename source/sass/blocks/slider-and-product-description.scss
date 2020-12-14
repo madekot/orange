@@ -1,0 +1,103 @@
+.page-calendars__calendar-content {
+  display: flex;
+  justify-content: center;
+
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-calendars__calendar-column {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.page-calendars__calendar-title {
+  align-self: flex-end;
+
+  min-width: 350px;
+  margin-bottom: 50px;
+}
+
+.page-calendars__calendar-column--color-orange {
+  background-color: var(--main-color-light);
+}
+
+.page-calendars__calendar-column--color-orange-dark {
+  background-color: var(--main-color);
+}
+
+.page-calendars__calendar-column--color-green {
+  background-color: var(--color-green);
+}
+
+.page-calendars__calendar-column--description {
+  box-sizing: border-box;
+  padding-right: 130px;
+  padding-left: 40px;
+
+  box-shadow: var(--box-shadow-second-style);
+}
+
+.page-calendars__calendar-description p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-calendars__calendar-description > * + p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+
+.page-calendars__calendar-slider {
+  align-self: center;
+
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: $desktopBreakpoint) {
+  .page-calendars__calendar-slider {
+    width: 340px;
+    height: 340px;
+  }
+
+  .page-calendars__calendar-column--description {
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: $tabletBreakpoint) {
+  .page-calendars__calendar-content {
+    flex-wrap: wrap;
+  }
+
+  .page-calendars__calendar-column {
+    flex-grow: 1;
+
+    width: auto;
+  }
+
+  .page-calendars__calendar-slider {
+    align-self: center;
+
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .page-calendars__calendar-slider {
+    width: 290px;
+    height: 290px;
+  }
+
+  .page-calendars__calendar-title {
+    min-width: 290px;
+  }
+}
