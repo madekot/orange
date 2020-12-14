@@ -26,6 +26,27 @@
   background: linear-gradient(to bottom, var(--main-color) 0px, var(--main-color) 10px, transparent 10px, transparent 100%);
 }
 
+.decorative-line--simple-color-gray {
+  padding-top: 10px;
+  padding-bottom: 0;
+
+  background: linear-gradient(to bottom, var(--color-gray-light) 0px, var(--color-gray-light) 10px, transparent 10px, transparent 100%);
+}
+
+.decorative-line--simple-color-green {
+  padding-top: 10px;
+  padding-bottom: 0;
+
+  background: linear-gradient(to bottom, var(--color-green-dark) 0px, var(--color-green-dark) 10px, transparent 10px, transparent 100%);
+}
+
+.decorative-line--simple-color-white {
+  padding-top: 10px;
+  padding-bottom: 0;
+
+  background: linear-gradient(to bottom, var(--color-white) 0px, var(--color-white) 10px, transparent 10px, transparent 100%);
+}
+
 .decorative-line--simple::before {
   display: none;
 }
