@@ -1,4 +1,4 @@
-.page-calendars__calendar-content {
+.slider-and-product-description__content {
   display: flex;
   justify-content: center;
 
@@ -7,7 +7,7 @@
   margin-left: auto;
 }
 
-.page-calendars__calendar-column {
+.slider-and-product-description__column {
   display: flex;
   flex-direction: column;
 
@@ -16,26 +16,26 @@
   padding-bottom: 70px;
 }
 
-.page-calendars__calendar-title {
+.slider-and-product-description__title {
   align-self: flex-end;
 
   min-width: 350px;
   margin-bottom: 50px;
 }
 
-.page-calendars__calendar-column--color-orange {
+.slider-and-product-description__column--color-orange {
   background-color: var(--main-color-light);
 }
 
-.page-calendars__calendar-column--color-orange-dark {
+.slider-and-product-description__column--color-orange-dark {
   background-color: var(--main-color);
 }
 
-.page-calendars__calendar-column--color-green {
+.slider-and-product-description__column--color-green {
   background-color: var(--color-green);
 }
 
-.page-calendars__calendar-column--description {
+.slider-and-product-description__column--description {
   box-sizing: border-box;
   padding-right: 130px;
   padding-left: 40px;
@@ -43,18 +43,18 @@
   box-shadow: var(--box-shadow-second-style);
 }
 
-.page-calendars__calendar-description p {
+.slider-and-product-description__description p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.page-calendars__calendar-description > * + p {
+.slider-and-product-description__description > * + p {
   margin-top: 20px;
   margin-bottom: 0;
 }
 
 
-.page-calendars__calendar-slider {
+.slider-and-product-description__slider {
   align-self: center;
 
   width: 500px;
@@ -62,28 +62,28 @@
 }
 
 @media (max-width: $desktopBreakpoint) {
-  .page-calendars__calendar-slider {
+  .slider-and-product-description__slider {
     width: 340px;
     height: 340px;
   }
 
-  .page-calendars__calendar-column--description {
+  .slider-and-product-description__column--description {
     padding-right: 40px;
   }
 }
 
 @media (max-width: $tabletBreakpoint) {
-  .page-calendars__calendar-content {
+  .slider-and-product-description__content {
     flex-wrap: wrap;
   }
 
-  .page-calendars__calendar-column {
+  .slider-and-product-description__column {
     flex-grow: 1;
 
     width: auto;
   }
 
-  .page-calendars__calendar-slider {
+  .slider-and-product-description__slider {
     align-self: center;
 
     width: 500px;
@@ -92,12 +92,12 @@
 }
 
 @media (max-width: $mobileBreakpoint) {
-  .page-calendars__calendar-slider {
+  .slider-and-product-description__slider {
     width: 290px;
     height: 290px;
   }
 
-  .page-calendars__calendar-title {
+  .slider-and-product-description__title {
     min-width: 290px;
   }
 }

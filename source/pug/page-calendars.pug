@@ -37,16 +37,16 @@ html(lang="ru")
       p(class=`${pageClassName}__lead`) Закажи календари сейчас по выгодной цене!
       ul(class=`${pageClassName}__calendars-list`)
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-gray`)
-          div(class=`${pageClassName}__calendar-content`)
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--color-orange` id="calendar-1")
-              +label(`${pageClassName}__calendar-title`, {
+          div(class=`slider-and-product-description__content`)
+            div(class=`slider-and-product-description__column slider-and-product-description__column--color-orange` id="calendar-1")
+              +label(`slider-and-product-description__title`, {
                 title: {
                     textContent: 'Моно',
                   },
               })
-              +slider(`${pageClassName}__calendar-slider`)
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--description`)
-              div(class=`${pageClassName}__calendar-description`)
+              +slider(`slider-and-product-description__slider`)
+            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
+              div(class=`slider-and-product-description__description`)
                 p
                   | Календарь МОНО с одной стороны подчеркнет Ваш уникальный стиль,
                   | а с другой гармонично впишется в любое, даже самое маленькое
@@ -64,18 +64,18 @@ html(lang="ru")
                 p <b>Люверс (белый/серебро)</b>
                 p <b>Бегунок</b>
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple`)
-          div(class=`${pageClassName}__calendar-content`)
-            div(class=`${pageClassName}__calendar-column` id="calendar-2")
-              +label(`${pageClassName}__calendar-title`, {
+          div(class=`slider-and-product-description__content`)
+            div(class=`slider-and-product-description__column` id="calendar-2")
+              +label(`slider-and-product-description__title`, {
                 classModifiers: '--color-orange',
                 title: {
                     textContent: 'Трио',
                     classModifiers: '--color-white',
                   },
               })
-              +slider(`${pageClassName}__calendar-slider`)
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--description`)
-              div(class=`${pageClassName}__calendar-description`)
+              +slider(`slider-and-product-description__slider`)
+            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
+              div(class=`slider-and-product-description__description`)
                 p
                   | Календарь ТРИО подойдет практически для любой компании.
                   | Этот вид календаря полюбили многие компании
@@ -92,9 +92,9 @@ html(lang="ru")
                 p <b>Люверс (белый/серебро)</b>
                 p <b>Бегунок</b>
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple`)
-          div(class=`${pageClassName}__calendar-content`)
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--color-green` id="calendar-3")
-              +label(`${pageClassName}__calendar-title`, {
+          div(class=`slider-and-product-description__content`)
+            div(class=`slider-and-product-description__column slider-and-product-description__column--color-green` id="calendar-3")
+              +label(`slider-and-product-description__title`, {
                 title: {
                     textContent: 'Домик',
                     classModifiers: '--color-green',
@@ -103,9 +103,9 @@ html(lang="ru")
                     textContent: '*стандарт'
                 }
               })
-              +slider(`${pageClassName}__calendar-slider`)
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--description`)
-              div(class=`${pageClassName}__calendar-description`)
+              +slider(`slider-and-product-description__slider`)
+            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
+              div(class=`slider-and-product-description__description`)
                 p
                   | Настольный календарь "домик" подразумевает его использование
                   | прямо на рабочем месте Ваших клиентов, а значит Ваша
@@ -122,9 +122,9 @@ html(lang="ru")
                 p <b>Основа (210 х 120 х 60) биговки 3шт: с печатью 4+0 на картоне 265 гр/м2</b>
                 p <b>Крепление: склейка</b>
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-green`)
-          div(class=`${pageClassName}__calendar-content`)
-            div(class=`${pageClassName}__calendar-column` id="calendar-4")
-              +label(`${pageClassName}__calendar-title`, {
+          div(class=`slider-and-product-description__content`)
+            div(class=`slider-and-product-description__column` id="calendar-4")
+              +label(`slider-and-product-description__title`, {
                 classModifiers: '--color-orange',
                 title: {
                     textContent: 'Домик',
@@ -135,9 +135,9 @@ html(lang="ru")
                     classModifiers: '--color-black',
                 }
               })
-              +slider(`${pageClassName}__calendar-slider`)
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--description`)
-              div(class=`${pageClassName}__calendar-description`)
+              +slider(`slider-and-product-description__slider`)
+            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
+              div(class=`slider-and-product-description__description`)
                 p
                   | Настольный календарь "домик" с перекидными блоками
                   | позволит вам рассказать о компании и товаре
@@ -161,9 +161,9 @@ html(lang="ru")
                 p <b>Блоки (210 х 90) - 6 шт (4+4) + обложка или 12 шт (4+0) + обложка</b>
                 p <b>Крепление: пружина</b>
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple`)
-          div(class=`${pageClassName}__calendar-content`)
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--color-orange-dark` id="calendar-5")
-              +label(`${pageClassName}__calendar-title`, {
+          div(class=`slider-and-product-description__content`)
+            div(class=`slider-and-product-description__column slider-and-product-description__column--color-orange-dark` id="calendar-5")
+              +label(`slider-and-product-description__title`, {
                 title: {
                     textContent: 'Домик',
                   },
@@ -171,9 +171,9 @@ html(lang="ru")
                     textContent: '*численник 1/2'
                 }
               })
-              +slider(`${pageClassName}__calendar-slider`)
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--description`)
-              div(class=`${pageClassName}__calendar-description`)
+              +slider(`slider-and-product-description__slider`)
+            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
+              div(class=`slider-and-product-description__description`)
                 p
                   | Настольный календарь "домик" с перекидными
                   | индивидуальными блоками 1/2*
@@ -195,17 +195,17 @@ html(lang="ru")
                 p <b>Блоки (210 х 90) - 6 шт (4+4) + обложка или 12 шт (4+0) + обложка</b>
                 p <b>Крепление: пружина</b>
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-white`)
-          div(class=`${pageClassName}__calendar-content`)
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--color-green` id="calendar-6")
-              +label(`${pageClassName}__calendar-title`, {
+          div(class=`slider-and-product-description__content`)
+            div(class=`slider-and-product-description__column slider-and-product-description__column--color-green` id="calendar-6")
+              +label(`slider-and-product-description__title`, {
                 title: {
                     textContent: 'карманный',
                     classModifiers: '--color-green',
                   },
               })
-              +slider(`${pageClassName}__calendar-slider`)
-            div(class=`${pageClassName}__calendar-column ${pageClassName}__calendar-column--description`)
-              div(class=`${pageClassName}__calendar-description`)
+              +slider(`slider-and-product-description__slider`)
+            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
+              div(class=`slider-and-product-description__description`)
                 p
                   | Настольный календарь "домик" с перекидными
                   | индивидуальными блоками 1/2*
