@@ -1,0 +1,27 @@
+.page-flysheet__title-type-work {
+  @include page-inner;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.page-flysheet__slider-and-product-description {
+  margin-bottom: 50px;
+}
+
+.page-flysheet__information-call {
+  @include page-inner;
+
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.page-flysheet__decorative-line {
+  margin-bottom: 80px;
+}
+
+.page-flysheet__decorative-wrapper {
+  margin-bottom: 50px;
+}

@@ -1,0 +1,47 @@
+include includes/_includes.pug
+
+-
+  var pageClassName = 'page-menu';
+  var pageTitle = 'Печать меню';
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header
+    main(class=pageClassName + '__main')
+      +titleTypeWork(pageClassName + '__title-type-work',{
+        tagName: 'h1',
+        textContent: pageTitle,
+      })
+      div(class=pageClassName + '__slider-and-product-description decorative-line decorative-line--double-simple decorative-line--double-simple-color-top-gray')
+        div(class=`slider-and-product-description`)
+          div(class=`slider-and-product-description__column slider-and-product-description__column--color-orange` id="calendar-3")
+            +slider(`slider-and-product-description__slider`)
+          div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
+            div(class=`slider-and-product-description__description`)
+              p
+                | Меню – это «визитная карточка», с помощью которой гости могут
+                | ознакомиться с ассортиментом напитков и блюд, предлагаемых
+                | в заведении. Наша компания изготовит для Вас удобное
+                | и информативное меню, соответствующее стилю
+                | и концепции кафе, бара или ресторана.
+
+              p <b>ВЫБОР МАТЕРИАЛА</b>
+
+              p
+                | Если Вы являетесь владельцем элитного заведения – ресторана,
+                | коктейльного бара или закрытого клуба – мы предлагаем Вам
+                | выбрать эксклюзивные материалы, использующиеся для
+                | изготовления меню и винных карт - например, матовую
+                | ламинацию или дизайнерские материалы в сочетании с
+                | плотной бумагой. Элегантное меню способно в полной
+                | мере передать стиль заведения.
+
+              p
+                | Мы внимательно относимся к предложениям и идеям заказчика,
+                | предоставляя всю необходимую информацию, сотрудники
+                | нашей компании ответственно подходят к решению проблем.
+      +informationCall(pageClassName + '__information-call')
+      div(class=pageClassName + '__decorative-line decorative-line')
+    +footer

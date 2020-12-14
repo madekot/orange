@@ -1,0 +1,23 @@
+.page-menu__title-type-work {
+  @include page-inner;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.page-menu__slider-and-product-description {
+  margin-bottom: 50px;
+}
+
+.page-menu__information-call {
+  @include page-inner;
+
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.page-menu__decorative-line {
+  margin-bottom: 80px;
+}

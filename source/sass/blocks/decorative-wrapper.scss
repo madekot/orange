@@ -16,3 +16,21 @@
   background-image: url($cssPath + "page-production__image-wrapper--plotter-image.jpg");
   background-size: contain;
 }
+
+.decorative-wrapper--image-2 {
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 10%;
+
+  background-image: url($cssPath + "decorative-wrapper__image-2.png");
+  background-size: contain;
+}
+
+@media (max-width: $tabletBreakpoint) {
+  .decorative-wrapper--image-2 {
+    padding: 20%;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+}

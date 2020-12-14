@@ -63,6 +63,14 @@
   background: linear-gradient(to bottom, var(--main-color) 0px, var(--main-color) 10px, transparent 10px, transparent calc(100% - 10px), var(--main-color) calc(100% - 10px), var(--main-color) 100%);
 }
 
+.decorative-line--double-simple-color-top-gray {
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-bottom: 10px;
+
+  background: linear-gradient(to bottom, var(--color-gray-light) 0px, var(--color-gray-light) 10px, transparent 10px, transparent calc(100% - 10px), var(--main-color) calc(100% - 10px), var(--main-color) 100%);
+}
+
 .decorative-line--double-simple::before {
   display: none;
 }
