@@ -43,21 +43,6 @@
   box-shadow: var(--box-shadow-second-style);
 }
 
-.slider-and-product-description__description p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.slider-and-product-description__description b {
-  color: var(--main-color);
-}
-
-.slider-and-product-description__description > * + p {
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
-
 .slider-and-product-description__slider {
   align-self: center;
 

@@ -1,0 +1,13 @@
+.texts p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.texts b {
+  color: var(--main-color);
+}
+
+.texts > * + p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}

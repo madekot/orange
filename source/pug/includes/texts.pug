@@ -1,0 +1,20 @@
+mixin texts(nameMixedClass, obj)
+  -
+    obj = obj || {}
+    obj.tagName = obj.tagName || 'div'; // тег блока по умолчанию
+    obj.elementName = obj.elementName || 'texts';
+    obj.classModifiers = obj.classModifiers || [];
+    obj.classModifiers = variables.getArrayClassModifiers(obj.classModifiers);
+    obj.elements = obj.elements || [];
+
+  #{obj.tagName}(class=[
+    nameMixedClass,
+    obj.elementName,
+    variables.getModifierClasses(obj.classModifiers, obj.elementName)
+  ])
+
+    each item in obj.elements
+      -
+        var tagName = item.tagName || 'p'
+        var className = item.className || ''
+      #{tagName}(class=className) !{item.textContent}
