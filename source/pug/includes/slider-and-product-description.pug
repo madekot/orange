@@ -35,13 +35,18 @@ mixin slider-and-product-description(nameMixedClass, obj)
     obj.columnSlider = obj.columnSlider || {};
     obj.columnSlider.elementName = obj.columnSlider.elementName || '__column-slider';
     obj.columnSlider.classModifiers = variables.getArrayClassModifiers(obj.columnSlider.classModifiers || '--color-orange');
+    obj.columnSlider.id = obj.columnSlider.id || false;
 
   #{obj.tagName}(class=[
     nameMixedClass,
     obj.elementName,
     variables.getModifierClasses(obj.classModifiers, obj.elementName)
   ])
-    div(class=[`${obj.elementName}${obj.columnSlider.elementName}`, variables.getModifierClasses(obj.columnSlider.classModifiers, `${obj.elementName}${obj.columnSlider.elementName}`)])
+    div(class=[`${obj.elementName}${obj.columnSlider.elementName}`,
+      variables.getModifierClasses(obj.columnSlider.classModifiers,
+      `${obj.elementName}${obj.columnSlider.elementName}`)] id=obj.columnSlider.id)
+      if (obj.label)
+        +label(`${obj.elementName}__title`, obj.label)
       +slider(`${obj.elementName}__slider`)
     div(class=`${obj.elementName}__column-texts`)
       +texts(`${obj.elementName}__texts`, obj.texts)
