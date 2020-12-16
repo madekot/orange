@@ -1,0 +1,47 @@
+mixin slider-and-product-description(nameMixedClass, obj)
+  -
+    obj = obj || {}
+    obj.tagName = obj.tagName || 'div'; // тег блока по умолчанию
+    obj.elementName = obj.elementName || 'slider-and-product-description';
+    obj.classModifiers = obj.classModifiers || [];
+    obj.classModifiers = variables.getArrayClassModifiers(obj.classModifiers);
+
+    obj.texts = obj.texts || {
+      elements: this.texts.elements || [
+        {
+          textContent: `Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Sapiente, odit. Illo nisi, ratione ipsum optio nulla minus
+          culpa iure rerum, dignissimos accusantium tempora aperiam
+          architecto, facere eveniet quas dolor ex!`,
+        },
+        {
+          textContent: `<b>Lorem ipsum dolor</b>`,
+        },
+        {
+          textContent: `<b>Lorem ipsum dolor</b><br> sit amet consectetur adipisicing
+          elit. Sapiente, odit. Illo nisi, ratione ipsum optio nulla minus
+          culpa iure rerum, dignissimos accusantium tempora aperiam
+          architecto, facere eveniet quas dolor ex!`,
+        },
+        {
+          textContent: `<b>Lorem ipsum dolor</b>  sit amet consecteturadipisicing
+          elit. Sapiente, odit. Illo nisi, ratione ipsum optio nulla minus
+          culpa iure rerum, dignissimos accusantium tempora aperiam
+          architecto, facere eveniet quas dolor ex!`,
+        },
+      ],
+    };
+
+    obj.columnSlider = obj.columnSlider || {};
+    obj.columnSlider.elementName = obj.columnSlider.elementName || '__column-slider';
+    obj.columnSlider.classModifiers = variables.getArrayClassModifiers(obj.columnSlider.classModifiers || '--color-orange');
+
+  #{obj.tagName}(class=[
+    nameMixedClass,
+    obj.elementName,
+    variables.getModifierClasses(obj.classModifiers, obj.elementName)
+  ])
+    div(class=[`${obj.elementName}${obj.columnSlider.elementName}`, variables.getModifierClasses(obj.columnSlider.classModifiers, `${obj.elementName}${obj.columnSlider.elementName}`)])
+      +slider(`${obj.elementName}__slider`)
+    div(class=`${obj.elementName}__column-texts`)
+      +texts(`${obj.elementName}__texts`, obj.texts)

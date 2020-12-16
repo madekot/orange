@@ -15,11 +15,9 @@ html(lang="ru")
         textContent: pageTitle,
       })
       div(class=pageClassName + '__slider-and-product-description decorative-line decorative-line--double-simple decorative-line--double-simple-color-top-gray')
-        div(class=`slider-and-product-description`)
-          div(class=`slider-and-product-description__column slider-and-product-description__column--color-orange` id="calendar-3")
-            +slider(`slider-and-product-description__slider`)
-          div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
-            +texts('', {elements: [
+        +slider-and-product-description('', {
+          texts: {
+            elements: [
               {
                 textContent: `Меню – это «визитная карточка», с помощью которой гости могут
                 ознакомиться с ассортиментом напитков и блюд, предлагаемых
@@ -44,7 +42,9 @@ html(lang="ru")
                 предоставляя всю необходимую информацию, сотрудники
                 нашей компании ответственно подходят к решению проблем.`,
               },
-              ]})
+            ],
+          },
+        })
       +informationCall(pageClassName + '__information-call')
       div(class=pageClassName + '__decorative-line decorative-line')
     +footer

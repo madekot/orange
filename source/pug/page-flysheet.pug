@@ -15,18 +15,16 @@ html(lang="ru")
         textContent: pageTitle,
       })
       div(class=pageClassName + '__slider-and-product-description decorative-line decorative-line--double-simple decorative-line--double-simple-color-top-gray')
-        div(class=`slider-and-product-description`)
-          div(class=`slider-and-product-description__column slider-and-product-description__column--color-orange` id="calendar-3")
-            +slider(`slider-and-product-description__slider`)
-          div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
-            +texts('', {elements: [
+        +slider-and-product-description('', {
+          texts: {
+            elements: [
               {
-                textContent: `Листовка – это рекламное издание объемом
+                textContent: `<b>Листовка</b> – это рекламное издание объемом
                 от одной до четырех страниц с информацией.
                 Для чего нужна цифровая печать листовок и в чем ее преимущества?`,
               },
               {
-                textContent: `Листовка – один из самых экономичных, но эффективных способов
+                textContent: `<b>Листовка</b> – один из самых экономичных, но эффективных способов
                 продвижения товаров и услуг. Вы хотите информировать клиентов
                 о новой акции или распродаже? Красочная листовка – отличный
                 способ сделать это быстро и без особых затрат.
@@ -43,7 +41,9 @@ html(lang="ru")
                 печатью. В нашей типографии вы можете оперативно
                 изготовить вид данной продукции.`,
               },
-              ]})
+            ],
+          },
+        })
       +informationCall(pageClassName + '__information-call')
       div(class=pageClassName + '__decorative-wrapper decorative-wrapper decorative-wrapper--image-2')
       div(class=pageClassName + '__decorative-line decorative-line')
