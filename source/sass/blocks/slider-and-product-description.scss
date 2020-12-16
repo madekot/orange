@@ -7,16 +7,6 @@
   margin-left: auto;
 }
 
-.slider-and-product-description__column {
-  //потом удаляем, когда реализуем блок полностью
-  display: flex;
-  flex-direction: column;
-
-  width: 50%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 .slider-and-product-description__column-slider {
   display: flex;
   flex-direction: column;
@@ -47,27 +37,11 @@
   margin-bottom: 50px;
 }
 
-.slider-and-product-description__column--color-orange {
-  //потом удаляем, когда реализуем блок полностью
-  background-color: var(--main-color-light);
-}
-
-.slider-and-product-description__column--color-orange-dark {
-  //потом удаляем, когда реализуем блок полностью
-  background-color: var(--main-color);
-}
-
-.slider-and-product-description__column--color-green {
-  //потом удаляем, когда реализуем блок полностью
-  background-color: var(--color-green);
-}
-
-
 .slider-and-product-description__column-slider--color-orange {
   background-color: var(--main-color-light);
 }
 
-.slider-and-product-description__column-slider--orange-dark {
+.slider-and-product-description__column-slider--color-orange-dark {
   background-color: var(--main-color);
 }
 
@@ -75,14 +49,6 @@
   background-color: var(--color-green);
 }
 
-.slider-and-product-description__column--description {
-  //потом удаляем, когда реализуем блок полностью
-  box-sizing: border-box;
-  padding-right: 130px;
-  padding-left: 40px;
-
-  box-shadow: var(--box-shadow-second-style);
-}
 
 .slider-and-product-description__slider {
   align-self: center;
@@ -97,11 +63,6 @@
     height: 340px;
   }
 
-  .slider-and-product-description__column--description {
-    //потом удаляем, когда реализуем блок полностью
-    padding-right: 40px;
-  }
-
   .slider-and-product-description__column-texts {
     padding-right: 40px;
   }
@@ -110,13 +71,6 @@
 @media (max-width: $tabletBreakpoint) {
   .slider-and-product-description {
     flex-wrap: wrap;
-  }
-
-  .slider-and-product-description__column {
-    // потом удаляем, когда реализуем блок полностью
-    flex-grow: 1;
-
-    width: auto;
   }
 
   .slider-and-product-description__column-slider {

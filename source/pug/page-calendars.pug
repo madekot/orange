@@ -37,255 +37,269 @@ html(lang="ru")
       p(class=`${pageClassName}__lead`) Закажи календари сейчас по выгодной цене!
       ul(class=`${pageClassName}__calendars-list`)
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-gray`)
-          div(class=`slider-and-product-description`)
-            div(class=`slider-and-product-description__column slider-and-product-description__column--color-orange` id="calendar-1")
-              +label(`slider-and-product-description__title`, {
-                title: {
-                    textContent: 'Моно',
-                  },
-              })
-              +slider(`slider-and-product-description__slider`)
-            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
-              div(class=`slider-and-product-description__description`)
-                +texts('', {elements: [
-                  {
-                    textContent: `Календарь МОНО с одной стороны подчеркнет Ваш уникальный стиль,
-                    а с другой гармонично впишется в любое, даже самое маленькое
-                    пространство на стене. А изготовление такого календаря в
-                    нашей типографии очень удивит Вас ценой!`,
-                  },
-                  {
-                    textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
-                    индивидуальный дизайн, который подчеркнет достоинства
-                    Вашей компании и Ваш неповторимый стиль!`,
-                  },
-                  {
-                    textContent: `<b>Печать подложки и шпигеля: полноцветная на картоне 265 гр/м2</b>`,
-                  },
-                  {
-                    textContent: `<b>Календарные блоки: стандартные (цветность) 2+0 на офсетной бумаге 80 гр/м2</b>`,
-                  },
-                  {
-                    textContent: `<b>Крепление:пружина (белая/серебро)</b>`,
-                  },
-                  {
-                    textContent: `<b>Люверс (белый/серебро)</b>`,
-                  },
-                  {
-                    textContent: `<b>Бегунок</b>`,
-                  },
-                  ]})
+          +sliderAndProductDescription('', {
+            columnSlider: {
+              id: 'calendar-1',
+            },
+            label: {
+              title: {
+                textContent: 'Моно',
+              },
+            },
+            texts: {
+              elements: [
+                {
+                  textContent: `Календарь МОНО с одной стороны подчеркнет Ваш уникальный стиль,
+                  а с другой гармонично впишется в любое, даже самое маленькое
+                  пространство на стене. А изготовление такого календаря в
+                  нашей типографии очень удивит Вас ценой!`,
+                },
+                {
+                  textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
+                  индивидуальный дизайн, который подчеркнет достоинства
+                  Вашей компании и Ваш неповторимый стиль!`,
+                },
+                {
+                  textContent: `<b>Печать подложки и шпигеля: полноцветная на картоне 265 гр/м2</b>`,
+                },
+                {
+                  textContent: `<b>Календарные блоки: стандартные (цветность) 2+0 на офсетной бумаге 80 гр/м2</b>`,
+                },
+                {
+                  textContent: `<b>Крепление:пружина (белая/серебро)</b>`,
+                },
+                {
+                  textContent: `<b>Люверс (белый/серебро)</b>`,
+                },
+                {
+                  textContent: `<b>Бегунок</b>`,
+                },
+              ],
+            },
+          })
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple`)
-          div(class=`slider-and-product-description`)
-            div(class=`slider-and-product-description__column` id="calendar-2")
-              +label(`slider-and-product-description__title`, {
-                classModifiers: '--color-orange',
-                title: {
-                    textContent: 'Трио',
-                    classModifiers: '--color-white',
-                  },
-              })
-              +slider(`slider-and-product-description__slider`)
-            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
-              div(class=`slider-and-product-description__description`)
-                +texts('', {elements: [
-                  {
-                    textContent: `Календарь ТРИО подойдет практически для любой компании.
-                    Этот вид календаря полюбили многие компании
-                    за его практичность, красоту и невысокую стоимость производства!`,
-                  },
-                  {
-                    textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
-                    индивидуальный дизайн, который подчеркнет достоинства
-                    Вашей компании и Ваш неповторимый стиль!`,
-                  },
-                  {
-                    textContent: `<b>Печать подложки и шпигеля: полноцветная на картоне 265 гр/м2</b>`,
-                  },
-                  {
-                    textContent: `<b>Календарные блоки: стандартные (цветность) 2+0 на офсетной бумаге 80 гр/м2</b>`,
-                  },
-                  {
-                    textContent: `<b>Крепление:пружина (белая/серебро)</b>`,
-                  },
-                  {
-                    textContent: `<b>Люверс (белый/серебро)</b>`,
-                  },
-                  {
-                    textContent: `<b>Бегунок</b>`,
-                  },
-                  ]})
+          +sliderAndProductDescription('', {
+            columnSlider: {
+              id: 'calendar-2',
+              classModifiers: '--color-white',
+            },
+            label: {
+              classModifiers: '--color-orange',
+              title: {
+                textContent: 'Трио',
+                classModifiers: '--color-white',
+              },
+            },
+            texts: {
+              elements: [
+                {
+                  textContent: `Календарь ТРИО подойдет практически для любой компании.
+                  Этот вид календаря полюбили многие компании
+                  за его практичность, красоту и невысокую стоимость производства!`,
+                },
+                {
+                  textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
+                  индивидуальный дизайн, который подчеркнет достоинства
+                  Вашей компании и Ваш неповторимый стиль!`,
+                },
+                {
+                  textContent: `<b>Печать подложки и шпигеля: полноцветная на картоне 265 гр/м2</b>`,
+                },
+                {
+                  textContent: `<b>Календарные блоки: стандартные (цветность) 2+0 на офсетной бумаге 80 гр/м2</b>`,
+                },
+                {
+                  textContent: `<b>Крепление:пружина (белая/серебро)</b>`,
+                },
+                {
+                  textContent: `<b>Люверс (белый/серебро)</b>`,
+                },
+                {
+                  textContent: `<b>Бегунок</b>`,
+                },
+              ],
+            },
+          })
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple`)
-          div(class=`slider-and-product-description`)
-            div(class=`slider-and-product-description__column slider-and-product-description__column--color-green` id="calendar-3")
-              +label(`slider-and-product-description__title`, {
-                title: {
-                    textContent: 'Домик',
-                    classModifiers: '--color-green',
-                  },
-                description : {
-                    textContent: '*стандарт'
-                }
-              })
-              +slider(`slider-and-product-description__slider`)
-            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
-              div(class=`slider-and-product-description__description`)
-                +texts('', {elements: [
-                  {
-                    textContent: `Настольный календарь "домик" подразумевает его использование
-                    прямо на рабочем месте Ваших клиентов, а значит Ваша
-                    компания всегда будет в поле видимости,
-                    будет своей, родной, ведь она впишется в
-                    рабочее пространство человека на целый год!`,
-                  },
-                  {
-                    textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
-                    индивидуальный дизайн, который подчеркнет достоинства
-                    Вашей компании и Ваш неповторимый стиль!`,
-                  },
-                  {
-                    textContent: `<b>Домик горизонтальный</b>`,
-                  },
-                  {
-                    textContent: `<b>Основа (210 х 120 х 60) биговки 3шт: с печатью 4+0 на картоне 265 гр/м2</b>`,
-                  },
-                  {
-                    textContent: `<b>Крепление: склейка</b>`,
-                  },
-                  ]})
+          +sliderAndProductDescription('', {
+            columnSlider: {
+              id: 'calendar-3',
+              classModifiers: '--color-green',
+            },
+            label: {
+              title: {
+                textContent: 'Домик',
+                classModifiers: '--color-green',
+              },
+              description : {
+                  textContent: '*стандарт',
+              },
+            },
+            texts: {
+              elements: [
+                {
+                  textContent: `Настольный календарь "домик" подразумевает его использование
+                  прямо на рабочем месте Ваших клиентов, а значит Ваша
+                  компания всегда будет в поле видимости,
+                  будет своей, родной, ведь она впишется в
+                  рабочее пространство человека на целый год!`,
+                },
+                {
+                  textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
+                  индивидуальный дизайн, который подчеркнет достоинства
+                  Вашей компании и Ваш неповторимый стиль!`,
+                },
+                {
+                  textContent: `<b>Домик горизонтальный</b>`,
+                },
+                {
+                  textContent: `<b>Основа (210 х 120 х 60) биговки 3шт: с печатью 4+0 на картоне 265 гр/м2</b>`,
+                },
+                {
+                  textContent: `<b>Крепление: склейка</b>`,
+                },
+              ],
+            },
+          })
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-green`)
-          div(class=`slider-and-product-description`)
-            div(class=`slider-and-product-description__column` id="calendar-4")
-              +label(`slider-and-product-description__title`, {
-                classModifiers: '--color-orange',
-                title: {
-                    textContent: 'Домик',
-                    classModifiers: '--color-white',
-                  },
-                description : {
-                    textContent: '*перекидной',
-                    classModifiers: '--color-black',
-                }
-              })
-              +slider(`slider-and-product-description__slider`)
-            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
-              div(class=`slider-and-product-description__description`)
-                +texts('', {elements: [
-                  {
-                    textContent: `Настольный календарь "домик" с перекидными блоками
-                    позволит вам рассказать о компании и товаре
-                    более развёрнуто, предоставив о
-                    них фото и необходимую рекламную информацию.`,
-                  },
-                  {
-                    textContent: `Такой календарь подразумевает его использование прямо
-                    на рабочем месте Ваших клиентов, а значит
-                    Ваша компания всегда будет в поле видимости,
-                    будет своей, родной, ведь она впишется
-                    в рабочее пространство человека на целый год!`,
-                  },
-                  {
-                    textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
-                    индивидуальный дизайн, который подчеркнет достоинства
-                    Вашей компании и Ваш неповторимый стиль!`,
-                  },
-                  {
-                    textContent: `<b>Домик горизонтальный с перекидными блоками</b>`,
-                  },
-                  {
-                    textContent: `<b>Основа (210 х 120 х 60) биговки 3шт: с печатью 4+0 на картоне 265 гр/м2</b>`,
-                  },
-                  {
-                    textContent: `<b>Блоки (210 х 90) - 6 шт (4+4) + обложка или 12 шт (4+0) + обложка</b>`,
-                  },
-                  {
-                    textContent: `<b>Крепление: пружина</b>`,
-                  },
-                  ]})
+          +sliderAndProductDescription('', {
+            columnSlider: {
+              id: 'calendar-4',
+              classModifiers: '--color-white',
+            },
+            label: {
+              classModifiers: '--color-orange',
+              title: {
+                textContent: 'Домик',
+                classModifiers: '--color-white',
+              },
+              description : {
+                textContent: '*перекидной',
+                classModifiers: '--color-black',
+              },
+            },
+            texts: {
+              elements: [
+                {
+                  textContent: `Настольный календарь "домик" с перекидными блоками
+                  позволит вам рассказать о компании и товаре
+                  более развёрнуто, предоставив о
+                  них фото и необходимую рекламную информацию.`,
+                },
+                {
+                  textContent: `Такой календарь подразумевает его использование прямо
+                  на рабочем месте Ваших клиентов, а значит
+                  Ваша компания всегда будет в поле видимости,
+                  будет своей, родной, ведь она впишется
+                  в рабочее пространство человека на целый год!`,
+                },
+                {
+                  textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
+                  индивидуальный дизайн, который подчеркнет достоинства
+                  Вашей компании и Ваш неповторимый стиль!`,
+                },
+                {
+                  textContent: `<b>Домик горизонтальный с перекидными блоками</b>`,
+                },
+                {
+                  textContent: `<b>Основа (210 х 120 х 60) биговки 3шт: с печатью 4+0 на картоне 265 гр/м2</b>`,
+                },
+                {
+                  textContent: `<b>Блоки (210 х 90) - 6 шт (4+4) + обложка или 12 шт (4+0) + обложка</b>`,
+                },
+                {
+                  textContent: `<b>Крепление: пружина</b>`,
+                },
+              ],
+            },
+          })
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple`)
-          div(class=`slider-and-product-description`)
-            div(class=`slider-and-product-description__column slider-and-product-description__column--color-orange-dark` id="calendar-5")
-              +label(`slider-and-product-description__title`, {
-                title: {
-                    textContent: 'Домик',
-                  },
-                description : {
-                    textContent: '*численник 1/2'
-                }
-              })
-              +slider(`slider-and-product-description__slider`)
-            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
-              div(class=`slider-and-product-description__description`)
-                +texts('', {elements: [
-                  {
-                    textContent: `Настольный календарь "домик" с перекидными
-                    индивидуальными блоками 1/2*`,
-                  },
-                  {
-                    textContent: `Такой календарь обязательно  заинтересует
-                    Ваших клиентов, своей индивидуальностью,
-                    а значит Ваша компания всегда будет
-                    в поле видимости и привлекать внимание
-                    к Вашей рекламе.`,
-                  },
-                  {
-                    textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
-                    индивидуальный дизайн, который подчеркнет достоинства
-                    Вашей компании и Ваш неповторимый стиль!`,
-                  },
-                  {
-                    textContent: `<b>Домик горизонтальный с перекидными блоками</b>`,
-                  },
-                  {
-                    textContent: `<b>Основа (210 х 120 х 60) биговки 3шт: с печатью 4+0 на картоне 265 гр/м2</b>`,
-                  },
-                  {
-                    textContent: `<b>Блоки (210 х 90) - 6 шт (4+4) + обложка или 12 шт (4+0) + обложка</b>`,
-                  },
-                  {
-                    textContent: `<b>Крепление: пружина</b>`,
-                  },
-                  ]})
+          +sliderAndProductDescription('', {
+            columnSlider: {
+              id: 'calendar-5',
+              classModifiers: '--color-orange-dark',
+            },
+            label: {
+              title: {
+                textContent: 'Домик',
+              },
+              description : {
+                textContent: '*численник 1/2',
+              },
+            },
+            texts: {
+              elements: [
+                {
+                  textContent: `Настольный календарь "домик" с перекидными
+                  индивидуальными блоками 1/2*`,
+                },
+                {
+                  textContent: `Такой календарь обязательно  заинтересует
+                  Ваших клиентов, своей индивидуальностью,
+                  а значит Ваша компания всегда будет
+                  в поле видимости и привлекать внимание
+                  к Вашей рекламе.`,
+                },
+                {
+                  textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
+                  индивидуальный дизайн, который подчеркнет достоинства
+                  Вашей компании и Ваш неповторимый стиль!`,
+                },
+                {
+                  textContent: `<b>Домик горизонтальный с перекидными блоками</b>`,
+                },
+                {
+                  textContent: `<b>Основа (210 х 120 х 60) биговки 3шт: с печатью 4+0 на картоне 265 гр/м2</b>`,
+                },
+                {
+                  textContent: `<b>Блоки (210 х 90) - 6 шт (4+4) + обложка или 12 шт (4+0) + обложка</b>`,
+                },
+                {
+                  textContent: `<b>Крепление: пружина</b>`,
+                },
+              ],
+            },
+          })
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-white`)
-          div(class=`slider-and-product-description`)
-            div(class=`slider-and-product-description__column slider-and-product-description__column--color-green` id="calendar-6")
-              +label(`slider-and-product-description__title`, {
-                title: {
-                    textContent: 'карманный',
-                    classModifiers: '--color-green',
-                  },
-              })
-              +slider(`slider-and-product-description__slider`)
-            div(class=`slider-and-product-description__column slider-and-product-description__column--description`)
-              div(class=`slider-and-product-description__description`)
-                +texts('', {elements: [
-                  {
-                    textContent: `Настольный календарь "домик" с перекидными
-                индивидуальными блоками 1/2*`,
-                  },
-                  {
-                    textContent: `Такой календарь обязательно  заинтересует
-                Ваших клиентов, своей индивидуальностью,
-                а значит Ваша компания всегда будет
-                в поле видимости и привлекать внимание
-                к Вашей рекламе.`,
-                  },
-                  {
-                    textContent: `Группа наших дизайнеров с удовольствием разработает для Вас
-                индивидуальный дизайн, который подчеркнет достоинства
-                Вашей компании и Ваш неповторимый стиль!`,
-                  },
-                  {
-                    textContent: `<b>Печать двухсторонняя или односторонняя: полноцветная на картоне 265 гр/м2</b>`,
-                  },
-                  {
-                    textContent: `<b>Дополнительно можно сделать:</b>`,
-                  },
-                  {
-                    textContent: `<b>Ламинация (матовая/глянцевая)</b>`,
-                  },
-                  {
-                    textContent: `<b>Кругление углов</b>`,
-                  },
-                  ]})
+          +sliderAndProductDescription('', {
+            columnSlider: {
+              id: 'calendar-6',
+              classModifiers: '--color-green',
+            },
+            label: {
+              title: {
+                textContent: 'Карманный',
+                classModifiers: '--color-green',
+              },
+            },
+            texts: {
+              elements: [
+                {
+                  textContent: `Карманные календари служат
+                  приятным дополнением к настенным! Такие
+                  календари можно часто встретить в записных
+                  книжках, ежедневниках и бумажниках Ваших клиентов!`,
+                },
+                {
+                  textContent: `Группа наших дизайнеров с удовольствием
+                  разработает для Вас индивидуальный дизайн,
+                  который подчеркнет достоинства Вашей компании
+                  и Ваш неповторимый стиль!`,
+                },
+                {
+                  textContent: `<b>Печать двухсторонняя или
+                  односторонняя: полноцветная на картоне 265 гр/м2</b>`,
+                },
+                {
+                  textContent: `<b>Дополнительно можно сделать:</b>`,
+                },
+                {
+                  textContent: `<b>Ламинация (матовая/глянцевая)</b>`,
+                },
+                {
+                  textContent: `<b>Кругление углов</b>`,
+                },
+              ],
+            },
+          })
     +footer
