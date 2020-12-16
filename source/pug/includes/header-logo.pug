@@ -1,4 +1,24 @@
-mixin header-logo(className)
-  p(class=[className, 'header-logo'])
-    a.header-logo__link(href="index.html")
-      img.header-logo__image(src=variables.imagePath + 'orange-logo.svg' width='177' height='177' alt='Типография Копи Шоп Оранж')
+mixin headerLogo(nameMixedClass, obj)
+  -
+    obj = obj || {}
+    obj.tagName = obj.tagName || 'p'; // тег блока по умолчанию
+    obj.elementName = obj.elementName || 'header-logo';
+    obj.classModifiers = obj.classModifiers || [];
+    obj.classModifiers = variables.getArrayClassModifiers(obj.classModifiers);
+
+    obj.link = obj.link || {};
+    obj.link.tagName = obj.link.tagName || 'a'; // тег элемента по умолчанию
+    obj.link.elementName = obj.link.elementName || '__link'; // имя элемента по умолчанию
+    obj.link.classModifiers = obj.link.classModifiers || [];
+    obj.link.classModifiers = variables.getArrayClassModifiers(obj.link.classModifiers);
+    obj.link.alt = obj.link.alt || 'Типография Копи Шоп Оранж';
+    obj.link.href = obj.pageClassName === 'index' ? false: 'index.html';
+
+
+  #{obj.tagName}(class=[
+    nameMixedClass,
+    obj.elementName,
+    variables.getModifierClasses(obj.classModifiers, obj.elementName)
+  ])
+    a(class=`${obj.elementName}${obj.link.elementName}` href=obj.link.href)
+      img.header-logo__image(src=variables.imagePath + 'orange-logo.svg' width='177' height='177' alt=obj.link.alt)

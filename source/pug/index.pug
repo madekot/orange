@@ -8,11 +8,14 @@ include includes/_includes.pug
   var typesProducts = variables.page.index.typesProducts;
   var orderPlanData = variables.page.index.orderPlan
 
+  var obj = {};
+  obj.pageClassName = pageClassName || '';
+
 <!DOCTYPE html>
 html(lang="ru")
   +head(pageTitle, pageTitle)
   body(class=pageClassName)
-    +header
+    +header('', obj)
     main(class=pageClassName + '__main')
       h1.visually-hidden Типография оранж - типография полного цикла.
       +types-works(pageClassName + '__types-works')
