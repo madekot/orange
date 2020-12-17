@@ -35,12 +35,12 @@ html(lang="ru")
             | офсетный вал, а оттуда — на бумагу. Офсетный вал способствует меньшему износу форм и большей
             | ровности краски.
       div(class=`${pageClassName}__wrap-slider decorative-line decorative-line--double-simple decorative-line--double-simple-color-top`)
-        section(class=`${pageClassName}__slider`)
+        div(class=`${pageClassName}__slider`)
           +label(`${pageClassName}__slider-wrap-text`, {
             title: {
               textContent: 'примеры',
             },
           })
-          +slider(`${pageClassName}__slider-slides slider--not-shadow`)
+          +sliderList(`${pageClassName}__slider-slides slider--not-shadow`)
 
     +footerWrapper
