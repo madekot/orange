@@ -1,3 +1,19 @@
-mixin slider(className)
-  div(class=[className, 'slider'])
-    div(class="slider__content")
+mixin slider(nameMixedClass, obj)
+  -
+    obj = obj || {}
+    obj.tagName = obj.tagName || 'div'; // тег блока по умолчанию
+    obj.elementName = obj.elementName || 'slider';
+    obj.classModifiers = obj.classModifiers || [];
+    obj.classModifiers = variables.getArrayClassModifiers(obj.classModifiers);
+
+    obj.label = obj.label || {};
+
+  #{obj.tagName}(class=[
+    nameMixedClass,
+    obj.elementName,
+    variables.getModifierClasses(obj.classModifiers, obj.elementName)
+  ] id=obj.id )
+    if (obj.label.isRender)
+      +label(`${obj.elementName}__title`, obj.label)
+    +sliderList(`${obj.elementName}__slider-list`)
+

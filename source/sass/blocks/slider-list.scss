@@ -1,0 +1,36 @@
+.slider-list {
+  display: flex;
+
+  box-shadow: 7px 7px 12px rgba(0,0,0,0.2);
+}
+
+.slider-list--border {
+  border: solid 100px #f5ba00;
+  border-right-width: 70px;
+  border-left-width: 70px;
+}
+
+.slider-list--not-shadow {
+  box-shadow: none;
+}
+
+.slider-list__content {
+  flex-grow: 1;
+
+  background-image: url($cssPath + "slider__mage--1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+}
+
+@media (max-width: $tabletBreakpoint) {
+  .slider-list {
+    display: flex;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .slider-list {
+    display: flex;
+  }
+}

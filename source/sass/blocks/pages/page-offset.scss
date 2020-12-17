@@ -61,19 +61,9 @@
 }
 
 .page-offset__slider {
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-
   max-width: var(--semi-max-width-page);
   margin-right: auto;
   margin-left: auto;
-  padding-top: 30px;
-  padding-right: 0;
-  padding-bottom: 60px;
-  padding-left: 0;
-
-  background-color: var(--main-color-light);
 }
 
 .page-offset__slider-wrap-text {
