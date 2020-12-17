@@ -38,15 +38,26 @@ html(lang="ru")
       ul(class=`${pageClassName}__calendars-list`)
         li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-gray`)
           +sliderAndProductDescription('', {
+            managerCheck: {
+              isRender: false,
+            },
+            sendIdeas: {
+              isRender: false,
+            },
+            informationCall: {
+              isRender: false,
+            },
             columnSlider: {
               id: 'calendar-1',
             },
             label: {
+              isRender: true,
               title: {
                 textContent: 'Моно',
               },
             },
             texts: {
+              isRender: true,
               elements: [
                 {
                   textContent: `Календарь МОНО с одной стороны подчеркнет Ваш уникальный стиль,
@@ -84,6 +95,7 @@ html(lang="ru")
               classModifiers: '--color-white',
             },
             label: {
+              isRender: true,
               classModifiers: '--color-orange',
               title: {
                 textContent: 'Трио',
@@ -127,6 +139,7 @@ html(lang="ru")
               classModifiers: '--color-green',
             },
             label: {
+              isRender: true,
               title: {
                 textContent: 'Домик',
                 classModifiers: '--color-green',
@@ -168,6 +181,7 @@ html(lang="ru")
               classModifiers: '--color-white',
             },
             label: {
+              isRender: true,
               classModifiers: '--color-orange',
               title: {
                 textContent: 'Домик',
@@ -220,6 +234,7 @@ html(lang="ru")
               classModifiers: '--color-orange-dark',
             },
             label: {
+              isRender: true,
               title: {
                 textContent: 'Домик',
               },
@@ -267,6 +282,7 @@ html(lang="ru")
               classModifiers: '--color-green',
             },
             label: {
+              isRender: true,
               title: {
                 textContent: 'Карманный',
                 classModifiers: '--color-green',

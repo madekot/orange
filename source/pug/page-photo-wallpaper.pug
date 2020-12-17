@@ -16,19 +16,26 @@ html(lang="ru")
         decorative-line
         decorative-line--double-simple
         decorative-line--double-simple-color-top`)
-        div(class=pageClassName + '__inner-wrap-row')
-          +slider(pageClassName + '__slider slider--border slider--not-shadow')
-          div(class=pageClassName + '__wrap-column')
-            div(class=pageClassName + '__wrap-text')
-              p(class=pageClassName + '__text')
-                |Фотообои - это то, что может раскрасить интерьер
-                |любого помещения и реализовать самые смелые дизайнерские решения, если Вы хотите
-                |видеть у себя дома потрясающие виды Венеции или Праги, красивейших пляжей мира
-                |или горных хребтов, то тогда это к нам!
-              p(class=pageClassName + '__text')
-                |В нашей компании используется только самая качественная печать.
-                |Если вы не можете определиться с тематикой фотообоев, опытные
-                |дизайнеры подберут варианты специально для Вашего помещения.
+        +sliderAndProductDescription(`${pageClassName}__inner-wrap-row`, {
+          columnSlider: {
+            classModifiers: '--color-orange',
+          },
+          texts: {
+            elements: [
+              {
+                textContent: `Фотообои - это то, что может раскрасить интерьер
+                любого помещения и реализовать самые смелые дизайнерские решения, если Вы хотите
+                видеть у себя дома потрясающие виды Венеции или Праги, красивейших пляжей мира
+                или горных хребтов, то тогда это к нам!`,
+              },
+              {
+                textContent: `В нашей компании используется только самая качественная печать.
+                Если вы не можете определиться с тематикой фотообоев, опытные
+                дизайнеры подберут варианты специально для Вашего помещения.`,
+              },
+            ],
+          },
+        })
             +managerCheck(pageClassName + '__manager-check')
             +sendIdeas(pageClassName + '__send-ideas')
       +priceTable(pageClassName + '__interior-print price-table--title-align-right')

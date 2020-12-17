@@ -18,48 +18,8 @@
   margin-bottom: 70px;
 }
 
-.page-photo-wallpaper__inner-wrap-row {
-  @include page-inner;
-
-  display: flex;
-
-  padding-right: 0;
-  padding-left: 0;
-
-  background-color: #f5ba00;
-}
-
-.page-photo-wallpaper__slider {
-  flex-shrink: 0;
-
-  width: 500px;
-  height: 400px;
-}
-
-.page-photo-wallpaper__wrap-column {
-  padding: 40px;
-
-  background-color: #ffffff;
-  box-shadow: -3px -7px 15px rgba(0, 0, 0, 0.2);
-}
-
-.page-photo-wallpaper__wrap-text {
-  margin-bottom: 50px;
-
-  letter-spacing: 1px;
-}
-
-.page-photo-wallpaper__text {
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
 .page-photo-wallpaper__manager-check {
   margin-bottom: 20px;
-}
-
-.page-photo-wallpaper__text:last-of-type {
-  margin-bottom: 0;
 }
 
 .page-photo-wallpaper__interior-print {
@@ -74,41 +34,4 @@
 
   max-width: 450px;
   margin-bottom: 50px;
-}
-
-@media (max-width: $desktopBreakpoint) {
-  .page-photo-wallpaper__inner-wrap-row {
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .page-photo-wallpaper__inner-wrap-row {
-    background-color: transparent;
-  }
-}
-
-@media (max-width: $tabletBreakpoint) {
-  .page-photo-wallpaper__slider {
-    width: calc(500px * 0.6);
-    height: calc(400px * 0.6);
-
-    border-width: calc(70px * 0.6);
-  }
-
-  .page-photo-wallpaper__wrap-text {
-    margin-bottom: 50px;
-
-    letter-spacing: 1px;
-
-    font-size: var(--font-size-semi-small);
-  }
-}
-
-@media (max-width: $mobileBreakpoint) {
-  .page-photo-wallpaper__slider {
-    width: calc(500px * 0.45);
-    height: calc(400px * 0.45);
-
-    border-width: calc(70px * 0.45);
-  }
 }
