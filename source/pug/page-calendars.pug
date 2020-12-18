@@ -36,8 +36,14 @@ html(lang="ru")
       +typesCalendars(`${pageClassName}__types-calendars`)
       p(class=`${pageClassName}__lead`) Закажи календари сейчас по выгодной цене!
       ul(class=`${pageClassName}__calendars-list`)
-        li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-gray`)
+        li(class=`${pageClassName}__calendar`)
           +sliderAndProductDescription('', {
+            decorativeLineTop: {
+              classModifiers: ['--simple', '--simple-color-gray'],
+            },
+            decorativeLineBottom: {
+              isRender: false,
+            },
             managerCheck: {
               isRender: false,
             },
@@ -88,8 +94,14 @@ html(lang="ru")
               ],
             },
           })
-        li(class=`${pageClassName}__calendar decorative-line decorative-line--simple`)
+        li(class=`${pageClassName}__calendar`)
           +sliderAndProductDescription('', {
+            decorativeLineTop: {
+              classModifiers: ['--simple', '--simple-color-orange'],
+            },
+            decorativeLineBottom: {
+              isRender: false,
+            },
             columnSlider: {
               id: 'calendar-2',
               classModifiers: '--color-white',
@@ -132,8 +144,14 @@ html(lang="ru")
               ],
             },
           })
-        li(class=`${pageClassName}__calendar decorative-line decorative-line--simple`)
+        li(class=`${pageClassName}__calendar`)
           +sliderAndProductDescription('', {
+            decorativeLineTop: {
+              classModifiers: ['--simple', '--simple-color-orange'],
+            },
+            decorativeLineBottom: {
+              isRender: false,
+            },
             columnSlider: {
               id: 'calendar-3',
               classModifiers: '--color-green',
@@ -174,8 +192,14 @@ html(lang="ru")
               ],
             },
           })
-        li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-green`)
+        li(class=`${pageClassName}__calendar`)
           +sliderAndProductDescription('', {
+            decorativeLineTop: {
+              classModifiers: ['--simple', '--simple-color-green'],
+            },
+            decorativeLineBottom: {
+              isRender: false,
+            },
             columnSlider: {
               id: 'calendar-4',
               classModifiers: '--color-white',
@@ -227,8 +251,14 @@ html(lang="ru")
               ],
             },
           })
-        li(class=`${pageClassName}__calendar decorative-line decorative-line--simple`)
+        li(class=`${pageClassName}__calendar`)
           +sliderAndProductDescription('', {
+            decorativeLineTop: {
+              classModifiers: ['--simple', '--simple-color-orange'],
+            },
+            decorativeLineBottom: {
+              isRender: false,
+            },
             columnSlider: {
               id: 'calendar-5',
               classModifiers: '--color-orange-dark',
@@ -275,8 +305,14 @@ html(lang="ru")
               ],
             },
           })
-        li(class=`${pageClassName}__calendar decorative-line decorative-line--simple decorative-line--simple-color-white`)
+        li(class=`${pageClassName}__calendar`)
           +sliderAndProductDescription('', {
+            decorativeLineTop: {
+              classModifiers: ['--simple', '--simple-color-white'],
+            },
+            decorativeLineBottom: {
+              isRender: false,
+            },
             columnSlider: {
               id: 'calendar-6',
               classModifiers: '--color-green',

@@ -34,7 +34,10 @@ html(lang="ru")
             | на его гидрофобные части наносится краска. Изображение переносится с вала с печатной формой на
             | офсетный вал, а оттуда — на бумагу. Офсетный вал способствует меньшему износу форм и большей
             | ровности краски.
-      div(class=`${pageClassName}__wrap-slider decorative-line decorative-line--double-simple decorative-line--double-simple-color-top`)
+      div(class=`${pageClassName}__wrap-slider`)
+        +decorativeLine('', {
+          classModifiers: ['--simple', '--simple-color-gray'],
+        })
         +slider(`${pageClassName}__slider`, {
           label: {
             isRender: true,
@@ -42,5 +45,8 @@ html(lang="ru")
               textContent: 'Примеры',
             },
           },
+        })
+        +decorativeLine('', {
+          classModifiers: ['--simple', '--simple-color-orange'],
         })
     +footerWrapper

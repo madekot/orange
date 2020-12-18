@@ -39,43 +39,64 @@ mixin sliderAndProductDescription(nameMixedClass, obj)
 
     obj.texts = obj.texts || {};
     obj.texts.isRender = obj.texts.isRender || true;
+
     obj.label = obj.label || {};
     obj.label.title = obj.label.title || {};
     obj.label.description = obj.label.description || {};
+
     obj.sendIdeas = obj.sendIdeas || {};
     obj.managerCheck = obj.managerCheck || {};
     obj.informationCall = obj.informationCall || {};
+
+    obj.decorativeLineTop = obj.decorativeLineTop || {};
+    obj.decorativeLineTop.isRender = obj.decorativeLineTop.isRender !== false;
+    obj.decorativeLineTop.classModifiers = variables.getArrayClassModifiers(obj.decorativeLineTop.classModifiers || ['--simple', '--simple-color-gray']);
+
+    obj.decorativeLineBottom = obj.decorativeLineBottom || {};
+    obj.decorativeLineBottom.isRender = obj.decorativeLineBottom.isRender !== false;
+    obj.decorativeLineBottom.classModifiers = variables.getArrayClassModifiers(obj.decorativeLineBottom.classModifiers || '--simple');
 
   #{obj.tagName}(class=[
     nameMixedClass,
     obj.elementName,
     variables.getModifierClasses(obj.classModifiers, obj.elementName)
   ])
-    +slider(`${obj.elementName}__column-slider`, {
-      id: obj.columnSlider.id,
-      classModifiers: obj.columnSlider.classModifiers,
-      label: {
-        isRender: obj.label.isRender,
-        classModifiers: obj.label.classModifiers,
-        title: {
-          textContent: obj.label.title.textContent,
-          classModifiers: obj.label.title.classModifiers,
+    if(obj.decorativeLineTop.isRender)
+      +decorativeLine(`${obj.elementName}__decorative-line-top`, {
+        isRender: obj.decorativeLineTop.isRender,
+        classModifiers: obj.decorativeLineTop.classModifiers,
+      })
+    div(class=`${obj.elementName}__content`)
+      +slider(`${obj.elementName}__column-slider`, {
+        id: obj.columnSlider.id,
+        classModifiers: obj.columnSlider.classModifiers,
+        label: {
+          isRender: obj.label.isRender,
+          classModifiers: obj.label.classModifiers,
+          title: {
+            textContent: obj.label.title.textContent,
+            classModifiers: obj.label.title.classModifiers,
+          },
+          description: {
+            textContent: obj.label.description.textContent,
+            classModifiers: obj.label.description.classModifiers,
+          },
         },
-        description: {
-          textContent: obj.label.description.textContent,
-          classModifiers: obj.label.description.classModifiers,
-        },
-      },
+      })
+      div(class=`${obj.elementName}__column-texts`)
+        if(obj.texts.isRender)
+          +texts(`${obj.elementName}__texts`, obj.texts)
+
+        if(obj.managerCheck.isRender)
+          +managerCheck(`${obj.elementName}__manager-check`)
+
+        if(obj.sendIdeas.isRender)
+          +sendIdeas(`${obj.elementName}__send-ideas`)
+
+        if(obj.informationCall.isRender)
+          +informationCall(`${obj.elementName}__information-call`)
+    if(obj.decorativeLineBottom.isRender)
+      +decorativeLine(`${obj.elementName}__decorative-line-bottom`, {
+        isRender: obj.decorativeLineBottom.isRender,
+        classModifiers: obj.decorativeLineBottom.classModifiers,
     })
-    div(class=`${obj.elementName}__column-texts`)
-      if(obj.texts.isRender)
-        +texts(`${obj.elementName}__texts`, obj.texts)
-
-      if(obj.managerCheck.isRender)
-        +managerCheck(`${obj.elementName}__manager-check`)
-
-      if(obj.sendIdeas.isRender)
-        +sendIdeas(`${obj.elementName}__send-ideas`)
-
-      if(obj.informationCall.isRender)
-        +informationCall(`${obj.elementName}__information-call`)

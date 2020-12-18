@@ -16,7 +16,14 @@ html(lang="ru")
       +productionItem(`${pageClassName}__production-item production-item--interior-icon`, interiorPrinting)
       div(class=pageClassName + '__decorative-line decorative-line decorative-line--little-size')
       +informationCall(pageClassName + '__information-call')
-      +sliderList(pageClassName + '__slider decorative-line decorative-line--double-simple decorative-line--double-simple-color-top')
+      div(class=pageClassName + '__wrap-slider')
+        +decorativeLine('', {
+          classModifiers: ['--simple', '--simple-color-orange'],
+        })
+        +sliderList(pageClassName + '__slider')
+        +decorativeLine('', {
+          classModifiers: ['--simple', '--simple-color-orange'],
+        })
       div(class=pageClassName + '__wrap')
         section(class=pageClassName + '__advantages')
           h2(class=pageClassName + '__advantages-title') Преимущества печати в типографии оранж

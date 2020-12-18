@@ -18,10 +18,12 @@ html(lang="ru")
     +header('', obj)
     main(class=pageClassName + '__main')
       h1.visually-hidden Типография оранж - типография полного цикла.
-      +typesWorks(pageClassName + '__types-works')
-      div(class=pageClassName + '__simple-decorative-line decorative-line decorative-line--simple')
+      +typesWorks(`${pageClassName}__types-works`)
+      +decorativeLine(`${pageClassName}__simple-decorative-line`, {
+        classModifiers: '--simple',
+      })
       +aboutUs(pageClassName + '__about-us', aboutUs)
-      div(class=pageClassName + '__decorative-line decorative-line')
+      +decorativeLine(`${pageClassName}__decorative-line`)
       +typesProducts(pageClassName + '__types-products', typesProducts)
       div(class=pageClassName + '__wrap-order-plan')
         +orderPlan(pageClassName + '__order-plan', orderPlanData)

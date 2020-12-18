@@ -1,4 +1,4 @@
-.slider-and-product-description {
+.slider-and-product-description__content {
   display: flex;
   justify-content: center;
 
@@ -42,7 +42,7 @@
 }
 
 @media (max-width: $tabletBreakpoint) {
-  .slider-and-product-description {
+  .slider-and-product-description__content {
     flex-wrap: wrap;
   }
 

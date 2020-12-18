@@ -1,0 +1,13 @@
+mixin decorativeLine(nameMixedClass, obj)
+  -
+    obj = obj || {}
+    obj.tagName = obj.tagName || 'div'; // тег блока по умолчанию
+    obj.elementName = obj.elementName || 'decorative-line';
+    obj.classModifiers = obj.classModifiers || [];
+    obj.classModifiers = variables.getArrayClassModifiers(obj.classModifiers);
+
+  #{obj.tagName}(class=[
+    nameMixedClass,
+    obj.elementName,
+    variables.getModifierClasses(obj.classModifiers, obj.elementName)
+  ])
