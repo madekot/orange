@@ -1,6 +1,6 @@
 include about-us-item.pug
 
-mixin about-us(className, obj)
+mixin aboutUs(className, obj)
   -
     obj = obj || {};
     obj.listItems = obj.listItems || [false, false];
@@ -10,4 +10,4 @@ mixin about-us(className, obj)
     h2.visually-hidden #{obj.title}
     ul.about-us__list
       each item in obj.listItems
-        +about-us-item('about-us__item', item)
+        +aboutUsItem('about-us__item', item)
