@@ -23,9 +23,11 @@ html(lang="ru")
     main(class=`${pageClassName}__main`)
       h1.visually-hidden Вся продукция и услуги типографии Копи шоп оранж
       +productionItem(`${pageClassName}__production-item`, digitalPrinting)
-      div(class=`${pageClassName}__decorative-wrapper decorative-wrapper`)
+      +decorativeWrapper(pageClassName + '__decorative-wrapper')
       +productionItem(`${pageClassName}__production-item`, widePrinting)
-      div(class=`${pageClassName}__decorative-wrapper-image decorative-wrapper decorative-wrapper--image`)
+      +decorativeWrapper(pageClassName + '__decorative-wrapper-image', {
+        classModifiers: '--image',
+      })
       +productionItem(`${pageClassName}__production-item`, souvenir)
       div(class=`${pageClassName}__wrap-design`)
         +decorativeLine(pageClassName + '__decorative-line', {

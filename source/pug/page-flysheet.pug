@@ -45,6 +45,8 @@ html(lang="ru")
           },
         })
       +informationCall(pageClassName + '__information-call')
-      div(class=pageClassName + '__decorative-wrapper decorative-wrapper decorative-wrapper--image-2')
+      +decorativeWrapper(pageClassName + '__decorative-wrapper', {
+        classModifiers: '--image-2',
+      })
       +decorativeLine(pageClassName + '__decorative-line')
     +footer
