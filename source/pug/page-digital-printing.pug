@@ -3,6 +3,7 @@ include includes/head.pug
 include includes/header.pug
 include includes/footer-wrapper.pug
 include includes/production-item.pug
+include includes/_includes.pug
 
 -var pageClassName = 'page-digital-printing';
 -var pageTitle = 'Цифровая печать, виды работ';
@@ -18,6 +19,8 @@ html(lang="ru")
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
       +productionItem(pageClassName + '__production-item', digitalPrinting)
-      div(class=pageClassName + '__decorative-line decorative-line decorative-line--simple')
-      
+      +decorativeLine(pageClassName + '__decorative-line', {
+        classModifiers: ['--simple', '--simple-color-orange'],
+      })
+
     +footerWrapper

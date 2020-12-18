@@ -3,6 +3,8 @@ include includes/head.pug
 include includes/header.pug
 include includes/footer-wrapper.pug
 include includes/production-item.pug
+include includes/_includes.pug
+
 
 -var pageClassName = variables.page.production.className;
 -var pageTitle = variables.page.production.title;
@@ -25,7 +27,10 @@ html(lang="ru")
       +productionItem(`${pageClassName}__production-item`, widePrinting)
       div(class=`${pageClassName}__decorative-wrapper-image decorative-wrapper decorative-wrapper--image`)
       +productionItem(`${pageClassName}__production-item`, souvenir)
-      div(class=`${pageClassName}__wrap-design decorative-line decorative-line--simple`)
+      div(class=`${pageClassName}__wrap-design`)
+        +decorativeLine(pageClassName + '__decorative-line', {
+          classModifiers: ['--simple', '--simple-color-orange'],
+        })
         +productionItem(`${pageClassName}__production-item ${pageClassName}__production-item--design production-item--design-icon`, design)
-        
+
     +footerWrapper

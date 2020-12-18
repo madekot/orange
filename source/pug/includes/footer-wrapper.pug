@@ -1,8 +1,13 @@
+include decorative-line.pug
 include footer.pug
 
 mixin footerWrapper(className)
   - var blockClassName = 'footer-wrapper'
-  div(class=[className, blockClassName, 'decorative-line'])
+
+  div(class=[className, blockClassName])
+    +decorativeLine(blockClassName + '__decorative-line', {
+        classModifiers: ['--little-size'],
+      })
     +footer(blockClassName + '__footer')
 
 

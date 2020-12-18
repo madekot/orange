@@ -14,7 +14,9 @@ html(lang="ru")
     main(class=pageClassName + '__main')
       h1.visually-hidden #{pageTitle}
       +productionItem(`${pageClassName}__production-item production-item--interior-icon`, interiorPrinting)
-      div(class=pageClassName + '__decorative-line decorative-line decorative-line--little-size')
+      +decorativeLine(pageClassName + '__decorative-line', {
+        classModifiers: ['--little-size'],
+      })
       +informationCall(pageClassName + '__information-call')
       div(class=pageClassName + '__wrap-slider')
         +decorativeLine('', {
