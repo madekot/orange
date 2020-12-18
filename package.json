@@ -17,6 +17,7 @@
     "browser-sync": "^2.26.12",
     "del": "^6.0.0",
     "gulp": "^4.0.0",
+    "gulp-html-bem-validator": "^1.0.5",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",

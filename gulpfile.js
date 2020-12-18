@@ -9,6 +9,17 @@ const sync = require("browser-sync").create();
 const del = require("del");
 const notify = require("gulp-notify");
 const typograf = require('gulp-typograf');
+const gulpHtmlBemValidator = require('gulp-html-bem-validator');
+
+
+// checkBemNaming
+const checkBemNaming = () => {
+  return gulp.src(['build/*.html'])
+    .pipe(gulpHtmlBemValidator())
+}
+
+exports.checkBemNaming = checkBemNaming;
+
 
 // Htmls
 const htmls = () => {
@@ -76,5 +87,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  deleteImage, imagesCopy, htmls, styles, server, watcher
+  checkBemNaming, deleteImage, imagesCopy, htmls, styles, server, watcher
 );
