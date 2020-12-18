@@ -12,7 +12,7 @@ mixin headerLogo(nameMixedClass, obj)
     obj.link.classModifiers = obj.link.classModifiers || [];
     obj.link.classModifiers = variables.getArrayClassModifiers(obj.link.classModifiers);
     obj.link.alt = obj.link.alt || 'Типография Копи Шоп Оранж';
-    obj.link.href = obj.pageClassName === 'index' ? false: 'index.html';
+    obj.link.href = obj.pageClassName === 'index' ? '#': 'index.html';
 
 
   #{obj.tagName}(class=[
