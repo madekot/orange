@@ -1,0 +1,24 @@
+.page-banner__title {
+  @include page-inner;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.page-banner__slider-and-product-description {
+  margin-bottom: 50px;
+}
+
+.page-banner__information-call {
+  @include page-inner;
+
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.page-banner__price-table {
+  @include page-inner;
+  margin-bottom: 50px;
+}

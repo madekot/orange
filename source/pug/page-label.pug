@@ -1,0 +1,58 @@
+include includes/_includes.pug
+
+-
+  var pageClassName = 'page-label';
+  var pageTitle = 'Печать этикеток';
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header
+    main(class=pageClassName + '__main')
+      +titleTypeWork(`${pageClassName}__title`, {
+        tagName: 'h1',
+        textContent: pageTitle,
+      })
+      +sliderAndProductDescription(`${pageClassName}__slider-and-product-description`, {
+        managerCheck: {
+          isRender: false,
+        },
+        sendIdeas: {
+          isRender: false,
+        },
+        informationCall: {
+          isRender: false,
+        },
+        texts: {
+          isRender: true,
+          elements: [
+            {
+              textContent: `Размещение рекламы или другой ознакомительной
+              информации на обычных бумажных листах сейчас не популярно
+              в силу того, что они легко разрушаются, быстро выцветают
+              или размываются. К тому же ручное нанесение клея или
+              использование скотча делают процесс размещения рекламы
+              крайне неудобным и длительным. Поэтому все уважающие
+              себя предприятия давно используют наклейки на
+              самоклеющейся бумаге.`,
+            },
+            {
+              textContent: `Кроме собственно печати, мы также
+              разрабатываем дизайн макета наклеек,
+              подбираем оптимальный материал и
+              даем профессиональные конструктивные советы.`,
+            },
+            {
+              textContent: `<b>СТРУКТУРА БУМАЖНОГО СТИКЕРА:</b><br>
+              Стандартный стикер изготавливают на основе бумаги,
+              с одной стороны которой графические изображения,
+              а с другой – клейкая основа. Прикрытием липкой
+              части может служить пленка или специальная бумага`,
+            },
+          ],
+        },
+      })
+      +informationCall(`${pageClassName}__information-call`)
+      +decorativeLine(`${pageClassName}__decorative-line`)
+    +footer

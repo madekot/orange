@@ -1,0 +1,64 @@
+include includes/_includes.pug
+
+-
+  var pageClassName = 'page-banner';
+  var pageTitle = 'Печать на баннерной ткани';
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header
+    main(class=pageClassName + '__main')
+      +titleTypeWork(`${pageClassName}__title`, {
+        tagName: 'h1',
+        textContent: pageTitle,
+      })
+      +sliderAndProductDescription(`${pageClassName}__slider-and-product-description`, {
+        managerCheck: {
+          isRender: true,
+        },
+        sendIdeas: {
+          isRender: false,
+        },
+        informationCall: {
+          isRender: false,
+        },
+        texts: {
+          isRender: true,
+          elements: [
+            {
+              textContent: `Баннер это одна из самых распространённых
+              технологий в производстве наружной рекламы.`,
+            },
+            {
+              textContent: `Печать на баннере позволяет изготавливать
+              растяжки, брандмауэры и плакаты которые
+              используют в промо-акциях, в качестве временных
+              вывесок, при оформлении интерьеров
+              и выставочного оборудования.`,
+            },
+            {
+              textContent: `Широкоформатная печать на баннерах
+              позволяет получить насыщенные и стойкие
+              цвета, которые сохранят текстуру и качество
+              в течении длительного времени
+              в различных погодных условиях.`,
+            },
+            {
+              textContent: `<b>БАНЕР</b><br>
+              Данный термин имеет прямое отношение к рекламе.
+              Начнем с того, что с английского оно переводится
+              как «знамя, флаг, заголовок». Так и есть,
+              впервые они появились на улицах городов
+              в качестве рекламы. Когда вы едете на машине,
+              то вдоль дорог стоят рекламные щиты
+              с растяжками – это и есть баннеры.`,
+            },
+          ],
+        },
+      })
+      +priceTable(`${pageClassName}__price-table price-table--title-align-right`)
+      +informationCall(`${pageClassName}__information-call`)
+      +decorativeLine(`${pageClassName}__decorative-line`)
+    +footer
