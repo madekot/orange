@@ -1,0 +1,70 @@
+include includes/_includes.pug
+
+-
+  var pageClassName = 'page-flyer';
+  var pageTitle = 'Печать флаеров';
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header
+    main(class=pageClassName + '__main')
+      +titleTypeWork(`${pageClassName}__title`, {
+        tagName: 'h1',
+        textContent: pageTitle,
+      })
+      +sliderAndProductDescription(`${pageClassName}__slider-and-product-description`, {
+        managerCheck: {
+          isRender: false,
+        },
+        sendIdeas: {
+          isRender: false,
+        },
+        informationCall: {
+          isRender: false,
+        },
+        columnSlider: {
+          id: 'calendar-1',
+        },
+        texts: {
+          isRender: true,
+          elements: [
+            {
+              textContent: `<b>Листовка / флаер</b> – наиболее распространенный вид
+              рекламной полиграфической продукции, задача которого – донести
+              до потенциального потребителя максимум информации о товаре,
+              услуге, скидке, акции, распродаже, выставке и т.д.`,
+            },
+            {
+              textContent: `<b>Распространяется</b> бесплатно в местах проведения
+              акции или продаж. В большинстве случаев предоставляет
+              право на скидку, выполняет функцию бесплатного пропуска
+              либо пригласительного билета, которым может
+              воспользоваться любой человек.`,
+            },
+            {
+              textContent: `Печать рекламных листовок и флаеров а4, а5, а6
+              пользуются спросом среди заказчиков благодаря
+              своей невысокой стоимости.`,
+            },
+            {
+              textContent: `<b>Сфера приминения:</b> выставки,
+              развлекательные мероприятия, акции.`,
+            },
+            {
+              textContent: `<b>Цели и задачи</b>:<br> информирование о приближающемся событии,
+              предоставление скидки или бесплатного входа на мероприятие.
+              Яркие привлекательные листовки от ОРАНЖ – быстрый
+              способ сообщить о вашем коммерческом
+              предложении или о предстоящем событии.`,
+            },
+          ],
+        },
+      })
+      +informationCall(`${pageClassName}__information-call`)
+      +decorativeWrapper(`${pageClassName}__decorative-wrapper`,{
+        classModifiers: ['--simple', '--image-4'],
+      })
+      +decorativeLine(`${pageClassName}__decorative-line`)
+    +footer

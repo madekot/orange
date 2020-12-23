@@ -33,6 +33,13 @@
   background-size: contain;
 }
 
+.decorative-wrapper--image-4 {
+  padding: 35%;
+
+  background-image: url($cssPath + "decorative-wrapper__image-4.jpg");
+  background-size: contain;
+}
+
 @media (max-width: $tabletBreakpoint) {
   .decorative-wrapper--image-2 {
     padding: 20%;

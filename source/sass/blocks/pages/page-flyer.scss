@@ -1,0 +1,24 @@
+.page-flyer__title {
+  @include page-inner;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.page-flyer__slider-and-product-description {
+  margin-bottom: 50px;
+}
+
+.page-flyer__information-call {
+  @include page-inner;
+
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.page-flyer__decorative-wrapper {
+  margin-bottom: 30px;
+}
+
+
