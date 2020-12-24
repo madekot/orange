@@ -1,0 +1,56 @@
+include includes/_includes.pug
+
+-
+  var pageClassName = 'product-page';
+  var pageTitle = 'Печать наклеек на стены и мебель';
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header
+    main(class=pageClassName + '__main')
+      +titleTypeWork(`${pageClassName}__title`, {
+        tagName: 'h1',
+        textContent: pageTitle,
+      })
+      +sliderAndProductDescription(`${pageClassName}__slider-and-product-description`, {
+        managerCheck: {
+          isRender: true,
+        },
+        sendIdeas: {
+          isRender: false,
+        },
+        informationCall: {
+          isRender: false,
+        },
+        texts: {
+          isRender: true,
+          elements: [
+            {
+              textContent: `Огромный плюс данного дизайнерского приема
+              в том, что наклейки легко скроют все дефекты
+              на абсолютно любой мебели и превратят
+              её в совершенно новый и яркий элемент интерьера.
+              Наклейки легко наносятся на мебель, а также
+              легко снимаются с любой поверхности. Благодаря
+              использованию современной технологии полноцветной
+              печати, а также плоттерной резки, наклейки для
+              мебели не потеряют яркости цвета и будут долго
+              радовать глаз своего обладателя. Это прекрасное
+              решения для ценителей индивидуальности в интерьере.`,
+            },
+            {
+              textContent: `Сочетая наклейки для мебели с другими изделиями
+              широкоформатной интерьерной печати такими как фотообои и
+              картины на холсте, можно создать совершенно неповторимый
+              интерьер, который привлечёт к себе внимание всех
+              ваших друзей и знакомых.`,
+            },
+          ],
+        },
+      })
+      +priceTable(`${pageClassName}__price-table price-table--title-align-right`)
+      +informationCall(`${pageClassName}__information-call`)
+      +decorativeLine(`${pageClassName}__decorative-line`)
+    +footer
