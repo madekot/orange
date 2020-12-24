@@ -12,7 +12,7 @@
 }
 
 .page-offset__wrap-top {
-  @include semi-size-page-inner;
+  @include page-inner(var(--semi-max-width-page));
 
   display: flex;
   justify-content: center;

@@ -4,7 +4,7 @@
 }
 
 .page-calendars__wrap-text {
-  @include semi-size-page-inner;
+  @include page-inner(var(--semi-max-width-page));
 
   margin-bottom: 30px;
 }
@@ -26,13 +26,13 @@
 }
 
 .page-calendars__types-calendars {
-  @include semi-size-page-inner;
+  @include page-inner(var(--semi-max-width-page));
 
   margin-bottom: 50px;
 }
 
 .page-calendars__lead {
-  @include semi-size-page-inner;
+  @include page-inner(var(--semi-max-width-page));
 
   margin-top: 0;
   margin-bottom: 50px;
