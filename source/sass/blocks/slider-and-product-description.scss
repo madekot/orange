@@ -35,6 +35,10 @@
   margin-top: 50px;
 }
 
+.slider-and-product-description__column-texts > * + .slider-and-product-description__send-ideas {
+  margin-top: 20px;
+}
+
 @media (max-width: $desktopBreakpoint) {
   .slider-and-product-description__column-texts {
     padding-right: 40px;

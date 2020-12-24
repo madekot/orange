@@ -1,0 +1,24 @@
+.page-wallpaper__title {
+  @include page-inner;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.page-wallpaper__slider-and-product-description {
+  margin-bottom: 50px;
+}
+
+.page-wallpaper__information-call {
+  @include page-inner;
+
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.page-wallpaper__price-table {
+  @include page-inner;
+  margin-bottom: 50px;
+}

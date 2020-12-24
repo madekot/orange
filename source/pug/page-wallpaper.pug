@@ -1,0 +1,50 @@
+include includes/_includes.pug
+
+-
+  var pageClassName = 'page-wallpaper';
+  var pageTitle = 'Печать фотообоев';
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header
+    main(class=pageClassName + '__main')
+      +titleTypeWork(`${pageClassName}__title`, {
+        tagName: 'h1',
+        textContent: pageTitle,
+      })
+      +sliderAndProductDescription(`${pageClassName}__slider-and-product-description`, {
+        managerCheck: {
+          isRender: true,
+        },
+        sendIdeas: {
+          isRender: true,
+        },
+        informationCall: {
+          isRender: false,
+        },
+        texts: {
+          isRender: true,
+          elements: [
+            {
+              textContent: `Фотообои - это то, что может раскрасить
+              интерьер любого помещения и реализовать самые смелые
+              дизайнерские решения, если Вы хотите видеть у себя
+              дома потрясающие виды Венеции или Праги, красивейших
+              пляжей мира или горных хребтов, то тогда это к нам!`,
+            },
+            {
+              textContent: `В нашей компании используется только
+              самая качественная печать. Если вы не можете
+              определиться с тематикой фотообоев, опытные
+              дизайнеры подберут варианты специально
+              для Вашего помещения.`,
+            },
+          ],
+        },
+      })
+      +priceTable(`${pageClassName}__price-table price-table--title-align-right`)
+      +informationCall(`${pageClassName}__information-call`)
+      +decorativeLine(`${pageClassName}__decorative-line`)
+    +footer
