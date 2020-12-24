@@ -1,0 +1,66 @@
+include includes/_includes.pug
+
+-
+  var pageClassName = 'product-page';
+  var pageTitle = 'Печать брошюр';
+
+  var obj = {};
+  obj.pageClassName = pageClassName || '';
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header('', obj)
+    main(class=pageClassName + '__main')
+      +titleTypeWork(pageClassName + '__title',{
+        tagName: 'h1',
+        textContent: pageTitle,
+      })
+      +sliderAndProductDescription(pageClassName + '__slider-and-product-description', {
+        managerCheck: {
+          isRender: true,
+        },
+        texts: {
+          elements: [
+            {
+              textContent: `<b>Брошюра - не много, не мало:</b>`,
+            },
+            {
+              textContent: `Брошюра - это просто небольшая А5
+              формата книжечка, может быть низкого , среднего
+              или хорошего качества и содержать всё что угодно - от
+              рекламы до стихов. на скрепке. Средний вариант
+              м/у каталогом и буклетом. Но В качестве рекламы
+              выбирают в основном либо каталог либо буклет,
+              а брошюру - когда надо о чём то или о ком то рассказать...`,
+            },
+            {
+              textContent: `<b>Преимущества цифровой печати:</b><br>
+              Возможность печати от 1 экземпляра`,
+            },
+            {
+              textContent: `<b>Преимущества офсетной печати:</b><br>
+              Малая стоимость 1 экземпляра при большом тираже`,
+            },
+            {
+              textContent: `<b>Типы скрепления:</b><br>Скоба, пружина`,
+            },
+            {
+              textContent: `<br><b>Преимущества цифровой печати:</b><br>Возможность печати от 1 экземпляра`,
+            },
+            {
+              textContent: `<b>Преимущества офсетной печати:</b><br>Малая стоимость 1 экземпляра при большом тираже`,
+            },
+            {
+              textContent: `<b>Тип скрепления:</b><br>Скоба, пружина, термоклей`,
+            },
+          ],
+        },
+      })
+      +fasteningTypes(pageClassName + '__fastening-types')
+      +decorativeWrapper(`${pageClassName}__decorative-wrapper`, {
+        classModifiers: '--image-3',
+      })
+      +decorativeLine(pageClassName + '__decorative-line')
+    +footer

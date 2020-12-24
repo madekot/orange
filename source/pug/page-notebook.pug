@@ -1,0 +1,65 @@
+include includes/_includes.pug
+
+-
+  var pageClassName = 'product-page';
+  var pageTitle = 'Печать блокнотов';
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header
+    main(class=pageClassName + '__main')
+      +titleTypeWork(`${pageClassName}__title`, {
+        tagName: 'h1',
+        textContent: pageTitle,
+      })
+      +sliderAndProductDescription(`${pageClassName}__slider-and-product-description`, {
+        managerCheck: {
+          isRender: false,
+        },
+        sendIdeas: {
+          isRender: false,
+        },
+        informationCall: {
+          isRender: false,
+        },
+        texts: {
+          isRender: true,
+          elements: [
+            {
+              textContent: `Мы печатаем блокноты
+              как стандартных размеров, форматы
+              А4, А5, А6 и А7, так и любых
+              нестандартных размеров.`,
+            },
+            {
+              textContent: `<b>ФОРМАТЫ</b><br>
+              Мы рекомендуем нашим клиентам
+              использовать стандартные форматы:`,
+            },
+            {
+              textContent: `А7 (105×74 мм)<br>
+              А6 (148×105 мм)<br>
+              А5 (210×148 мм) — <b>наиболее популярный формат</b><br>
+              А4 (297×210 мм)<br>
+              А3 (420×297 мм)<br>`,
+            },
+            {
+              textContent: `Наиболее популярным способом скрепления
+              блокнотов является так называемая навивка на пружину.
+              Для сборки блокнотов на металлическую пружину
+              мы используем новую полуавтоматическую машину.
+              Для перфорации мы используем промышленный
+              перфоратор. Парк оборудования нашей
+              типографии позволяет выпускать
+              промышленные объемы блокнотов, перекидных
+              и блочных календарей, каталогов, журналов,
+              брошюр, буклетов и многое другое.`,
+            },
+          ],
+        },
+      })
+      +informationCall(`${pageClassName}__information-call`)
+      +decorativeLine(`${pageClassName}__decorative-line`)
+    +footer

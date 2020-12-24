@@ -26,3 +26,12 @@
 .product-page__decorative-line {
   margin-bottom: 50px;
 }
+
+.product-page__fastening-types {
+  @include page-inner(var(--extra-max-width-page));
+  margin-bottom: 50px;
+}
+
+.product-page__decorative-wrapper {
+  margin-bottom: 50px;
+}
