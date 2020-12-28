@@ -2,6 +2,7 @@
   display: flex;
 
   box-shadow: 7px 7px 12px rgba(0,0,0,0.2);
+  min-height: 700px;
 }
 
 .slider-list--border {
@@ -25,12 +26,12 @@
 
 @media (max-width: $tabletBreakpoint) {
   .slider-list {
-    display: flex;
+    min-height: 550px;
   }
 }
 
 @media (max-width: $mobileBreakpoint) {
   .slider-list {
-    display: flex;
+    min-height: 320px;
   }
 }

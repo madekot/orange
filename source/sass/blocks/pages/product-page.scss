@@ -1,7 +1,9 @@
+.product-page__main {
+  padding-top: 50px;
+}
+
 .product-page__title {
   @include page-inner;
-
-  margin-top: 50px;
   margin-bottom: 30px;
 
   text-align: center;
@@ -33,5 +35,25 @@
 }
 
 .product-page__decorative-wrapper {
+  margin-bottom: 50px;
+}
+
+.product-page__texts {
+  @include page-inner;
+  margin-bottom: 50px;
+}
+
+.product-page__production-item {
+  @include page-inner;
+}
+
+.product-page__send-ideas {
+  @include page-inner;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.product-page__interior-print {
+  @include page-inner;
   margin-bottom: 50px;
 }

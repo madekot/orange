@@ -14,6 +14,12 @@ html(lang="ru")
       h1(class=pageClassName + '__title') #{pageTitle}
       div(class=pageClassName + `__wrap-row`)
         +sliderAndProductDescription(`${pageClassName}__inner-wrap-row`, {
+          managerCheck: {
+            isRender: true,
+          },
+          sendIdeas: {
+            isRender: true,
+          },
           columnSlider: {
             classModifiers: '--color-orange',
           },
@@ -33,8 +39,6 @@ html(lang="ru")
             ],
           },
         })
-            +managerCheck(pageClassName + '__manager-check')
-            +sendIdeas(pageClassName + '__send-ideas')
       +priceTable(pageClassName + '__interior-print price-table--title-align-right')
       +informationCall(pageClassName + '__information-call')
 

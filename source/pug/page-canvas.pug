@@ -1,0 +1,253 @@
+include includes/_includes.pug
+
+-
+  var pageClassName = 'product-page';
+  var pageTitle = 'Печать на холсте в санкт-петербурге';
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header
+    main(class=pageClassName + '__main')
+      +productionItem(`${pageClassName}__production-item production-item--no-icon`, {
+        title: `Печать на холсте в санкт-петербурге`,
+        description: `Печать на холсте –  такие работы могут украсить интерьер
+        любого помещения. У нас Вы сможете выбрать различные тематические картины.
+        Наши сотрудники помогут в выборе сюжета. Цены на данный вид работ вас порадуют.`,
+        listItems: [
+          {
+            title: map.typesProducts.differentTextures.title,
+            href: map.typesProducts.differentTextures.href,
+            imageName: map.typesProducts.differentTextures.imageName,
+            imageAlt: map.typesProducts.differentTextures.imageAlt,
+          },
+          {
+            title: map.typesProducts.framework.title,
+            href: map.typesProducts.framework.href,
+            imageName: map.typesProducts.framework.imageName,
+            imageAlt: map.typesProducts.framework.imageAlt,
+          },
+          {
+            title: map.typesProducts.canvasStretch.title,
+            href: map.typesProducts.canvasStretch.href,
+            imageName: map.typesProducts.canvasStretch.imageName,
+            imageAlt: map.typesProducts.canvasStretch.imageAlt,
+          },
+          {
+            title: map.typesProducts.yourPhoto.title,
+            href: map.typesProducts.yourPhoto.href,
+            imageName: map.typesProducts.yourPhoto.imageName,
+            imageAlt: map.typesProducts.yourPhoto.imageAlt,
+          },
+        ],
+      })
+      +texts(`${pageClassName}__texts`, {
+        elements: [
+          {
+            textContent: `Стоимость изготовления стандартных форматов,
+            которые вы можете заказать у нас сразу,
+            предоставив только свой файл
+            (печать на холсте изображения + подрамник деревянный + работа по натяжке)`,
+          },
+          {
+            textContent: `<b style="display: block; text-align: center;">
+            30 х 40 см – 2000 руб</b>
+            <b style="display: block; text-align: center;">
+            40 х 60 см – 2000 руб</b>
+            <b style="display: block; text-align: center;">
+            50 х 70 см – 2000 руб</b>`
+          },
+          {
+            textContent: `Любые другие форматы так же возможно изготовить,
+            наши сотрудники предоставят расчет по вашим индивидуальным размерам.`,
+          },
+        ],
+      })
+      +informationCall(`${pageClassName}__information-call`)
+      +sendIdeas(`${pageClassName}__send-ideas`)
+      +sliderList
+      +decorativeLine(`${pageClassName}__decorative-line`, {
+        classModifiers: '--simple',
+      })
+      +priceTable(pageClassName + '__interior-print price-table--title-align-right')
+      +decorativeLine(`${pageClassName}__decorative-line`)
+      +texts(`${pageClassName}__texts`, {
+        elements: [
+          {
+            textContent: `<b style="text-align: center; display: block;">ОСОБЕННОСТИ ПЕЧАТИ НА ХОЛСТЕ. ДАВАЙТЕ НА ЧИСТОТУ.</b>`,
+          },
+        ],
+      })
+      +texts(`${pageClassName}__texts`, {
+        elements: [
+          {
+            textContent: `<b>«HD качество», «натуральные материалы»,
+            «обработка лаком», «галерейный подрамник».
+            Что означают эти понятия в контексте печати на холстах?</b>`
+          },
+          {
+            textContent: `Вы решили сделать подарок себе, близкому
+            человеку или коллеге. И в любом случае, это должен
+            быть «ого-го какой» презент, необычный подарок,
+            подарок, за который будет не стыдно, за который
+            вам скажут искреннее «спасибо».`
+          },
+          {
+            textContent: `Обычный план действий —
+            берём кошелёк и идём по магазинам, вдруг повезёт.`
+          },
+          {
+            textContent: `Но можно не полагаться на слепую удачу,
+            и нем тратить зря кучу времени.
+            Лучший подарок человеку, который вам
+            не безразличен — это кусочек ваших
+            общих приятных воспоминаний, картинка
+            по его или её вкусу, которая будет греть
+            и вдохновлять, или портрет виновника
+            торжества в близком ему образе.
+            Дело за малым — правильно эту идею
+            оформить и подать =)`
+          },
+          {
+            textContent: `Остановимся на варианте печати фото.`
+          },
+          {
+            textContent: `Отправляемся в интернет, вводим запрос
+            «печать фото на холсте» и появляется масса идей,
+            как напечатать вашу фотографию. Можно её напечатать
+            на бумаге, плёнке, пластике, холсте. Но помимо
+            заманчивых предложений мы сталкиваемся с массой
+            терминов. Мы решили помочь разобраться в том,
+            что же за этими не очень понятными словами стоит.`
+          },
+          {
+            textContent: `Сегодня поговорим об одном из самых
+            популярных вариантов — печати фото на холсте.`
+          },
+          {
+            textContent: `Итак, печать на холсте.`
+          },
+          {
+            textContent: `Во многих объявлениях о печати
+            на холсте можно встретить фразу:
+            «100% натуральные материалы». Что это
+            означает, насколько действительно
+            это важно при выборе исполнителя и
+            какой холст нужен именно вашей картине?`
+          },
+          {
+            textContent: `Уже многие столетия художники всего мира
+            пишут свои шедевры на холсте и знают,
+            как это важно подобрать холст правильно,
+            ведь на самом деле, существует множество разных холстов.
+            Чем же один холст отличается от другого?`
+          },
+        ],
+      })
+      +texts(`${pageClassName}__texts`, {
+        elements: [
+          {
+            textContent: `<b style="text-align: center; display: block;">ХОЛСТ ГЛАЗАМИ ХУДОЖНИКА. ИЗ ЧЕГО СДЕЛАН ХОЛСТ.</b>`,
+          },
+        ],
+      })
+      +texts(`${pageClassName}__texts`, {
+        elements: [
+          {
+            textContent: `<b style="">ЛЬНЯНОЙ ХОЛСТ</b>`,
+          },
+          {
+            textContent: `Стоит помнить, что самым распространённым
+            материалом для холста исстари являлся лён.
+            Холст из льна обладал жёсткой и грубоватой текстурой.`
+          },
+          {
+            textContent: `Художники, которые используют в своей
+            работе широкие и жирные мазки, пишут мастихином,
+            предпочитают писать работы большого масштаба,
+            до сих пор предпочитают холсты из льна. Картины на
+            льняном холсте считаются самыми устойчивыми к
+            безжалостному влиянию времени.`
+          },
+        ],
+      })
+      +texts(`${pageClassName}__texts`, {
+        elements: [
+          {
+            textContent: `<b style="">ХЛОПКОВЫЙ ХОЛСТ</b>`,
+          },
+          {
+            textContent: `С развитием текстильного
+            производства появлялись новые материалы.
+            Люди научились ткать из хлопка.`
+          },
+          {
+            textContent: `Так же, как и льняной, хост из
+            хлопка имеет свою неповторимую структуру.
+            Его особенности — эластичность и тонкости.
+            Его фактуру легко отличить от льна.
+            Ячея хлопкового холста более мелкая.
+            Это холст для художников,
+            чья манера — более чёткие и мелкие мазки.`
+          },
+          {
+            textContent: `Эластичность — одно из преимуществ
+            хлопкового холста перед достаточно
+            грубым льняным —  позволяет аккуратнее
+            выполнить натяжку холста на подрамник,
+            а художник тратит меньше сил и
+            времени на его грунтовку.`
+          },
+        ],
+      })
+      +texts(`${pageClassName}__texts`, {
+        elements: [
+          {
+            textContent: `<b style="text-align: center; display: block;">ХОЛСТЫ ДЛЯ ПЕЧАТИ</b>`,
+          },
+        ],
+      })
+      +texts(`${pageClassName}__texts`, {
+        elements: [
+          {
+            textContent: `<b>НАТУРАЛЬНЫЕ ХОЛСТЫ ДЛЯ ПЕЧАТИ</b>`
+          },
+          {
+            textContent: `100% натуральные холсты для печати чаще всего
+            имеют хлопковую основу, на которую при
+            производстве уже нанесён слой грунтовки.
+            Современный натуральный холст для печати
+            продаётся рулонами в герметичной упаковке.
+            Такой холст имеет свой срок хранения.`
+          },
+          {
+            textContent: `<b>СИНТЕТИЧЕСКИЙ ХОЛСТ</b>`
+          },
+          {
+            textContent: `Натуральность — это прекрасно и актуально.
+            Но в полиграфии и рекламном деле большей популярностью
+            пользуются синтетические,
+            искусственные холсты. Почему? Всё просто!`
+          },
+          {
+            textContent: `<b>При изготовлении искусственному холсту можно задать любую фактуру, например, фактуру того же льна или хлопка</b><br>`
+          },
+          {
+            textContent: `<b>Синтетический холст существенно дешевле натурального</b><br>`
+          },
+          {
+            textContent: `<b>Неприхотливость к погодным условиям и микроклимату помещений, как следствие, широкое использование в работах по оформлению интерьеров и наружной рекламе</b><br>`
+          },
+          {
+            textContent: `<b>Однородность текстуры, отсутствие катышков и неровности в рисунке (что часто встречается на натуральных холстах)</b><br>`
+          },
+        ],
+      })
+      +decorativeLine(`${pageClassName}__decorative-line`, {
+        classModifiers: '--simple',
+      })
+      +priceTable(pageClassName + '__interior-print price-table--title-align-right')
+      +informationCall(`${pageClassName}__information-call`)
+      +decorativeLine(`${pageClassName}__decorative-line`)
+    +footer
