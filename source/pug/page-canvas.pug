@@ -66,10 +66,7 @@ html(lang="ru")
       })
       +informationCall(`${pageClassName}__information-call`)
       +sendIdeas(`${pageClassName}__send-ideas`)
-      +sliderList
-      +decorativeLine(`${pageClassName}__decorative-line`, {
-        classModifiers: '--simple',
-      })
+      +sliderList(`${pageClassName}__slider-list`)
       +priceTable(pageClassName + '__interior-print price-table--title-align-right')
       +decorativeLine(`${pageClassName}__decorative-line`)
       +texts(`${pageClassName}__texts`, {
@@ -153,14 +150,26 @@ html(lang="ru")
         ],
       })
       +texts(`${pageClassName}__texts`, {
-        elements: [
-          {
-            textContent: `<b style="">ЛЬНЯНОЙ ХОЛСТ</b>`,
+        classModifiers: '--image',
+        image: {
+          isRender: true,
+          title: {
+            textContent: 'ЛЬНЯНОЙ ХОЛСТ'
           },
+          src: 'img/texts__image-content--1.jpg',
+        },
+        elements: [
           {
             textContent: `Стоит помнить, что самым распространённым
             материалом для холста исстари являлся лён.
             Холст из льна обладал жёсткой и грубоватой текстурой.`
+          },
+          {
+            textContent: `Как и всякий тканный продукт, льняной холст
+            имел свою неповторимую фактуру и чтобы её подчеркнуть,
+            применялись различные приёмы — нитка двойного кручения,
+            разные виды плетения. Холсты могут иметь
+            крупнозернистую и мелкозернистую ячею.`
           },
           {
             textContent: `Художники, которые используют в своей
@@ -173,10 +182,15 @@ html(lang="ru")
         ],
       })
       +texts(`${pageClassName}__texts`, {
-        elements: [
-          {
-            textContent: `<b style="">ХЛОПКОВЫЙ ХОЛСТ</b>`,
+        classModifiers: ['--image', '--position-image-right'],
+        image: {
+          isRender: true,
+          title: {
+            textContent: 'НАТУРАЛЬНЫЕ ХОЛСТЫ ДЛЯ ПЕЧАТИ'
           },
+          src: 'img/texts__image-content--2.jpg'
+        },
+        elements: [
           {
             textContent: `С развитием текстильного
             производства появлялись новые материалы.
@@ -244,9 +258,7 @@ html(lang="ru")
           },
         ],
       })
-      +decorativeLine(`${pageClassName}__decorative-line`, {
-        classModifiers: '--simple',
-      })
+      +sliderList(`${pageClassName}__slider-list`)
       +priceTable(pageClassName + '__interior-print price-table--title-align-right')
       +informationCall(`${pageClassName}__information-call`)
       +decorativeLine(`${pageClassName}__decorative-line`)

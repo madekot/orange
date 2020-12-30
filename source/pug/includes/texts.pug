@@ -7,12 +7,21 @@ mixin texts(nameMixedClass, obj)
     obj.classModifiers = variables.getArrayClassModifiers(obj.classModifiers);
     obj.elements = obj.elements || [];
 
+    obj.image = obj.image || {};
+    obj.image.isRender = obj.image.isRender || false;
+    obj.image.title = obj.image.title || {};
+    obj.image.title.textContent = obj.image.title.textContent || 'lorem Title';
+    obj.image.src = obj.image.src || 'img/texts__image-content--1.jpg';
+
   #{obj.tagName}(class=[
     nameMixedClass,
     obj.elementName,
     variables.getModifierClasses(obj.classModifiers, obj.elementName)
   ])
-
+    if(obj.image.isRender)
+      div(class=`${obj.elementName}__image`)
+        p(class=`${obj.elementName}__image-title`) #{obj.image.title.textContent}
+        div(class=`${obj.elementName}__image-content` style=`background-image: url('${obj.image.src}');`)
     each item in obj.elements
       -
         var tagName = item.tagName || 'p'

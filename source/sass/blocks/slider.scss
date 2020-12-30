@@ -19,8 +19,8 @@
 .slider__slider-list {
   align-self: center;
 
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 700px;
   margin-top: 20px;
 }
 
@@ -42,7 +42,7 @@
 
 @media (max-width: $desktopBreakpoint) {
   .slider__slider-list {
-    width: 340px;
+    width: 500px;
     height: 340px;
   }
 }
@@ -51,14 +51,14 @@
   .slider__slider-list {
     align-self: center;
 
-    width: 500px;
+    width: 700px;
     height: 500px;
   }
 }
 
 @media (max-width: $mobileBreakpoint) {
   .slider__slider-list {
-    width: 290px;
+    width: 380px;
     height: 290px;
     margin-top: 10px;
   }

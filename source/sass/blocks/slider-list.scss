@@ -1,8 +1,8 @@
 .slider-list {
   display: flex;
 
-  box-shadow: 7px 7px 12px rgba(0,0,0,0.2);
-  min-height: 700px;
+  // box-shadow: 7px 7px 12px rgba(0,0,0,0.2);
+  // min-height: 700px;
 }
 
 .slider-list--border {
@@ -21,7 +21,7 @@
   background-image: url($cssPath + "slider__mage--1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto 100%;
+  background-size: contain;
 }
 
 @media (max-width: $tabletBreakpoint) {
