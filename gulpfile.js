@@ -24,7 +24,7 @@ exports.checkBemNaming = checkBemNaming;
 // Htmls
 const htmls = () => {
   return gulp.src(['source/pug/**/*.pug', '!source/pug/includes/**/*.pug'])
-    .pipe(plumber({ errorHandler: notify.onError() }))
+    .pipe(plumber())
     .pipe(pug({ pretty: true }))
     .pipe(typograf({ locale: ['ru', 'en-US'] }))
     .pipe(gulp.dest('./build'))
@@ -35,7 +35,7 @@ exports.htmls = htmls;
 // Styles
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-    .pipe(plumber({ errorHandler: notify.onError() }))
+    .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(postcss([
