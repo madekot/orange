@@ -32,6 +32,22 @@
   background-size: cover;
 }
 
+.texts--slider {
+  // модификатор слайдера
+  min-height: 500px;
+}
+
+.texts__slider {
+  float: left;
+
+  margin-right: 30px;
+  margin-bottom: 20px;
+
+  width: 500px;
+  height: 500px;
+  padding: 50px;
+}
+
 .texts--position-image-right .texts__image {
   // модификатор положения картинки
   float: right;
@@ -63,7 +79,21 @@
   padding-top: 45px;
 }
 
+// @media (max-width: $desktopBreakpoint) {
+//   .texts__slider {
+//     width: 500px;
+//     height: 340px;
+//   }
+// }
+
 @media (max-width: $tabletBreakpoint) {
+  .texts__slider {
+    float: none;
+    width: 100%;
+    // margin-right: auto;
+    // margin-left: auto;
+  }
+
   .texts--image .texts__image {
     margin-bottom: 0;
     margin-left: 0;
@@ -83,3 +113,12 @@
     width: 100%;
   }
 }
+
+@media (max-width: $mobileBreakpoint) {
+  .texts__slider {
+    padding: 15px;
+    height: 300px;
+    margin-bottom: 0;
+  }
+}
+

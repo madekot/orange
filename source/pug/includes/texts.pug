@@ -10,8 +10,12 @@ mixin texts(nameMixedClass, obj)
     obj.image = obj.image || {};
     obj.image.isRender = obj.image.isRender || false;
     obj.image.title = obj.image.title || {};
-    obj.image.title.textContent = obj.image.title.textContent || 'lorem Title';
+    obj.image.title.textContent = obj.image.title.textContent || false;
+    obj.image.title.style = obj.image.title.style || '';
     obj.image.src = obj.image.src || 'img/texts__image-content--1.jpg';
+
+    obj.slider = obj.slider || {};
+    obj.slider.isRender = obj.slider.isRender || false;
 
   #{obj.tagName}(class=[
     nameMixedClass,
@@ -20,8 +24,25 @@ mixin texts(nameMixedClass, obj)
   ])
     if(obj.image.isRender)
       div(class=`${obj.elementName}__image`)
-        p(class=`${obj.elementName}__image-title`) #{obj.image.title.textContent}
+        if (obj.image.title.textContent)
+          case obj.image.title.style
+            when 'label'
+              +label(`${obj.elementName}__image-title`, {
+                classModifiers: [`--color-orange`],
+                title: {
+                  textContent: obj.image.title.textContent,
+                  classModifiers: [`--color-white`],
+                },
+              })
+            default
+              p(class=`${obj.elementName}__image-title`) #{obj.image.title.textContent}
         div(class=`${obj.elementName}__image-content` style=`background-image: url('${obj.image.src}');`)
+
+    if(obj.slider.isRender)
+      +slider(`${obj.elementName}__slider`, {
+        classModifiers: ['--size-small'],
+      })
+
     each item in obj.elements
       -
         var tagName = item.tagName || 'p'

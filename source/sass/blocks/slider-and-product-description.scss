@@ -13,6 +13,7 @@
   flex-grow: 1;
 
   min-width: 50%;
+  height: auto;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -52,5 +53,9 @@
 
   .slider-and-product-description__column-texts {
     max-width: 100%;
+  }
+
+  .slider-and-product-description__column-slider {
+    height: 380px;
   }
 }

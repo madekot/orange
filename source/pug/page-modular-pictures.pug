@@ -1,0 +1,73 @@
+include includes/_includes.pug
+
+-var pageClassName = 'product-page';
+-var pageTitle = 'Печать модульных картин в санкт-петербурге';
+-var interiorPrinting = variables.page.production.interiorPrinting;
+
+<!DOCTYPE html>
+html(lang="ru")
+  +head(pageTitle, pageTitle)
+  body(class=pageClassName)
+    +header
+
+    main(class=pageClassName + '__main')
+      +titleTypeWork(`${pageClassName}__title`, {
+        textContent: pageTitle,
+      })
+      +texts(`${pageClassName}__texts`, {
+        classModifiers: [
+          `--slider`,
+        ],
+        slider : {
+          isRender: true,
+        },
+        elements: [
+          {
+            textContent: `Изображение в модульной картине
+            разбивается на несколько частей. Благодаря этому
+            создается эффект объема и оригинальной формы.
+            Классическая прямоугольная картина в модульном
+            исполнении может превратиться в ромб или
+            оригинальный многоугольник. Это отличное
+            решение для оформление офиса или квартиры.
+            А когда надоест, можно поменять местами части
+            модуля и получить нечто свежее и не стандартное.`
+          },
+        ],
+      })
+      +decorativeLine(`${pageClassName}__decorative-line`, {
+        classModifiers: [
+          `--simple`,
+          `--simple-color-gray`,
+        ],
+      })
+      +titleTypeWork(`${pageClassName}__title`, {
+        tagName: 'h3',
+        textContent: `Основные виды модульных картин`,
+      })
+      +texts(`${pageClassName}__texts`, {
+        classModifiers: [
+          `--image`,
+        ],
+        image : {
+          isRender: true,
+          title: {
+            style: `label`,
+            textContent: `ДИПТИХ`,
+          },
+        },
+        elements: [
+          {
+            textContent: `Изображение в модульной картине
+            разбивается на несколько частей. Благодаря этому
+            создается эффект объема и оригинальной формы.
+            Классическая прямоугольная картина в модульном
+            исполнении может превратиться в ромб или
+            оригинальный многоугольник. Это отличное
+            решение для оформление офиса или квартиры.
+            А когда надоест, можно поменять местами части
+            модуля и получить нечто свежее и не стандартное.`
+          },
+        ],
+      })
+    +footer
