@@ -13,6 +13,9 @@ html(lang="ru")
     main(class=pageClassName + '__main')
       +titleTypeWork(`${pageClassName}__title`, {
         textContent: pageTitle,
+        hello: {
+          textContent: 'hello',
+        },
       })
       +texts(`${pageClassName}__texts`, {
         classModifiers: [

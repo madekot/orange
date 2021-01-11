@@ -9,6 +9,27 @@ include map.pug
     getArrayClassModifiers: function(classModifiers) {
       return Array.isArray(classModifiers) ? classModifiers : classModifiers.split() || [];
     },
+    NodeElement: function ({
+      tagName: tagName,
+      elementName: elementName,
+      classModifiers: classModifiers,
+      textContent: textContent,
+    } = {}) {
+      this.tagName = tagName || 'h2';
+      this.elementName = elementName || 'title-type-work';
+      this.classModifiers = variables.getArrayClassModifiers( classModifiers || [] );
+      this.textContent = textContent || 'Lorem impulse';
+
+      this.getArrayClassModifiers = function(classModifiers) {
+        return Array.isArray(classModifiers) ? classModifiers : classModifiers.split() || [];
+      };
+
+      this.getModifierClasses = function(modifierClasses = this.classModifiers, blockName = this.elementName) {
+        return modifierClasses.map(function (element){
+          return `${blockName}${element}`;
+        }).join(' ');
+      };
+    },
     imagePath: 'img/',
     stylePath: '',
     orange: {
