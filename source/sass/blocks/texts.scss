@@ -4,23 +4,21 @@
 
 .texts--image {
   // модификатор картинки
-  min-height: 400px;
+  min-height: 354px;
 }
 
-.texts--image .texts__image {
+.texts__image {
   float: left;
 
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.texts--image .texts__image-title {
-  margin-bottom: 20px;
-
+.texts__image-title {
   color: var(--main-color);
 }
 
-.texts--image .texts__image-content {
+.texts__image-content {
   display: block;
 
   width: 536px;
@@ -76,17 +74,34 @@
 
 .texts__image + p {
   margin-top: 0;
-  padding-top: 45px;
+  // padding-top: 45px;
 }
 
-// @media (max-width: $desktopBreakpoint) {
-//   .texts__slider {
-//     width: 500px;
-//     height: 340px;
-//   }
+// .texts p + .texts__text-title {
+//   margin-top: 20px;
 // }
 
-@media (max-width: $tabletBreakpoint) {
+.texts * + * {
+  margin-top: 20px;
+}
+
+.texts__image + .texts__text-title {
+  margin-top: 0;
+}
+
+.texts__images-list {
+  @include page-inner;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 400px;
+}
+
+.texts__images-list-item {
+  flex-grow: 1;
+  background-color: tomato;
+}
+
+@media (max-width: $desktopBreakpoint) {
   .texts__slider {
     float: none;
     width: 100%;
@@ -94,25 +109,32 @@
     // margin-left: auto;
   }
 
-  .texts--image .texts__image {
+  .texts__image {
+    margin-top: 20px;
     margin-bottom: 0;
     margin-left: 0;
-  }
-
-  .texts--image .texts__image {
     float: none;
-
     margin-right: 0;
   }
 
-  .texts--image .texts__image-title {
+  .texts__image-title {
     text-align: center;
   }
 
-  .texts--image .texts__image-content {
+  .texts__image-content {
     width: 100%;
   }
+
+  .texts__image-title--label {
+    max-width: 100%;
+  }
+
+  .texts__image + .texts__text-title {
+    margin-top: 20px;
+  }
 }
+
+@media (max-width: $tabletBreakpoint) {}
 
 @media (max-width: $mobileBreakpoint) {
   .texts__slider {

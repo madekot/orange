@@ -14,6 +14,7 @@ mixin texts(nameMixedClass, obj)
     obj.image.title.style = obj.image.title.style || '';
     obj.image.src = obj.image.src || 'img/texts__image-content--1.jpg';
 
+
     obj.slider = obj.slider || {};
     obj.slider.isRender = obj.slider.isRender || false;
 
@@ -23,19 +24,21 @@ mixin texts(nameMixedClass, obj)
     variables.getModifierClasses(obj.classModifiers, obj.elementName)
   ])
     if(obj.image.isRender)
+      if (obj.image.title.textContent)
+        case obj.image.title.style
+          when 'label'
+            +label(`${obj.elementName}__image-title
+            ${obj.elementName}__image-title--label` , {
+              classModifiers: [`--color-orange`],
+              title: {
+                tagName: 'span',
+                textContent: obj.image.title.textContent,
+                classModifiers: [`--color-white`],
+              },
+            })
+          default
+            p(class=`${obj.elementName}__image-title`) #{obj.image.title.textContent}
       div(class=`${obj.elementName}__image`)
-        if (obj.image.title.textContent)
-          case obj.image.title.style
-            when 'label'
-              +label(`${obj.elementName}__image-title`, {
-                classModifiers: [`--color-orange`],
-                title: {
-                  textContent: obj.image.title.textContent,
-                  classModifiers: [`--color-white`],
-                },
-              })
-            default
-              p(class=`${obj.elementName}__image-title`) #{obj.image.title.textContent}
         div(class=`${obj.elementName}__image-content` style=`background-image: url('${obj.image.src}');`)
 
     if(obj.slider.isRender)
@@ -45,6 +48,16 @@ mixin texts(nameMixedClass, obj)
 
     each item in obj.elements
       -
-        var tagName = item.tagName || 'p'
-        var className = item.className || ''
-      #{tagName}(class=className) !{item.textContent}
+        var tagName = item.tagName || 'p';
+        item.title = item.title || {};
+
+      if (item.title.isRender)
+        +label(`${obj.elementName}__text-title` ,{
+          classModifiers: [`--color-orange`],
+          title: {
+            tagName: 'span',
+            textContent: item.title.textContent,
+            classModifiers: [`--color-white`],
+          },
+        })
+      #{tagName} !{item.textContent}
