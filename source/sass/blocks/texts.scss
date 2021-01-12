@@ -103,19 +103,6 @@
   background-color: tomato;
 }
 
-.product-page__images-list-item {
-  overflow: hidden;
-}
-
-.product-page__images-list-image {
-  display: block;
-
-  width: auto;
-  height: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 @media (max-width: $desktopBreakpoint) {
   .texts__slider {
     float: none;
