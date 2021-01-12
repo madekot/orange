@@ -48,36 +48,45 @@ html(lang="ru")
         tagName: 'h3',
         textContent: `Основные виды модульных картин`,
       })
-      +texts(`${pageClassName}__texts`, {
-        classModifiers: [
-          `--image`,
-        ],
-        image : {
-          isRender: true,
-          title: {
-            style: `label` && '',
-            textContent: ``,
-          },
-        },
-        elements: [
-          {
-            title : {
-              isRender: true,
-              textContent: 'ДИПТИХ',
+      div(class=`${pageClassName}__wrap`)
+        +texts(`${pageClassName}__texts ${pageClassName}__texts--size-small`, {
+          classModifiers: [
+            `--image`,
+          ],
+          image : {
+            isRender: true,
+            title: {
+              style: `label` && '',
+              textContent: ``,
             },
-            textContent: `Разделение картины на две части – приём,
-            которые использую дизайнеры интерьеров, чтобы подчеркнуть
-            дуалистичность сюжета и идеи, выделить частное на фоне
-            общего или показать единство и борьбу противоположностей.
-            Например: мужчина – женщина, пустыня – оазис,
-            берег – океан, большое – маленькое.`,
           },
-          {
-            textContent: `Форма и размеры частей диптиха может
-            быть абсолютно разной: панорама, одна картина над
-            второй, одна большая и одна маленькая часть и
-            другие варианты.`,
-          },
-        ],
-      })
+          elements: [
+            {
+              title : {
+                isRender: true,
+                textContent: 'ДИПТИХ',
+              },
+              textContent: `Разделение картины на две части – приём,
+              которые использую дизайнеры интерьеров, чтобы подчеркнуть
+              дуалистичность сюжета и идеи, выделить частное на фоне
+              общего или показать единство и борьбу противоположностей.
+              Например: мужчина – женщина, пустыня – оазис,
+              берег – океан, большое – маленькое.`,
+            },
+            {
+              textContent: `Форма и размеры частей диптиха может
+              быть абсолютно разной: панорама, одна картина над
+              второй, одна большая и одна маленькая часть и
+              другие варианты.`,
+            },
+          ],
+        })
+        div(class=`${pageClassName}__wrap-images-list`)
+          div(class=`${pageClassName}__images-list`)
+            div(class=`${pageClassName}__images-list-item`)
+              img(class=`${pageClassName}__images-list-image` src="img/no-image.png")
+            div(class=`${pageClassName}__images-list-item`)
+              img(class=`${pageClassName}__images-list-image` src="img/no-image.png")
+            div(class=`${pageClassName}__images-list-item`)
+              img(class=`${pageClassName}__images-list-image` src="img/no-image.png")
     +footer
