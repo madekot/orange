@@ -1,0 +1,44 @@
+mixin imagesList(nameMixedClass, obj)
+  -
+    let imagesList = new variables.NodeElement(obj = {
+      tagName: `div`,
+      elementName: `images-list`,
+    });
+
+    imagesList.imagesListInnerWrap = new variables.NodeElement(obj = {
+      tagName: `div`,
+      elementName: `__inner-wrap`,
+    });
+
+    imagesList.imagesListItem = new variables.NodeElement(obj = {
+      tagName: `div`,
+      elementName: `__item`,
+    });
+
+    imagesList.imagesListImage = new variables.NodeElement(obj = {
+      tagName: `img`,
+      elementName: `__image`,
+      src: 'img/images-list__item--image-1.jpg',
+    });
+
+  #{imagesList.tagName}(class=[
+    nameMixedClass,
+    imagesList.elementName,
+    imagesList.getModifierClasses(),
+  ])
+
+    #{imagesList.imagesListInnerWrap.tagName}(class=[
+      `${imagesList.elementName}${imagesList.imagesListInnerWrap.elementName}`,
+      imagesList.imagesListInnerWrap.getModifierClasses(),
+    ])
+
+      #{imagesList.imagesListItem.tagName}(class=[
+        `${imagesList.elementName}${imagesList.imagesListItem.elementName}`,
+        imagesList.imagesListItem.getModifierClasses(),
+      ])
+
+        #{imagesList.imagesListImage.tagName}(class=[
+          `${imagesList.elementName}${imagesList.imagesListImage.elementName}`,
+          imagesList.imagesListImage.getModifierClasses(),
+        ]
+        src=imagesList.imagesListImage.src)

@@ -1,0 +1,35 @@
+.images-list__inner-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-left: -20px;;
+}
+
+.images-list__image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.images-list__item {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+
+  width: calc(33.3% - 20px);
+  max-height: 400px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .images-list__item {
+    width: 100%;
+  }
+}

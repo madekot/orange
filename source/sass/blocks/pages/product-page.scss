@@ -56,41 +56,7 @@
 }
 
 .product-page__images-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  margin-left: -20px;;
-}
-
-.product-page__wrap-images-list {
   @include page-inner;
-}
-
-.product-page__images-list-image {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain;
-}
-
-
-.product-page__images-list-item {
-  display: flex;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: center;
-
-  width: calc(33.3% - 20px);
-  max-height: 400px;
-  margin-top: 20px;
-  margin-left: 20px;
-
-  background-color: orange;
 }
 
 .product-page__production-item {

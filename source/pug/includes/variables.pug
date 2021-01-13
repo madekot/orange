@@ -14,11 +14,13 @@ include map.pug
       elementName: elementName,
       classModifiers: classModifiers,
       textContent: textContent,
+      src: src,
     } = {}) {
       this.tagName = tagName || 'h2';
       this.elementName = elementName || 'title-type-work';
       this.classModifiers = variables.getArrayClassModifiers( classModifiers || [] );
-      this.textContent = textContent || 'Lorem impulse';
+      this.textContent = textContent || '';
+      this.src = src || false;
 
       this.getArrayClassModifiers = function(classModifiers) {
         return Array.isArray(classModifiers) ? classModifiers : classModifiers.split() || [];

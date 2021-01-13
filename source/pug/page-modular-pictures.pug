@@ -59,6 +59,7 @@ html(lang="ru")
               style: `label` && '',
               textContent: ``,
             },
+            src: 'img/texts__image--1.jpg'
           },
           elements: [
             {
@@ -81,12 +82,5 @@ html(lang="ru")
             },
           ],
         })
-        div(class=`${pageClassName}__wrap-images-list`)
-          div(class=`${pageClassName}__images-list`)
-            div(class=`${pageClassName}__images-list-item`)
-              img(class=`${pageClassName}__images-list-image` src="img/no-image.png")
-            div(class=`${pageClassName}__images-list-item`)
-              img(class=`${pageClassName}__images-list-image` src="img/decorative-wrapper__image-4.jpg")
-            div(class=`${pageClassName}__images-list-item`)
-              img(class=`${pageClassName}__images-list-image` src="img/page-production__image-wrapper--plotter-image.jpg")
+        +imagesList(`${pageClassName}__images-list`)
     +footer
