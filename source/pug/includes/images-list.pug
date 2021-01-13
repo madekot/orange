@@ -1,24 +1,32 @@
 mixin imagesList(nameMixedClass, obj)
   -
+    let bemBlockName = `images-list`;
     let imagesList = new variables.NodeElement(obj = {
       tagName: `div`,
-      elementName: `images-list`,
+      elementName: bemBlockName,
+      classModifiers: '',
     });
 
-    imagesList.imagesListInnerWrap = new variables.NodeElement(obj = {
+    let imagesListInnerWrap = new variables.NodeElement(obj = {
+      bemBlockName: bemBlockName,
       tagName: `div`,
       elementName: `__inner-wrap`,
+      classModifiers: '',
     });
 
-    imagesList.imagesListItem = new variables.NodeElement(obj = {
+    let imagesListItem = new variables.NodeElement(obj = {
+      bemBlockName: bemBlockName,
       tagName: `div`,
       elementName: `__item`,
+      classModifiers: '',
     });
 
-    imagesList.imagesListImage = new variables.NodeElement(obj = {
+    let imagesListImage = new variables.NodeElement(obj = {
+      bemBlockName: bemBlockName,
       tagName: `img`,
       elementName: `__image`,
       src: 'img/images-list__item--image-1.jpg',
+      classModifiers: '',
     });
 
   #{imagesList.tagName}(class=[
@@ -27,18 +35,20 @@ mixin imagesList(nameMixedClass, obj)
     imagesList.getModifierClasses(),
   ])
 
-    #{imagesList.imagesListInnerWrap.tagName}(class=[
-      `${imagesList.elementName}${imagesList.imagesListInnerWrap.elementName}`,
-      imagesList.imagesListInnerWrap.getModifierClasses(),
+    #{imagesListInnerWrap.tagName}(class=[
+      `${imagesList.elementName}${imagesListInnerWrap.elementName}`,
+      imagesListInnerWrap.getModifierClasses(),
     ])
 
-      #{imagesList.imagesListItem.tagName}(class=[
-        `${imagesList.elementName}${imagesList.imagesListItem.elementName}`,
-        imagesList.imagesListItem.getModifierClasses(),
+      #{imagesListItem.tagName}(class=[
+        `${imagesList.elementName}${imagesListItem.elementName}`,
+        imagesListItem.getModifierClasses(),
       ])
 
-        #{imagesList.imagesListImage.tagName}(class=[
-          `${imagesList.elementName}${imagesList.imagesListImage.elementName}`,
-          imagesList.imagesListImage.getModifierClasses(),
+        #{imagesListImage.tagName}(class=[
+          `${imagesList.elementName}${imagesListImage.elementName}`,
+          imagesListImage.getModifierClasses(),
         ]
-        src=imagesList.imagesListImage.src)
+        src=imagesListImage.src,
+        alt=imagesListImage.alt,
+        )

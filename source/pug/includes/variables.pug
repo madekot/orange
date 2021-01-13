@@ -6,32 +6,39 @@ include map.pug
         return `${blockName}${element}`;
       }).join(' ');
     },
+
     getArrayClassModifiers: function(classModifiers) {
       return Array.isArray(classModifiers) ? classModifiers : classModifiers.split() || [];
     },
+
     NodeElement: function ({
       tagName: tagName,
       elementName: elementName,
       classModifiers: classModifiers,
       textContent: textContent,
       src: src,
+      alt: alt,
+      bemBlockName: bemBlockName,
     } = {}) {
       this.tagName = tagName || 'h2';
       this.elementName = elementName || 'title-type-work';
       this.classModifiers = variables.getArrayClassModifiers( classModifiers || [] );
       this.textContent = textContent || '';
       this.src = src || false;
+      this.alt = alt || false;
+      this.bemBlockName = bemBlockName || '';
 
       this.getArrayClassModifiers = function(classModifiers) {
         return Array.isArray(classModifiers) ? classModifiers : classModifiers.split() || [];
       };
 
-      this.getModifierClasses = function(modifierClasses = this.classModifiers, blockName = this.elementName) {
+      this.getModifierClasses = function({} = {bemBlockName: bemBlockName = this.bemBlockName, modifierClasses : modifierClasses = this.classModifiers, blockName : blockName = this.elementName}) {
         return modifierClasses.map(function (element){
-          return `${blockName}${element}`;
+          return `${bemBlockName}${blockName}${element}`;
         }).join(' ');
       };
     },
+
     imagePath: 'img/',
     stylePath: '',
     orange: {
