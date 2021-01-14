@@ -45,16 +45,11 @@
   padding: 50px;
 }
 
-.texts--position-image-right .texts__image {
-  // модификатор положения картинки
+.texts__image--position-right {
   float: right;
 
   margin-right: 0;
   margin-left: 30px;
-}
-
-.texts--position-image-right .texts__image-title {
-  text-align: right;
 }
 
 .texts p {
@@ -115,7 +110,6 @@
   .texts__image {
     float: none;
 
-    margin-top: 20px;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;

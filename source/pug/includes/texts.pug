@@ -8,6 +8,8 @@ mixin texts(nameMixedClass, obj)
     obj.elements = obj.elements || [];
 
     obj.image = obj.image || {};
+    obj.image.classModifiers = obj.image.classModifiers || [];
+    obj.image.classModifiers = variables.getArrayClassModifiers(obj.image.classModifiers);
     obj.image.isRender = obj.image.isRender || false;
     obj.image.title = obj.image.title || {};
     obj.image.title.textContent = obj.image.title.textContent || false;
@@ -38,7 +40,9 @@ mixin texts(nameMixedClass, obj)
             })
           default
             p(class=`${obj.elementName}__image-title`) #{obj.image.title.textContent}
-      div(class=`${obj.elementName}__image`)
+      div(class=[`${obj.elementName}__image`,
+      variables.getModifierClasses(obj.image.classModifiers, `${obj.elementName}__image`)
+      ])
         div(class=`${obj.elementName}__image-content` style=`background-image: url('${obj.image.src}');`)
 
     if(obj.slider.isRender)

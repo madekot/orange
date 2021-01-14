@@ -57,6 +57,8 @@
 
 .product-page__images-list {
   @include page-inner;
+
+  margin-bottom: 50px;
 }
 
 .product-page__production-item {
@@ -75,6 +77,32 @@
   @include page-inner;
 
   margin-bottom: 50px;
+}
+
+.product-page__wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.product-page__wrap-information-call {
+  @include page-inner;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.product-page__wrap-send-ideas {
+  padding-top: 20px;
+  @include page-inner;
+  margin-bottom: 20px;
+}
+
+.product-page__wrap--shadow {
+  box-shadow: var(--box-shadow-second-style);
+}
+
+.product-page__types-products-list {
+  @include page-inner;
 }
 
 @media (max-width: $mobileBreakpoint) {

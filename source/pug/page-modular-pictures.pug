@@ -48,39 +48,146 @@ html(lang="ru")
         tagName: 'h3',
         textContent: `Основные виды модульных картин`,
       })
-      div(class=`${pageClassName}__wrap`)
-        +texts(`${pageClassName}__texts ${pageClassName}__texts--size-small`, {
-          classModifiers: [
-            `--image`,
-          ],
-          image : {
-            isRender: true,
-            title: {
-              style: `label` && '',
-              textContent: ``,
-            },
-            src: 'img/texts__image--1.jpg'
+      +texts(`${pageClassName}__texts ${pageClassName}__texts--size-small`, {
+        classModifiers: [
+          `--image`,
+        ],
+        image : {
+          isRender: true,
+          title: {
+            style: `label` && '',
+            textContent: ``,
           },
-          elements: [
-            {
-              title : {
-                isRender: true,
-                textContent: 'ДИПТИХ',
-              },
-              textContent: `Разделение картины на две части – приём,
-              которые использую дизайнеры интерьеров, чтобы подчеркнуть
-              дуалистичность сюжета и идеи, выделить частное на фоне
-              общего или показать единство и борьбу противоположностей.
-              Например: мужчина – женщина, пустыня – оазис,
-              берег – океан, большое – маленькое.`,
+          src: 'img/texts__image--1.jpg'
+        },
+        elements: [
+          {
+            title : {
+              isRender: true,
+              textContent: 'ДИПТИХ',
             },
-            {
-              textContent: `Форма и размеры частей диптиха может
-              быть абсолютно разной: панорама, одна картина над
-              второй, одна большая и одна маленькая часть и
-              другие варианты.`,
+            textContent: `Разделение картины на две части – приём,
+            которые использую дизайнеры интерьеров, чтобы подчеркнуть
+            дуалистичность сюжета и идеи, выделить частное на фоне
+            общего или показать единство и борьбу противоположностей.
+            Например: мужчина – женщина, пустыня – оазис,
+            берег – океан, большое – маленькое.`,
+          },
+          {
+            textContent: `Форма и размеры частей диптиха может
+            быть абсолютно разной: панорама, одна картина над
+            второй, одна большая и одна маленькая часть и
+            другие варианты.`,
+          },
+        ],
+      })
+      +imagesList(`${pageClassName}__images-list`)
+      div(class=`${pageClassName}__wrap ${pageClassName}__wrap--shadow`)
+        +informationCall(`${pageClassName}__wrap-information-call`)
+        +sendIdeas(`${pageClassName}__wrap-send-ideas`)
+      +texts(`${pageClassName}__texts`, {
+        classModifiers: [
+          `--image`,
+        ],
+        image : {
+          isRender: true,
+          title: {
+            style: `label` && '',
+            textContent: ``,
+          },
+          src: 'img/texts__image--1.jpg',
+        },
+        elements: [
+          {
+            title : {
+              isRender: true,
+              textContent: 'ТРИПТИХ',
             },
-          ],
-        })
-        +imagesList(`${pageClassName}__images-list`)
+            textContent: `Разделение картины на три части – классическая форма
+            для модульной картины. Триптихи хороши в интерьерах,
+            где преобладает стиль минимализма, и строгие геометрические
+            формы: прямоугольники, линии. 3 сегмента картины придают
+            таким помещениям дополнительный объем и завершенность.`,
+          },
+          {
+            textContent: `Форма и размеры частей диптиха может
+            быть абсолютно разной: панорама, одна картина над
+            второй, одна большая и одна маленькая часть и
+            другие варианты.`,
+          },
+        ],
+      })
+      +decorativeLine(`${pageClassName}__decorative-line`, {
+        classModifiers: [
+          `--simple`,
+          `--simple-color-gray`,
+        ],
+      })
+      +texts(`${pageClassName}__texts ${pageClassName}__texts--size-small`, {
+        classModifiers: [
+          `--image`,
+        ],
+        image : {
+          isRender: true,
+          title: {
+            style: `label` && '',
+            textContent: ``,
+          },
+          src: 'img/texts__image--1.jpg',
+          classModifiers : '--position-right',
+        },
+        elements: [
+          {
+            title : {
+              isRender: true,
+              textContent: 'ПОЛИПТИХ',
+            },
+            textContent: `Более трёх модулей в картине – креативная форма модульной
+            картины, прекрасно подходящая для оформления больших пространств или
+            визуального увеличения объема помещения.`,
+          },
+          {
+            textContent: `Дизайнеры любят работать с полиптихами – они дают возможность
+            полету фантазии: многообразие вариантов оформления, игра с формой и размерами,
+            расположением сегментов на стене и расстоянием между ними.`,
+          },
+        ],
+      })
+      +imagesList(`${pageClassName}__images-list`)
+      div(class=`${pageClassName}__wrap ${pageClassName}__wrap--shadow`)
+        +informationCall(`${pageClassName}__wrap-information-call`)
+      +typesProductsList(`${pageClassName}__types-products-list`, [
+          {
+            title: map.typesProducts.differentTextures.title,
+            href: map.typesProducts.differentTextures.href,
+            imageName: map.typesProducts.differentTextures.imageName,
+            imageAlt: map.typesProducts.differentTextures.imageAlt,
+          },
+          {
+            title: map.typesProducts.framework.title,
+            href: map.typesProducts.framework.href,
+            imageName: map.typesProducts.framework.imageName,
+            imageAlt: map.typesProducts.framework.imageAlt,
+          },
+          {
+            title: map.typesProducts.canvasStretch.title,
+            href: map.typesProducts.canvasStretch.href,
+            imageName: map.typesProducts.canvasStretch.imageName,
+            imageAlt: map.typesProducts.canvasStretch.imageAlt,
+          },
+          {
+            title: map.typesProducts.yourPhoto.title,
+            href: map.typesProducts.yourPhoto.href,
+            imageName: map.typesProducts.yourPhoto.imageName,
+            imageAlt: map.typesProducts.yourPhoto.imageAlt,
+          },
+        ])
+      +decorativeLine(`${pageClassName}__decorative-line`, {
+        classModifiers: [
+          `--simple`,
+          `--simple-color-orange`,
+        ],
+      })
+      +priceTable(`${pageClassName}__price-table`)
+      +decorativeLine(`${pageClassName}__decorative-line`)
     +footer
